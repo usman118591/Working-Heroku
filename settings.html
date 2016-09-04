@@ -1,0 +1,1414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CrowdPHP 2.0  - CrowdPHP ,Fundraising Script, Fundraising Script</title>
+<meta name="keywords" content="Crowdfunding , Fundraising, f" />
+<meta name="description" content="Fundraising Script CV2" />
+<link rel="stylesheet" type="text/css" href="http://demo.crowdphp.com/public/runtime/statics/ec227dcf9c5e18692c777930cb610a44.css" />
+<script type="text/javascript" src="http://demo.crowdphp.com/public/runtime/statics/f3ef9db8468ca2aa68bc4b72ce8b95d2.js"></script>
+<script type="text/javascript">
+var APP_ROOT = '';
+var LOADER_IMG = 'http://demo.crowdphp.com/app/Tpl/cv4/images/lazy_loading.gif';
+var ERROR_IMG = 'http://demo.crowdphp.com/app/Tpl/cv4/images/image_err.gif';
+</script>
+<script type='text/javascript'  src='/public/region.js'></script>
+<!--[if IE 6]>
+	<script src="http://demo.crowdphp.com/app/Tpl/cv4/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	DD_belatedPNG.fix('img , .banner .btn_tit ul li.on , .banner .btn_tit ul li , .mx_1 , .mx_2 , .mx_3 , .mx_4 , .xzdq1 , .zcz , .timeline-left-gray , .deal_log_title .title , .timeline-comment-top , .timeline-start span , .pageleft a , .dz , .kj , .mf , .boxaddress , .xzdq , .con6 .sub , .fx i , .attention_focus_deal i , .head_down_icon , .banner .prev , .banner .next , .mxr_1 , .mxr_2 , .mxr_3 , .shenhe .shenhe_info li , .mod_title i , .box4 .mod_cont3 .leader_t , .box4 .mod_cont3 .leader_w , .box4 .mod_cont3 .leader_r , .box4 .mod_cont3 .leader_x , .box4 .mod_cont3 .leader_p , .step_box , .pageleft a i , .invester_all .col_a , .article_l li.on , .article_box .article_r_list h3 , .deals_cate_equity .equity_box .equity_box_l .inf_2 i , .fa , .send_message , .sidebar ul li .sidetop , .sidebar ul li .sidetop:hover , .header .header_nav_box .main_publish .btn_publish , .login_tip span a.zc_phone , .icon_arrow_down , .homeleft .menutitle .icons , .uinfo_settting .set , .u_header .u_total_box , .u_header .u_img .u_img_bg , .jcDateIco'); 
+	</script>
+<![endif]-->
+</head>
+<body>
+<div class="header" id="J_head">
+	<div class="header_top wrap">
+		<div class="logo f_l">
+			<a class="link" href="/">
+								<span style='display:inline-block; width:200px; height:35px; background:url(http://demo.crowdphp.com/public/attachment/201506/19/23/5584350305662.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://demo.crowdphp.com/public/attachment/201506/19/23/5584350305662.png, sizingMethod=scale);_background-image:none;'></span>			</a>
+		</div>
+		<div class="header_search f_l">
+			<form action="/deals.html" method="post" id="header_search_form">
+				 
+     			<a href="javascript:void(0);" livalue="0" class="search_cate cur" checked="checked">Projects</a>
+         		<a href="javascript:void(0);" livalue="1" class="search_cate">Investments</a>
+																<div class="blank0"></div>	
+				<input type="text" id="header_keyword" name="k" placeholder="Search Projects" class="seach_text">
+				<input type="button" value="Find" class="seach_submit" id="header_submit" />
+				 
+					<input type="hidden" name="type" value="0"/>				
+					<input type="hidden" name="redirect" value="1"/>		
+															</form>	
+        </div>
+        <div class="f_r" style="width:320px;">		
+			<div class="login_tip">	
+<span>	
+<form action="" method="get" class="form-horizontal" role="form">
+					<select name="lang" onchange="this.form.submit()" class="form-control">
+          			<option value="">+ Language</option>
+					<option value="en_US">English&nbsp;&nbsp;&nbsp;</option>
+          			<option value="ar_AE">Arabic</option>
+          			<option value="bg_BG">Bulgarian</option>
+          			<option value="cs_CZ">Czech</option>
+          			<option value="el_GR">Greek</option>
+          			<option value="es_ES">Spanish</option>
+          			<option value="fr_FR">French</option>
+          			<option value="hi_IN">Hindi</option>
+          			<option value="hu_HU">Hungarian</option>
+          			<option value="iw_IL">Hebrew</option>
+          			<option value="id_ID">Indonesian</option>
+          			<option value="it_IT">Italian</option>
+          			<option value="ja_JP">Japanese</option>
+          			<option value="ko_KR">Korean</option>
+          			<option value="nl_NL">Dutch</option>
+          			<option value="no_NO">Norwegian</option>
+          			<option value="pt_BR">Portuguese</option>
+          			<option value="ro_RO">Romanian</option>
+					<option value="ru_RU">Russian</option>
+					<option value="th_TH">Thai</option>
+					<option value="sk_SK">Slovak</option>
+                    <option value="sl_SI">Slovenian</option>
+					<option value="uk_UA">Ukrainian</option>
+					<option value="vi_VN">Vietnamese</option>
+					<option value="zh_CN">Simplified Chinese</option>
+					<option value="zh_TW">Traditional Chinese</option>
+					<option value="sw_KE">Swahili</option>
+					<option value="mt_MT">Maltese</option>
+					<option value="ms_MY">Malay</option>
+					<option value="mk_MK">Macedonian</option>
+					<option value="is_IS">Icelandic</option>
+					<option value="gl_ES">Galician</option>
+					<option value="lt_LT">Lithuanian</option>
+					<option value="ca_ES">Catalan</option>
+					<option value="be_BY">Belarussian</option>
+					<option value="sq_AL">Albanian</option>
+					<option value="af_ZA">Afrikaans</option>
+					<option value="yi_US">Yiddish</option>
+					<option value="cy_GB">Welsh</option>
+					<option value="sv_SE">Swedish</option>
+					<option value="sr_CS">Serbian</option>
+					<option value="fa_IR">Persian</option>
+					<option value="pl_PL">Polish</option>
+					<option value="lv_LV">Latvian</option>
+					<option value="ga_IE">Irish</option>
+					<option value="de_DE">German</option>
+					<option value="fil_PH">Filipino</option>
+					<option value="fi_FI">Finnish</option>
+					<option value="hr_HR">Croatian</option>
+					<option value="et_EE">Estonian</option>
+					<option value="da_DK">Danish</option>
+					</select>
+		</form>
+</span>
+	 	<span>
+		<a href="javascript:void(0);" id="mymessage" style="padding: 0 6px;
+	border-right: 1px solid #d2d2d2; display:none;">News <b class="head_down_icon"></b></a>
+		<a href="javascript:void(0);" id="mycenter" style="">josh<s class="icon_arrow icon_arrow_down"></s></a>
+		<i class="line"></i>
+		<a href="/user-loginout.html" title="Drop out" id="user_login_out" style="padding: 0 6px; ">Logout</a>
+				<a href="javascript:void(0);" id="zc_phone" class="zc_phone pr">
+			App<s class="icon_arrow icon_arrow_down"></s>
+		</a>
+			</span>
+	<div id="mymessage_drop" style="position:absolute; display:none;">
+		<div class="drop_box">
+			<span><a href="/news-fav.html">Updates</a></span>
+			<span><a href="/comment.html">View Comments</a></span>
+			<span><a href="/message.html">View Messages</a></span>
+			<span class="last"><a href="/notify.html">(0) Notifications</a></span>
+		</div>
+	</div>
+	<div id="mycenter_drop" style="position:absolute; display:none;">
+		<div class="drop_box mycenter_drop">
+			<span><a href="/home/id-23.html">Dashboard</a></span>
+			<span><a href="/home.html">Account</a></span>
+			<span><a href="/account.html">Projects</a></span>
+			<span><a href="/settings.html">Settings</a></span>
+			<span><a href="/news-fav.html">Updates</a></span>
+			<span><a href="/comment.html">Comments</a></span>
+			<span><a href="/message.html">Messages</a></span>
+			<span class="last"><a href="/notify.html">(1) Notifications</a></span>
+		</div>
+	</div>
+	
+		
+	<div id="zc_phone_drop" style="position:absolute; display:none;">
+		<div class="zc_phone_drop">
+								</div>
+	</div>
+</div> 
+			<div id="user_notify_tip" style="position:absolute; z-index:1; display:none; margin-top:45px;">		
+			<div class="notify_tip_box1" id="close_user_notify">
+				<div class="close_user_notify1"></div>
+								<span><a href="/notify.html">You have <font>1</font>  notifications</a></span>
+											</div>
+		</div>
+			</div>
+		<div class="blank0"></div>
+	</div>
+	<div class="header_nav theme_bgcolor">
+		<div class="header_nav_box">
+			<ul class="main_nav f_l">
+								<li class="">
+					<a href="/deals.html"  target="" title="Discover">Discover</a>	
+				</li>
+								<li class="">
+					<a href="/deals/r-classic.html"  target="" title="Classic">Classic</a>	
+				</li>
+							</ul>
+						<div class="main_publish f_r">
+				<a href="javascript:check_tg();" class="btn_publish"></a>
+				<input type="hidden" name="check_login" value="23">
+			</div>
+					</div>
+	</div>		
+</div>
+<script type="text/javascript">
+	(function(){
+		if(!($(".zc_phone_drop").children().length)){
+			$(".zc_phone").remove();
+		}
+	})();
+	$(function(){
+		$(".search_cate").bind('click',function(){
+			$(this).attr("checked",true).addClass("cur").siblings().attr("checked",false).removeClass("cur");
+			$("input[name='type']").val($(this).attr("livalue"));
+		});
+		
+		//Solve the input value can not support the placeholder problems in ie
+		var doc=document,inputs=doc.getElementsByTagName('input'),supportPlaceholder='placeholder'in doc.createElement('input'),placeholder=function(input){var text=input.getAttribute('placeholder'),defaultValue=input.defaultValue;
+		if(defaultValue==''){
+			input.value=text}
+			input.onfocus=function(){
+				if(input.value===text){
+				this.value=''
+				}
+			};
+			input.onblur=function(){
+				if(input.value===''){
+					this.value=text
+				}
+			}
+		};
+		if(!supportPlaceholder){
+			for(var i=0,len=inputs.length;i<len;i++){
+				var input=inputs[i],text=input.getAttribute('placeholder');
+				if(input.type==='text'&&text){
+					placeholder(input)
+				}
+			}
+		}
+	});
+
+	function check_tg(){
+		var is_tg=0,
+			is_user_tg=0,
+			is_user_investor=0,
+			check_login=$("input[name='check_login']").val();
+		if(check_login){
+			if(is_tg){
+				if(!is_user_tg){
+					$.showErr("Your account is not completed ,Goto the accounts Page",function(){
+						window.location.href=APP_ROOT +"/index.php?ctl=collocation&act=CreateNewAcct&user_type=0&user_id=23";
+					});
+				}else{
+					window.location.href="/index.php?ctl=project&act=choose";
+				}
+			}else{
+				
+				if(is_user_investor ==1){
+					window.location.href="/index.php?ctl=project&act=choose";
+				}else if(is_user_investor ==2){
+					$.showErr("Your identity is being checked, Please contact our staff or wait .");
+				}
+				else{
+					$.showErr("You are not authorized to start a project ,Please make sure your account is verfied!",function(){
+						window.location.href="/settings-security/method-setting-id-box.html";
+					});
+				}
+				
+			}
+		}
+		else{
+			show_pop_login();
+		}
+	}
+</script><link rel="stylesheet" type="text/css" href="http://demo.crowdphp.com/public/runtime/statics/db0a86d4fbdeddb3d0f0756838e28914.css" />
+<script type="text/javascript">
+    var ROOT = '/m.php';
+    var VAR_MODULE = "m";
+    var VAR_ACTION = "a";
+    var WEB_SESSION_ID = 'ec87bd65b28f4af3e9dcafc9453f7083';
+    var EMOT_URL = '/public/emoticons/';
+    var MAX_FILE_SIZE = "3MB";
+    var UPLOAD_URL ='/m.php?m=File&a=do_upload&upload_type=0&dir=image' ;
+	var UPLOAD_SWF='http://demo.crowdphp.com/app/Tpl/cv4/js/plupload/Moxie.swf';
+	var UPLOAD_XAP='http://demo.crowdphp.com/app/Tpl/cv4/js/plupload//Moxie.xap';
+	var ALLOW_IMAGE_EXT= "gif,jpg,jpeg,png,bmp";
+	var MAX_IMAGE_SIZE= "3MB";
+	function get_file_fun(str){
+  		$(str).ui_upload({multi:false,
+		FileUploaded:function(ajaxobj){
+ 				if(ajaxobj.error==1)
+				{
+					$.showErr(ajaxobj.info);
+				}else{
+					$(str).attr('src',ajaxobj.url);
+					if(str=='#business_tax'||str=='#business_code'||str=='#business_licence'){
+						str=str.replace("#","");
+ 						$("#identify_"+str).val(ajaxobj.public_url);
+					}else{
+						$(str+"_image").val(ajaxobj.public_url);
+					}
+					
+ 				}
+			},Error:function(error){
+			$.showErr(error.message);
+ 		}});
+	}
+</script>
+<style>
+	.setlist_new {
+		padding: 5px 0;
+		width: 100%;
+	}
+	.tip_box{
+		height:41px;
+		line-height:41px;
+		
+	}
+	.tip_box .form_tip{color:red;}
+	.tip_box .form_success{color:green;}
+	.control-group a{height:37px;line-height:37px}
+	.btn_select{_margin-top:10px;}
+	.textareabox{width:300px}
+
+	.security-ul{
+		padding:0 20px;
+		overflow:hidden;
+		font-size:14px;
+	}
+	.security-ul li {
+		clear: both;
+		border-bottom: 1px solid #eee;
+		margin: 0px;
+		padding: 20px 0;
+		overflow:hidden;
+	}
+	.security-ul li .it .nicheng {
+		background-position: 0 3px;
+	}
+	.security-ul li .it .icon {
+		background: url(http://demo.crowdphp.com/app/Tpl/cv4/images/security_icon.png) no-repeat 0 0;
+		float: left;
+		margin-right: 30px;
+		height: 30px;
+		width: 34px;
+	}
+	.security-ul li .it h3 {
+		font-weight: bolder;
+		float: left;
+		width: 183px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.security-ul li .it p {
+		float: left;
+		width: 250px;
+	}
+	.security-ul li .it .update {
+		float: right;
+		color: #ccc;
+	}
+	.setting_box{
+		padding:20px 0;
+		margin:0 100px;
+		display:none;
+	}
+	.security-ul li .it .reaname {
+		background-position: 0 -29px;
+	}
+	.security-ul li .it .pwd {
+		background-position: 0 -66px;
+	}
+	.security-ul li .it .email {
+		background-position: 0px -103px;
+	}
+	.security-ul li .it .mobile {
+		background-position: 0px -138px;
+	}
+	.security-ul li .it .paypwd {
+		background-position: 0px -182px;
+	}
+	.security-ul li .it .verified {
+		background-position: 0px -32px;
+	}
+	.control-group .form_lable{width:105px;}
+	.control-group .small_send_sms_verify{
+		width:125px;
+	}
+</style>
+<style type="text/css">
+	.weedialog .dialog-content{text-align:left}
+	.weedialog .dialog-button{padding-top:20px;}
+	.pic_box{
+		position:relative;
+		width:158px;
+		height:158px;
+		overflow:hidden;
+		margin-bottom:0;
+	}
+	.pic_show {
+		width: 150px;
+		height: 150px;
+		line-height: 18px;
+		background: url(http://demo.crowdphp.com/app/Tpl/cv4/images/upload_bg.png) no-repeat;
+		color: #666;
+		cursor:pointer;
+		font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 12px;
+		margin-top:8px;
+		overflow:hidden;
+	}
+	.pic_box i{
+		width:16px;
+		height:16px;
+		cursor:pointer;
+		background:url(http://demo.crowdphp.com/app/Tpl/cv4/images/del_icon.png) no-repeat;
+		display:none;
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:99;
+	}
+	.pic_show img {
+		position: absolute;
+		top:0;
+		left:0;
+		font-size: 0;
+		width: 150px;
+		height: 150px;
+	}
+	.fileupload1 , .filebox{
+		cursor:pointer;
+		padding:0;
+		height: 150px;
+		width:150px;
+		filter: alpha(opacity=0);-moz-opacity: 0;-khtml-opacity: 0;opacity: 0;
+	}
+	.fileupload1 {
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.pic_text{
+		font-family:"Helvetica";
+		color:#999;
+	}
+	.add_pic{
+		font-size:80px;
+		line-height:80px;
+		cursor:pointer;
+		display:block;
+		margin-top:30px;
+		float:left;
+	}
+	.holder_tip{
+		top:0;
+		left:0;
+		height:37px;
+		line-height:37px;
+	}
+	.group{
+		position:relative;
+	}
+	.control-group .small_form_lable {
+		height: 37px;
+		line-height: 37px;
+		color: #666;
+		font-size: 14px;
+	}
+	.control-group .smaller_form_lable {
+		height: 26px;
+		line-height: 26px;
+		color: #666;
+		font-size: 14px;
+	}
+	.control-group .fail_form_lable {
+		color:#ff5500;
+		position:relative;
+	}
+	.control-group .fail_form_lable i{
+		position:absolute;
+		top:4px;
+		left:24px;
+		width:17px;
+		height:17px;
+		background:url(http://demo.crowdphp.com/app/Tpl/cv4/images/all.png) -133px -75px no-repeat;
+		display:block;
+	}
+	.control-group .small_form_cont {
+		height: 37px;
+		line-height: 37px;
+		color:#333;
+		font-size: 14px;
+		float:left;
+	}
+	.control-group .smaller_form_cont {
+		height: 26px;
+		line-height: 26px;
+		color:#333;
+		font-size: 14px;
+		float:left;
+	}
+	.pic_box{z-index:2;}
+	.pic_show{z-index:1;}
+	.control-group{float:left}
+	#qy_div{border-top:1px dashed #d4d4d4}
+</style>
+<style type="text/css">
+	.u_money_box .recharge.mt60{
+		margin-top:60px;
+	}
+</style>
+<div class="u_header">
+	<div class="u_box">
+		<div class="u_img_box f_l">
+			<div class="u_img f_l mr20">
+				<div class="u_img_bg"></div>
+				<a href='/home/id-23.html' style='text-align:center; display:inline-block;'><img src='/public/avatar/default/noavatar_3.JPG'  /></a>			</div>
+			<div class="u_infobox f_l">
+				<div class="u_l1 user_name">
+					<span class="f24">josh</span>
+						                <img src="http://demo.crowdphp.com/app/Tpl/cv4/images/level_icon/level0.png" alt="Membership Level" class="level_icon" />
+									</div>
+				<div class="u_l1 time">
+					<div class="f_l">Last online:</div>
+					<div class="f_l name">2015/07/28</div>
+				</div>
+				<div class="u_l1 position">
+									</div>
+				<div class='u_l1 uinfo_settting'>
+	                <a class='set smobile' href='/settings-security/method-setting-mobile-box.html' title="Mobile Authentication,Unauthenticated">Mobile Authentication</a>
+	                <a class='set saccount' href='/settings-security/method-setting-id-box.html' title="Verified,Unauthenticated">Verified</a>
+	                <a class='set semailpassed' href='/settings-security/method-setting-email-box.html' title="E-mail certification,AlreadyRecognizeCertificate">E-mail certification</a>
+	                <a class='set spaypwd' href='/settings-security/method-setting-pass-box.html' title="Payment password,Not set">Payment password</a>
+	                <a class='set ssetting' href="/settings.html" title="Account settings">Account settings</a>
+	            </div>
+			</div>
+		</div>
+		<div class="u_money_box f_r">
+			<div id="u_money_other" class="u_total_box trusteeship_total_box f_r" style="display:none;">
+            	<div class="u_total_m">
+            		<div class="f_l mr20">
+            			<h3>Balance</h3>
+            			<span class="u_money J_u_money_0 theme_fcolor" id="u_money_other_money"></span>
+            		</div>
+            		<div class="f_r tr">
+            			<h3>Security Deposit</h3>
+            			<span class="u_money J_u_money_2 sincerity_money" id="u_money_other_freeze"></span>
+            		</div>
+            	</div>
+            </div>
+            <div id="u_money_main" class="u_total_box f_r mr10">
+            	<div class="u_total_m">
+            		<div class="f_l mr20">
+            			<h3>Balance</h3>
+            			<span class="u_money f_red">$0.00</span>
+            		</div>
+            		<div class="f_r tr">
+            			<h3>Earnest Money</h3>
+            			<span class="u_money sincerity_money">$0.00</span>
+            		</div>
+            	</div>
+            </div>
+            <div class="blank10"></div>
+            <div class="recharge f_r">
+            	                <a href="/account-money_inchange.html" class="ui-small-button theme_bgcolor btn_inchange mr10">Topup</a>
+                <a href="/account-money_carry_bank.html" class="ui-small-button bg_red btn_inchange mr10">Withdrawal</a>
+            </div>
+		</div>
+		<div class="blank"></div>
+	</div>
+</div>
+<script type="text/javascript">
+	(function(){
+			})();
+</script><!--Start Middle -->
+<div class="dlmain Myhomepage">
+	<div class="homeleft pageleft f_l ">
+	<div class="homeleft_title">
+		<span class="f12">Account Security level:</span><span class="f_r b" id="security_val">50%</span>
+		<div class="blank5"></div>
+		<div class="progress_bg">
+			<span class="theme_bgcolor" id="progress"></span>
+		</div>
+		<input type="hidden" name="s_email" value="josh@crowdphp.com" />
+		<input type="hidden" name="s_mobile" value="" />
+		<input type="hidden" name="s_paypassword" value="" />
+		<input type="hidden" name="s_investor_status" value="0" />
+	</div>
+	<div class="menutitle menutitle_account">
+		<span class="f_l"><i class="icons"></i>Account Management</span>
+		<i class="icon iconfont iconfont_right">&#xe61a;</i>
+		<i class="icon iconfont iconfont_down">&#xe61b;</i>
+		<div class="blank0"></div>
+	</div>
+	<ul class="homemenulist">
+		<li >
+			<a href="/home.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Dashboard</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-credit.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Financial records</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-money_inchange.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Topups</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-money_carry_bank.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>My withdrawal</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-score.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Score</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-point.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Points</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="menutitle menutitle_item">
+		<span class="f_l"><i class="icons"></i>Project management</span>
+		<i class="icon iconfont iconfont_right">&#xe61a;</i>
+		<i class="icon iconfont iconfont_down">&#xe61b;</i>
+		<div class="blank0"></div>
+	</div>
+	<ul class="homemenulist">
+		<li >
+			<a href="/account.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>My Funded projects</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-project.html" class="a2">
+				<div class="text">
+					<i class="icon iconfont"></i><span>My Projects</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-focus.html" class="a3">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Follow</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-recommend.html" class="a3">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Recommended</span>
+				</div>
+			</a>
+		</li>
+ 	</ul>
+	<div class="menutitle menutitle_set">
+		<span class="f_l"><i class="icons"></i>Profile</span>
+		<i class="icon iconfont iconfont_right">&#xe61a;</i>
+		<i class="icon iconfont iconfont_down">&#xe61b;</i>
+		<div class="blank0"></div>
+	</div>
+	<ul class="homemenulist">
+ 		<li >
+			<a href="/settings.html" class="a5">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Personal</span>
+				</div>
+			</a>
+		</li>
+		<li class="select">
+			<a href="/settings-security.html" class="a12">
+				<div class="text">
+					<i class="icon iconfont">&#xe61a;</i><span>Security</span>
+				</div>
+			</a>
+		</li>
+ 		<li >
+			<a href="/settings-consignee.html" class="a8">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Shipping Address</span>
+				</div>
+			</a>
+			</li>
+		<li >
+			<a href="/settings-bind.html" class="a7">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Account binding</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="menutitle menutitle_news">
+		<span class="f_l"><i class="icons"></i>Message Center</span><i class="icon iconfont">&#xe61a;</i>
+	</div>
+	<ul class="homemenulist">
+		<li >
+			<a href="/comment.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Project Reviews</span>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="/news-fav.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Project Updates</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/message.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Messages</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/notify.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Notifications</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="menutitle menutitle_invite">
+		<span class="f_l"><i class="icons"></i>Refer</span><i class="icon iconfont">&#xe61a;</i>
+	</div>
+	<ul class="homemenulist">
+		<li >
+			<a href="/referral.html" class="a3">
+				<div class="text">
+					<i class="icon iconfont"></i><span>My referrals</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+(function(){
+	var email=$("input[name='s_email']").val() ,
+	 	mobile=$("input[name='s_mobile']").val() ,
+	 	paypassword=$("input[name='s_paypassword']").val() ,
+	 	investor_status=$("input[name='s_investor_status']").val() ,
+		s_array=new Array(email,mobile,paypassword,investor_status);
+ 	for(var i=0; i<s_array.length; i++){
+     	if(s_array[i] == "" || s_array[i] == 0 || typeof(s_array[i]) == "undefined"){
+          	s_array.splice(i,1);
+          	i= i-1;
+ 		}        
+ 	}
+ 	var total_length=4 ,
+ 		s_array_length=s_array.length ,
+ 		security_val=((s_array_length/total_length)*100);
+	$("#security_val").text(security_val+"%");
+	$("#progress").animate({width:security_val+"%"},1000);
+})();
+
+(function(){
+	$(".menutitle").removeClass(".cur");
+	$(".homemenulist").hide();
+	$(".homemenulist").each(function(){
+		var obj = $(this);
+		if(obj.find(".select").length){
+			var menutitle = obj.prev(".menutitle");
+			obj.show();
+			menutitle.addClass("cur");
+			menutitle.find(".iconfont_right").hide();
+			menutitle.find(".iconfont_down").show();
+		}
+	});
+
+	$(".homeleft").find(".menutitle").bind('click',function(e){
+		e.stopPropagation();
+		var obj = $(this);
+		var hascur = obj.hasClass("cur");
+		if(hascur){
+			obj.find(".iconfont_down").hide();
+			obj.find(".iconfont_right").show();
+			obj.removeClass("cur").next(".homemenulist").slideUp(300);
+		}
+		else{
+			obj.find(".iconfont_right").hide();
+			obj.find(".iconfont_down").show();
+			obj.addClass("cur").next(".homemenulist").slideDown(300);
+		}
+	});
+})();
+</script> 
+	<div class="homeright pageright f_r">
+		<div class="list_title clearfix">
+			<div class="cur">
+				<span>Account Security</span>
+			</div>
+		</div>
+		<div class="list_conment">
+			<ul class="security-ul">
+				<li>
+					<div class="it cf clearfix">
+						<div class="icon nicheng"></div>
+						<h3>Username</h3>
+												<p>Done!!</p>
+						<div class="update">josh</div>
+						 					</div>
+					<div class="setting_box" id="setting-username-box">
+											</div>
+				</li>
+				<li>
+					<div class="it cf clearfix">
+						<div class="icon pwd"></div>
+						<h3>Login Password</h3>
+												<p>Done!!</p>
+												<div class="update">
+							<a href="javascript:void(0);" class="J_setting" id="J_setting_pwd">Modify</a>
+						</div>
+					</div>
+					<div class="setting_box" id="setting-pwd-box">
+						<form class="ajax_form_password" action="/settings-save_pass.html" id="save_pass" > 
+														<div class="form_row control-group select_contetn" >
+								<label class="form_lable">Old Password:</label>
+								<input type="password" value="" class="small_textbox" name="user_old_pwd" />
+							</div>
+							<input type="hidden" name="change_pwd" value="1">
+								 						<div class="blank0"></div> 				
+							<div class="form_row control-group">
+								<label class="form_lable">New Password:</label>
+								<input type="password" value="" class="small_textbox" name="user_pwd" />
+							</div>
+							<div class="blank0"></div>
+							<div class="form_row control-group">
+								<label class="form_lable">Confirm Password:</label>
+								<input type="password" value="" class="small_textbox" name="confirm_user_pwd" />
+							</div>
+							
+							<div class="blank20"></div>
+							<div class="submit_btn_row control-group">
+								<label class="form_lable"></label>
+								<input type="button" value="Save password" name="pass" class="ui-button theme_bgcolor" id="pass"  />
+								<input type="hidden" value="1" name="ajax" />
+								<input type="hidden" name="setting_pwd" value="1">
+								<div class="blank15"></div>
+							</div>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="it cf clearfix">
+						<div class="icon email"></div>
+						<h3>Confirm Email</h3>
+													<p>Confirmed</p>
+												<div class="update">
+ 							<a href="javascript:void(0);" class="J_setting" id="J_setting_email">Modify</a>
+						</div>
+					</div>
+					<div class="setting_box" id="setting-email-box">
+						<form class="ajax_form_email" action="/settings-email_binding.html">
+													<div class="form_row control-group">
+								<label class="form_lable smaller_form_lable">Main Email is:</label>
+								<div class="smaller_form_cont">josh@crow*****com</div>
+	 						</div>
+	 						<div class="blank0"></div>
+							<div class="form_row control-group">
+								<label class="form_lable small_form_lable">E-mail verification code:</label>
+								<input type="text" value="" class="small_textbox mr10" name="verify_coder"  style="width:165px;"/>
+	 							<input type="button" value="Get the code" class="ui_button send_sms_verify small_send_sms_verify bg_red" id="email_verify_code" />
+	 						</div>
+	 						<div class="blank0"></div>
+							<div class="form_row control-group">
+								<label class="form_lable small_form_lable">New Email id:</label>
+								<input type="text"   value=""   class="small_textbox" name="email" />
+	 						</div>
+							<input type="hidden" value="2" name="step" />
+										
+ 	 						<div class="blank20"></div>
+							<div class="submit_btn_row control-group">
+								<label class="form_lable small_form_lable"></label>
+								<div class="ui-button theme_bgcolor" rel="green">
+									<div>
+										<span>Email Address</span>
+									</div>
+								</div>
+								<input type="hidden" value="1" name="ajax" />
+								
+								<div class="blank15"></div>
+							</div>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="it cf clearfix">
+						<div class="icon mobile"></div>
+						<h3>Mobile</h3>
+													<p class="f_red">Not confirmed</p>
+							<div class="update"><a href="javascript:void(0)" class="J_setting f_red" id="J_setting_mobile">Confirm Now</a></div>
+												
+					</div>
+					<div class="setting_box" id="setting-mobile-box">
+						<form class="ajax_form_mobile" action="/settings-mobile_binding.html" >
+														<div class="form_row control-group">
+								<label class="form_lable small_form_lable">Mobile number:</label>
+								<input type="text" id="settings-mobile" value="" class="small_textbox" name="mobile" />
+	 							<input type="hidden" id="settings-mobile-type" name="step" value="1">
+							</div>
+	 						<div class="blank0"></div>
+						 	<div class="form_row control-group">
+								<label class="form_lable small_form_lable">Security Code:</label>
+								<input type="text" value="" class="small_textbox mr10" name="verify_coder"  style="width:165px;"/>
+	 							<input type="button" value="Get the code" class="ui_button send_sms_verify small_send_sms_verify bg_red" id="J_send_sms_verify" />
+	 						</div>
+							<input type="hidden" name="bind_mobile" value="1">
+								 						<div class="blank15"></div>
+							<div class="submit_btn_row control-group">
+								<label class="form_lable"></label>
+								<input type="button" value="Submit" name="setting_mobile" class="ui-button theme_bgcolor" id="setting_mobile"  />
+								<input type="hidden" value="1" name="ajax" />
+							</div>
+							<div class="blank15"></div>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="it cf clearfix">
+						<div class="icon paypwd"></div>
+						<h3>Payment password</h3>
+												<p class="f_red">Please set up a phone number</p>
+											</div>
+					<div class="setting_box" id="setting-pass-box">
+						<form class="ajax_form_paypassword" action="/settings-paypassword_binding.html">
+							<div class="form_row control-group">
+								<label class="form_lable small_form_lable">Payment password:</label>
+								<input type="password" id="" value="" class="small_textbox" name="paypassword" />
+	 						</div>
+	 						<div class="blank0"></div>
+							<div class="form_row control-group">
+								<label class="form_lable small_form_lable">Confirm payment password:</label>
+								<input type="password" id="" value="" class="small_textbox" name="confirm_pypassword" />
+	 						</div>
+	 						<div class="blank0"></div>
+							<div class="form_row control-group">
+								<label class="form_lable smaller_form_lable">Mobile phone number:</label>
+								<div class="smaller_form_cont"></div>
+	 						</div>
+	 						<div class="blank0"></div>
+						 	<div class="form_row control-group">
+								<label class="form_lable small_form_lable">Security Code:</label>
+								<input type="text" value="" class="small_textbox mr10" name="verify"  style="width:165px;"/>
+	 							<input type="button" value="Get the code" class="ui_button send_sms_verify small_send_sms_verify bg_red" id="J_send_sms_verify_pay" />
+	 						</div>
+							
+	 						<div class="blank15"></div>
+							<div class="submit_btn_row control-group">
+								<label class="form_lable small_form_lable"></label>
+								<div class="ui-button theme_bgcolor" rel="green">
+									<div>
+										<span>Submit</span>
+									</div>
+								</div>
+								<input type="hidden" value="1" name="ajax" />
+								<input type="hidden" value="0" name="step" />
+							</div>
+							<div class="blank15"></div>
+						</form>
+					</div>
+ 				</li>
+				
+				<li>
+					<div class="it cf clearfix">
+						<div class="icon verified"></div>
+						<h3>Verified</h3>
+												<p class="f_red">Please set up a phone number</p>
+											</div>
+					<div class="setting_box" id="setting-id-box">
+						<form class="ajax_form_identify" action="/settings-binding_investor.html">
+																				<div class="form_row control-group">
+								<label class="form_lable small_form_lable">Type:</label>
+								<div class="f_l f14" style="margin-top:7px">
+									<span class="ui_check info_view ui_checked " type="radio" rel="info_view">
+										<input type="radio" name="is_investor" value="1" checked="checked"  />
+									</span>
+									Individual User									<span class="ui_check ml10 info_view" type="radio" rel="info_view" >
+										<input type="radio" name="is_investor" value="2"  />
+									</span>	
+									Company								</div>
+	 						</div>
+	 						<div class="blank0"></div>
+ 							<div class="form_row control-group">
+								<label class="form_lable small_form_lable" id="identify_name_str">Personal Name:</label>
+								<input type="text" id="" value="" class="small_textbox" name="identify_name" />
+	 						</div>
+	 						<div class="blank0"></div>
+							<div class="form_row control-group">
+								<label class="form_lable small_form_lable">ID Number:</label>
+								<input type="text" id="" value="" class="small_textbox" name="identify_number" />
+	 						</div>
+														 							<div class="blank0"></div>
+ 							<div class="hidden pt20 mt20" id="qy_div">
+								<div class="form_row control-group">
+									<label class="form_lable small_form_lable">Company Name:</label>
+									<input type="text" id="" value="" class="small_textbox" name="identify_business_name" />
+	 							</div>
+																															</div>
+							<div class="blank0"></div>
+							<div class="form_row control-group">
+								<label class="form_lable smaller_form_lable">Mobile phone number:</label>
+								<div class="smaller_form_cont"></div>
+	 						</div>
+	 						<div class="blank0"></div>
+						 	<div class="form_row control-group">
+								<label class="form_lable small_form_lable">Security Code:</label>
+								<input type="text" value="" class="small_textbox mr10" name="verify"  style="width:165px;"/>
+	 							<input type="button" value="Get the code" class="ui_button send_sms_verify small_send_sms_verify bg_red" id="J_send_sms_verify_iden" />
+	 						</div>
+	 						<div class="blank15"></div>
+							<div class="submit_btn_row control-group">
+								<label class="form_lable small_form_lable"></label>
+								<div class="ui-button theme_bgcolor" rel="green">
+									<div>
+										<span>Submit</span>
+									</div>
+								</div>
+								<input type="hidden" value="1" name="ajax" />
+								<input type="hidden" value="0" name="step" />
+							</div>
+							<div class="blank15"></div>
+												</form>
+											</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+<script>
+	var code_timeer = null;
+	var code_lefttime = 0 ;
+		$(document).ready(function(){
+						get_file_fun("#identify_positive");
+			get_file_fun("#identify_nagative");
+			
+			get_file_fun("#business_licence");
+			get_file_fun("#business_code");
+			get_file_fun("#business_tax");
+			
+ 			$("#J_send_sms_verify").bind("click",function(){
+				send_mobile_verify_sms();
+			});	
+			$("#email_verify_code").bind("click",function(){
+				step=$(".ajax_form_email").find("input[name='step']").val();
+				if(step==1){
+					email=$(".ajax_form_email").find("input[name='email']").val();
+					send_email_verify(step,email,"#email_verify_code");
+				}else{
+					if(step==2){
+						send_email_verify(step,'',"#email_verify_code");
+					}
+				}
+ 			});
+			$("#J_send_sms_verify_pay").bind("click",function(){
+  				send_mobile_verify_sms_custom(2,'',"#J_send_sms_verify_pay");
+			});
+			//J_send_sms_verify_iden
+			$("#J_send_sms_verify_iden").bind("click",function(){
+  				send_mobile_verify_sms_custom(2,'',"#J_send_sms_verify_iden");
+			});
+ 			bind_ajax_form_custom(".ajax_form_user_name");
+			bind_ajax_form_custom(".ajax_form_paypassword");
+			bind_ajax_form_custom(".ajax_form_mobile");
+			bind_ajax_form_custom(".ajax_form_email");
+			bind_ajax_form_custom(".ajax_form_password");
+			//ajax_form_identify
+			bind_ajax_form_custom(".ajax_form_identify");
+			$(".ajax_form_identify").find("input[name='is_investor']").bind('click',function(){
+				$("#qy_div").toggle();
+ 				if($(this).val()==2){
+					$("#identify_name_str").html("Corporate identity Name");
+				}else{
+					$("#identify_name_str").html("Personal identification Name");
+				}
+			});
+		})
+ 		function send_mobile_verify_sms(){
+			type=$.trim($("#settings-mobile-type").val());
+ 			if(type!=2){
+				if($.trim($("#settings-mobile").val()).length == 0)
+				{			
+		 			$.showErr("Phone number is required");
+					return false;
+				}
+		 		if(!$.checkMobilePhone($("#settings-mobile").val()))
+				{
+		 			$.showErr("Malformed phone number");
+					return false;
+				}
+ 				if(!$.maxLength($("#settings-mobile").val(),11,true))
+				{
+					$.showErr("Length should not exceed 11 digits");
+					return false;
+				}
+			}
+ 			var sajaxurl = APP_ROOT+"/index.php?ctl=ajax&act=send_change_mobile_verify_code";
+ 			var squery = new Object();
+			squery.mobile = $.trim($("#settings-mobile").val());
+			squery.step =type;
+			$.ajax({ 
+				url: sajaxurl,
+				data:squery,
+				type: "POST",
+				dataType: "json",
+				success: function(sdata){
+					if(sdata.status==1)
+					{
+						code_lefttime = 60;
+						code_lefttime_func();
+						$.showSuccess(sdata.info);
+						return false;
+					}
+					else
+					{
+	 					$.showErr(sdata.info);
+						return false;
+					}
+				}
+			});	
+			
+		}
+	function code_lefttime_func(){
+		
+		clearTimeout(code_timeer);
+		$("#J_send_sms_verify").val(code_lefttime+"Resend seconds");
+		$("#J_send_sms_verify").css({"color":"#f1f1f1"});
+		code_lefttime--;
+		if(code_lefttime >0){
+			//$("#J_send_sms_verify").attr("disabled","true");
+			code_timeer = setTimeout(code_lefttime_func,1000);
+		}
+		else{
+			code_lefttime = 60;
+			$("#J_send_sms_verify").val("Send the verification code");
+ 			$("#J_send_sms_verify").css({"color":"#fff"});
+			$("#J_send_sms_verify").bind("click",function(){
+				send_mobile_verify_sms();
+			});
+		}
+		
+	}
+	
+</script>
+<!--Middle End-->
+	<div class="blank"></div>
+</div>
+<div class="blank"></div>
+<script type="text/javascript">
+	$(".J_setting").bind('click',function(){
+		var setting_box = $(this).parent().parent().parent().find(".setting_box");
+		if(setting_box.is(":hidden")){
+			setting_box.slideDown(300);
+			if($(this).text()=='Modify'){
+				$(this).text("Cancel the changes");
+			}
+			if($(this).text()=='Binding'){
+				$(this).text("Unbind");
+			}
+			if($(this).text()=='Set up'){
+				$(this).text("Unset");
+			}
+  		}
+		else{
+			setting_box.slideUp(300);
+ 			if($(this).text()=='Unbind'){
+				$(this).text("Binding");
+			}
+			if($(this).text()=='Cancel the changes'){
+				$(this).text("Modify");
+			}
+			if($(this).text()=='Unset'){
+				$(this).text("Set up");
+			}
+		}
+	});
+</script>
+<style>
+	.db .bdshare-button-style0-16 {float:left;}  
+	.db .bdshare-button-style0-16 a , .db .bdshare-button-style0-16 .bds_more {padding-left:0; background-image:none; margin-top:0;}
+	.bdshare-button-style0-16 a:hover {filter:alpha(opacity=100); opacity:1;}
+	.foot-logo img{width:90px; height:90px;}
+</style>
+<!--footer static-->
+<div class="footer" pbid="footer" id="J_footer">
+	<div class="footer-section footer-section-1">
+		<div class="footer-wrap">
+		 			</div>
+	</div>
+	<div class="blank"></div>
+	<div class="footer-section footer-section-2">
+		<div class="footer-wrap">
+			<!--footer map start-->
+			<div class="foot-map">
+															<dl >
+							<dt>About</dt>
+														<dd><a href="/about/81.html" >User Levels</a></dd>
+														<dd><a href="/about/69.html" >Contact</a></dd>
+														<dd><a href="/about/68.html" >About Us</a></dd>
+													</dl>
+																				<dl >
+							<dt>Help</dt>
+														<dd><a href="/Help/77.html" >Projects we like</a></dd>
+														<dd><a href="index.php?ctl=faq" >Faq</a></dd>
+													</dl>
+																				<dl >
+							<dt>Learn more</dt>
+														<dd><a href="/how-to/80.html" >How to start</a></dd>
+														<dd><a href="user-register" >Sign up</a></dd>
+													</dl>
+																				<dl class="last">
+							<dt>Whats New</dt>
+														<dd><a href="/new/78.html" >Copyright</a></dd>
+														<dd><a href="/new/75.html" >Terms</a></dd>
+													</dl>
+												</div>
+			<!--foot map end-->
+			<div class="foot-contact">
+				<h3>Call us</h3>
+				<div class="text">
+					<div class="text_show">
+						<div class="iphone">+001-213-456-789</div>
+						<div>10:00-1800</div>
+					</div>
+					<i></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="blank"></div>
+	<div class="footer-section">
+		<div class="footer-wrap">
+			<div class="blank0"></div>
+			<div class="copy_text">
+				<div class="mb15">
+									<a href="/help-term.html" title="Terms">Terms</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-intro.html" title="Services">Services</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-privacy.html" title="Privacy Policy">Privacy Policy</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-about.html" title="About">About</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-write_guide.html" title="Creator Handbook">Creator Handbook</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-8.html" title="Check">Check</a>								</div>
+				<div>All rights reserved CrowdPHP.com &nbsp;</div>
+				<div></div>
+			</div>	
+		</div>
+	</div>
+</div>
+<div></div>
+<div class="sidebar" id="sidebar">
+	<ul>
+				<li class="ewm_box">
+			<a href="javascript:void(0);">
+				<div class="sidebox_ewm"><img src="http://demo.crowdphp.com/app/Tpl/cv4/images/sidebar_img/ewm.png">QR Code</div>
+				<div class="sidebox_hide sidebox_ewm_hide">
+					<img src="http://demo.crowdphp.com/public/attachment/201507/16/14/55a7ba0c52a25.png" width=110 height=110>
+				</div>
+			</a>
+		</li>
+						<li>
+			<a href="javascript:void(0);">
+				<div class="sidebox"><img src="http://demo.crowdphp.com/app/Tpl/cv4/images/sidebar_img/phone.png">+001-213-456-789</div>
+			</a>
+		</li>
+				<li class="link_box" id="link_box">
+			<a href="javascript:void(0);">
+				<div class="sidebox_link tc"><i class="icon iconfont">&#xe603;</i></div>
+				<div class="sidebox_hide sidebox_link_hide muxfb_global_tip" id="sidebox_link_hide">
+					You can click&nbsp;&nbsp;<i class="icon iconfont">&#xe603;</i>
+					<div class="blank10"></div>
+					<div style="lh20">Your feedback is important to us</div>
+				</div>
+			</a>
+		</li>
+		<li style="border:none;">
+			<a href="javascript:goTop();" class="sidetop"></a>
+		</li>
+	</ul>
+</div>
+<div class="muxfb_dialog" id="muxfb_dialog">
+	<div class="muxfb_dialog_panel">
+		<i class="muxfb_dialog_close icon iconfont" id="muxfb_dialog_close">&#xe604;</i>
+		<div class="muxfb_dialog_content">
+			<div class="muxfb_left_tab_wrap">
+                <div class="muxfb_left_logo">
+                    <i class="muxfb_left_logo icon iconfont">&#xe605;</i>
+                    <span class="title">Users Feedback</span>
+                </div>
+            </div>
+			<form class="user_message_ajax" name="user_message_ajax"  action="/user_message-save_info.html">
+            <div class="muxfb_right_content muxfb_form" id="muxfb_form">
+            	<h1 class="muxfb_form_title">Feedback</h1>
+            	<div class="form_row control-group">
+					<label class="form_lable" style="height:37px;line-height:37px">Help:</label>
+					<select name="cate_id" class="ui-select field_select small">
+							              		<option value="1" selected="selected">Starting</option>
+	              			              		<option value="2" selected="selected">Suggestions</option>
+	              			              		<option value="3" selected="selected">Others</option>
+	              			              		<option value="4" selected="selected">Verification</option>
+	              							</select>
+					<div class="blank0"></div>
+				</div>
+            	<div class="form_row control-group">
+					<label class="form_lable small_form_lable">Your Name:</label>
+					<div class="pr f_l">
+						<input type="text" name="user_name" id="user_name" value="josh" class="small_textbox" />
+						<span class="holder_tip">Please enter your name</span>
+					</div>
+					<div class="blank0"></div>
+					<div class="muxfb_tip user_name_tip  f_red">*The Name can not be empty</div>
+					<div class="blank0"></div>
+				</div>
+				<div class="form_row control-group">
+					<label class="form_lable small_form_lable">Your Phone:</label>
+					<div class="pr f_l">
+						<input type="text" name="tel" id="tel" value="" class="small_textbox" />
+						<span class="holder_tip">Enter your phone number</span>
+					</div>
+					<div class="blank0"></div>
+					<div class="muxfb_tip tel_tip f_red">*The phone number can not be empty!</div>
+					<div class="blank0"></div>
+				</div>
+				<div class="blank0"></div>
+				<div>Please enter your feedback:</div>
+				<textarea placeholder="Your feedback is important to us" name="content" class="textareabox"></textarea>
+				<span class="muxfb_tip content_tip f_red">*Please enter your content</span>
+				<div class="blank20"></div>
+				<input type="button" value="Send" class="ui-button theme_bgcolor" />
+				<input type="hidden" name="user_id" value="23">
+				<input type="hidden" name="ajax" value="1">
+            </div>
+		</form>	
+		</div>
+		<div class="blank0"></div>
+	</div>
+	<div class="muxfb_dialog_mask"></div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		resetWindowBox();
+		sidebarFun();
+		bind_ajax_form_custom_footer(".user_message_ajax");
+	});
+
+	// Sidebar Function
+	function sidebarFun(){
+		$("#sidebar ul li").hover(function(){
+			$(this).find(".sidebox").stop().animate({"width":"150px"},200).css("background","#3d9eeb")
+		},function(){
+			$(this).find(".sidebox").stop().animate({"width":"38px"},200).css("background","#939393")	
+		});
+		var lastRmenuStatus=false;
+		$(window).scroll(function(){
+			var _top=$(window).scrollTop();
+			if(_top>300){
+				$("#sidebar").data("expanded",true);
+			}else{
+				$("#sidebar").data("expanded",false);
+			}
+			if($("#sidebar").data("expanded")!=lastRmenuStatus){
+				lastRmenuStatus=$("#sidebar").data("expanded");
+				if(lastRmenuStatus){
+					$("#sidebar .sidetop").animate({"height":"38px"},200);
+				}else{
+					$("#sidebar .sidetop").animate({"height":"0"},200);
+				}
+			}
+		});
+		//User Comments
+		var $muxfb_dialog=$("#muxfb_dialog");
+		$muxfb_dialog.find("#muxfb_dialog_close").on('click',function(){
+			$muxfb_dialog.hide();
+		});
+		$("#link_box").on('click',function(){
+			$muxfb_dialog.show();
+		});
+	}
+
+	//Goto Top 
+	function goTop(){
+		$('html,body').animate({'scrollTop':0},100);
+	}
+	function bind_ajax_form_custom_footer(str)
+	{
+		$(str).find(".ui-button").bind("click",function(){
+			var $muxfb_form=$("#muxfb_form");
+			var $muxfb_form_user_name=$("#muxfb_form").find("input[name='user_name']");
+			var $muxfb_form_tel=$("#muxfb_form").find("input[name='tel']");
+			var $muxfb_form_content=$("#muxfb_form").find("textarea[name='content']");
+			$muxfb_form.find(".muxfb_tip").hide();
+			if($.trim($muxfb_form_user_name.val())==''){
+				$muxfb_form.find(".user_name_tip").show();
+				$muxfb_form_user_name.focus();
+				return false;
+			}
+			if($.trim($muxfb_form_tel.val())==''){
+				$muxfb_form.find(".tel_tip").show();
+				$muxfb_form_tel.focus();
+				return false;
+			}
+			if($.trim($muxfb_form_content.val())==''){
+				$muxfb_form.find(".content_tip").show();
+				$muxfb_form_content.focus();
+				return false;
+			}
+			$(str).submit();
+		});
+		$(str).bind("submit",function(){
+			var ajaxurl = $(this).attr("action");
+			var query = $(this).serialize() ;
+			$.ajax({ 
+				url: ajaxurl,
+				dataType: "json",
+				data:query,
+				type: "POST",
+				success: function(ajaxobj){
+					if(ajaxobj.status==1)
+					{
+						location.href = ajaxobj.jump;
+					}
+					else
+					{ 
+						$("."+ajaxobj.info+"_tip").show();		
+					}
+				},
+				error:function(ajaxobj)
+				{
+					if(ajaxobj.responseText!='')
+					alert(ajaxobj.responseText);
+				}
+			});
+			return false;
+		});
+	}
+</script>
+</body>
+</html>

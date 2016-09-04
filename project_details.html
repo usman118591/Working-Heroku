@@ -1,0 +1,2222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQ8HVFBQGwsEVVJWDgk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script>
+<link rel="shortcut icon" href="#" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  minimum-scale=1" />
+<meta name="description" content="MogulREIT I (the &quot;Fund&quot;) is a commercial real estate fund, structured as an online Real Estate Investment Trust (&quot;REIT&quot;), designed with the goals of diversification, cash flow, and equity appreciation. The Fund was formed to invest in and manage a diversified portfolio of commercial real estate investments, including loans, equity in commercial real estate ventures and other real estate-related assets. " />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.realtymogul.com/investment-opportunity/193744" />
+<link rel="shortlink" href="https://www.realtymogul.com/node/193744" />
+<meta property="og:site_name" content="Realty Mogul" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.realtymogul.com/investment-opportunity/193744" />
+<meta property="og:title" content="MogulREIT I | RealtyMogul.com" />
+<meta property="og:description" content="Real Estate Crowdfunding. Simplified. RealtyMogul.com is an online marketplace offering crowdfunding for real estate investment opportunities." />
+<meta property="og:image" content="https://www.realtymogul.com/sites/default/files/rm_logo_dark.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Realty_Mogul" />
+<meta name="twitter:site:id" content="569481412" />
+<meta name="twitter:creator" content="@Realty_Mogul" />
+<meta name="twitter:creator:id" content="569481412" />
+<meta name="twitter:url" content="https://www.realtymogul.com/investment-opportunity/193744" />
+<meta name="twitter:title" content="MogulREIT I | RealtyMogul.com" />
+<meta name="twitter:description" content="Real Estate Crowdfunding. Simplified. RealtyMogul.com is an online marketplace offering crowdfunding for real estate investment opportunities." />
+<meta name="twitter:image:src" content="https://www.realtymogul.com/sites/default/files/rm_logo_dark.png" />
+  <title>MogulREIT I | RealtyMogul.com</title>
+  <style type="text/css" media="all">
+@import url("https://www.realtymogul.com/modules/system/system.base.css?ocjj0f");
+@import url("https://www.realtymogul.com/modules/system/system.menus.css?ocjj0f");
+@import url("https://www.realtymogul.com/modules/system/system.messages.css?ocjj0f");
+@import url("https://www.realtymogul.com/modules/system/system.theme.css?ocjj0f");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.resizable.min.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.dialog.min.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?ocjj0f");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.realtymogul.com/modules/comment/comment.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/date/date_api/date.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/fences/field.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/field_hidden/field_hidden.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/logintoboggan/logintoboggan.css?ocjj0f");
+@import url("https://www.realtymogul.com/modules/node/node.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/page_load_progress/css/page_load_progress.css?ocjj0f");
+@import url("https://www.realtymogul.com/modules/search/search.css?ocjj0f");
+@import url("https://www.realtymogul.com/modules/user/user.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/views/css/views.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/ckeditor/css/ckeditor.css?ocjj0f");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/patched/ctools/css/ctools.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/libraries/jquery-ui-multiselect-widget/jquery.multiselect.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/libraries/jquery-ui-multiselect-widget/jquery.multiselect.filter.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/jquery_ui_multiselect_widget/jquery_ui_multiselect_widget.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/panels/css/panels.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/panels/plugins/layouts/onecol/onecol.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/addressfield/addressfield.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/flag/theme/flag.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/patched/ctools/css/collapsible-div.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/quicktabs/css/quicktabs.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/libraries/stacktable.js/stacktable.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/realty_mogul/css/conditional/io-details/debt.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/realty_mogul/css/conditional/io-details/io-details-panel.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/modules/contrib/responsive_menus/styles/responsive_menus_simple/css/responsive_menus_simple.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/libraries/sidr/dist/stylesheets/jquery.sidr.bare.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/libraries/superfish/dist/css/superfish.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/libraries/tooltipster/css/tooltipster.bundle.min.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/libraries/slick/slick/slick.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/libraries/slick/slick/slick-theme.css?ocjj0f");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.realtymogul.com/sites/all/themes/omega/alpha/css/alpha-reset.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/omega/omega/css/formalize.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/omega/omega/css/omega-text.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/omega/omega/css/omega-branding.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/omega/omega/css/omega-menu.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/omega/omega/css/omega-forms.css?ocjj0f");
+@import url("https://www.realtymogul.com/sites/all/themes/realty_mogul/css/style.css?ocjj0f");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.realtymogul.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?ocjj0f");
+</style>
+  <script type="text/javascript" src="https://www.realtymogul.com/sites/all/libraries/modernizr/modernizr.custom.js?ocjj0f"></script>
+<script type="text/javascript" src="https://www.realtymogul.com/sites/default/files/advagg_js/js__m1TDdkgHQtPoxDpBQ-yC-nAMG4IsJiTiyaPS4IKay2E__v0ypiZUkUxT_63-3_XHTuwhnwoVz9Jyp735OMzG24qM__dz0BG_nuUuMoBxAVm_4dKGoJvwHLYSmGcE9QAApoekQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.migrateMute = true; jQuery.migrateTrace = false;
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.realtymogul.com/sites/default/files/advagg_js/js__qhRtvHIMpUckcsj3O49Xfn7FyAGlnPlLjAHUhGo0HPo__xvzTr2VMRO5ioxDSG4kO0Q-zXb9nBpA2IXJEsiO_9FQ__dz0BG_nuUuMoBxAVm_4dKGoJvwHLYSmGcE9QAApoekQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _vwo_code=(function(){
+var account_id=41447,
+settings_tolerance=2500,
+library_tolerance=2000,
+use_existing_jquery=false,
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.realtymogul.com/sites/default/files/advagg_js/js__IHoHk5OAhM1S1vPiLnqpExpmkdd5hkC8G80pjUwPXIs__sjoNrcCU2jYjq8l9FtOxXuY8oZKISNNB2j2ZVGdOywQ__dz0BG_nuUuMoBxAVm_4dKGoJvwHLYSmGcE9QAApoekQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(document).ready(function(){jQuery(".accordion").accordion( { heightStyle: "content", collapsible: true, active: false } );});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(document).ready(function(){jQuery(".accordion:eq(0)").accordion( { heightStyle: "content", collapsible: true, active: 0 } );});
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.realtymogul.com/sites/default/files/advagg_js/js__505sJZE-nqOun9jdVjgjWfv_LyhsYbS6Rf8rNW23GFo__gROwYBK6by0ClZWGxIzOY3Mk_3H9mXe4cXTApaMXj-M__dz0BG_nuUuMoBxAVm_4dKGoJvwHLYSmGcE9QAApoekQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;window.analytics.methods.length>i;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(t){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)},window.analytics.SNIPPET_VERSION="2.0.8",window.analytics.load("GJXJHOWv0d");window.analytics.identify("190880");!window.analytics.page();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.realtymogul.com/sites/default/files/advagg_js/js__aWzqeK2aKo0PIWl7G4uiaHK-j2Y3gHf3pT9v109geFU__8OyjXL7JjrxFmOGY3iggHrzxKVJpC0kPnGg9OjyDYpk__dz0BG_nuUuMoBxAVm_4dKGoJvwHLYSmGcE9QAApoekQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {
+    "basePath": "\/",
+    "pathPrefix": "",
+    "ajaxPageState": {
+        "theme": "realty_mogul",
+        "theme_token": "32FnD7o2JSCPb4k09y1pVLkB1HkUL4uHgadIam3_Do8",
+        "jquery_version": "1.10",
+        "css": {
+            "modules\/system\/system.base.css": 1,
+            "modules\/system\/system.menus.css": 1,
+            "modules\/system\/system.messages.css": 1,
+            "modules\/system\/system.theme.css": 1,
+            "misc\/ui\/jquery.ui.core.css": 1,
+            "misc\/ui\/jquery.ui.theme.css": 1,
+            "misc\/ui\/jquery.ui.button.css": 1,
+            "misc\/ui\/jquery.ui.resizable.css": 1,
+            "misc\/ui\/jquery.ui.dialog.css": 1,
+            "misc\/ui\/jquery.ui.accordion.css": 1,
+            "modules\/comment\/comment.css": 1,
+            "sites\/all\/modules\/contrib\/date\/date_api\/date.css": 1,
+            "sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css": 1,
+            "modules\/field\/theme\/field.css": 1,
+            "sites\/all\/modules\/contrib\/field_hidden\/field_hidden.css": 1,
+            "sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css": 1,
+            "modules\/node\/node.css": 1,
+            "sites\/all\/modules\/contrib\/page_load_progress\/css\/page_load_progress.css": 1,
+            "modules\/search\/search.css": 1,
+            "modules\/user\/user.css": 1,
+            "sites\/all\/modules\/contrib\/views\/css\/views.css": 1,
+            "sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css": 1,
+            "sites\/all\/modules\/patched\/ctools\/css\/ctools.css": 1,
+            "sites\/all\/libraries\/jquery-ui-multiselect-widget\/jquery.multiselect.css": 1,
+            "sites\/all\/libraries\/jquery-ui-multiselect-widget\/jquery.multiselect.filter.css": 1,
+            "sites\/all\/modules\/contrib\/jquery_ui_multiselect_widget\/jquery_ui_multiselect_widget.css": 1,
+            "sites\/all\/modules\/contrib\/panels\/css\/panels.css": 1,
+            "sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css": 1,
+            "sites\/all\/modules\/contrib\/addressfield\/addressfield.css": 1,
+            "sites\/all\/modules\/contrib\/flag\/theme\/flag.css": 1,
+            "sites\/all\/modules\/patched\/ctools\/css\/collapsible-div.css": 1,
+            "sites\/all\/modules\/contrib\/quicktabs\/css\/quicktabs.css": 1,
+            "sites\/all\/libraries\/stacktable.js\/stacktable.css": 1,
+            "sites\/all\/themes\/realty_mogul\/css\/conditional\/io-details\/debt.css": 1,
+            "sites\/all\/themes\/realty_mogul\/css\/conditional\/io-details\/io-details-panel.css": 1,
+            "sites\/all\/modules\/contrib\/responsive_menus\/styles\/responsive_menus_simple\/css\/responsive_menus_simple.css": 1,
+            "sites\/all\/libraries\/sidr\/dist\/stylesheets\/jquery.sidr.bare.css": 1,
+            "sites\/all\/libraries\/superfish\/dist\/css\/superfish.css": 1,
+            "sites\/all\/libraries\/tooltipster\/css\/tooltipster.bundle.min.css": 1,
+            "sites\/all\/libraries\/slick\/slick\/slick.css": 1,
+            "sites\/all\/libraries\/slick\/slick\/slick-theme.css": 1,
+            "sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css": 1,
+            "sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css": 1,
+            "sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css": 1,
+            "sites\/all\/themes\/omega\/omega\/css\/formalize.css": 1,
+            "sites\/all\/themes\/omega\/omega\/css\/omega-text.css": 1,
+            "sites\/all\/themes\/omega\/omega\/css\/omega-branding.css": 1,
+            "sites\/all\/themes\/omega\/omega\/css\/omega-menu.css": 1,
+            "sites\/all\/themes\/omega\/omega\/css\/omega-forms.css": 1,
+            "sites\/all\/themes\/realty_mogul\/css\/style.css": 1,
+            "sites\/all\/themes\/realty_mogul\/css\/fonts\/fontface.css": 1,
+            "sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css": 1
+        },
+        "js": {
+            "sites\/all\/libraries\/jquery-ui-multiselect-widget\/src\/jquery.multiselect.js": 1,
+            "sites\/all\/libraries\/jquery-ui-multiselect-widget\/src\/jquery.multiselect.filter.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_ui_multiselect_widget\/jquery_ui_multiselect_widget.js": 1,
+            "sites\/all\/modules\/contrib\/pardot\/pardot.js": 1,
+            "sites\/all\/libraries\/modernizr\/modernizr.custom.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/1.2.1\/jquery-migrate.min.js": 1,
+            "misc\/jquery.once.js": 1,
+            "misc\/drupal.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js": 1,
+            "misc\/form.js": 1,
+            "misc\/ajax.js": 1,
+            "sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js": 1,
+            "sites\/all\/modules\/contrib\/page_load_progress\/js\/page_load_progress.js": 1,
+            "sites\/all\/modules\/custom\/realty_mogul_modal\/js\/realty_mogul_modal_setcookie.js": 1,
+            "misc\/progress.js": 1,
+            "sites\/all\/modules\/contrib\/autologout\/autologout.js": 1,
+            "sites\/all\/modules\/custom\/auto_upload\/auto_upload.js": 1,
+            "sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js": 1,
+            "sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_inline.js": 1,
+            "sites\/all\/libraries\/inputmask\/dist\/jquery.inputmask.bundle.js": 1,
+            "sites\/all\/modules\/contrib\/flag\/theme\/flag.js": 1,
+            "misc\/collapse.js": 1,
+            "sites\/all\/modules\/contrib\/views\/js\/base.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/io-equity-details.js": 1,
+            "sites\/all\/modules\/contrib\/views\/js\/ajax_view.js": 1,
+            "sites\/all\/modules\/patched\/ctools\/js\/collapsible-div.js": 1,
+            "sites\/all\/modules\/contrib\/quicktabs\/js\/quicktabs.js": 1,
+            "sites\/all\/libraries\/stacktable.js\/stacktable.js": 1,
+            "sites\/all\/modules\/custom\/realty_mogul_modal\/js\/realty_mogul_modal_io_team_members.js": 1,
+            "sites\/all\/modules\/custom\/realty_mogul_modal\/js\/realty_mogul_modal_io_contact_form.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/date.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/line-graph-integration.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/jquery.transit.min.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/line-graph-generator.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/dashboard-integration.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/geography-radial-graph-generator.js": 1,
+            "sites\/all\/modules\/contrib\/responsive_menus\/styles\/responsive_menus_simple\/js\/responsive_menus_simple.js": 1,
+            "sites\/all\/modules\/contrib\/olark\/olark.js": 1,
+            "sites\/all\/modules\/features\/RM-Other-Content\/rm_blocks\/js\/1031_reg.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/need_help.js": 1,
+            "sites\/all\/modules\/custom\/rm_main_menu\/js\/superfish.js": 1,
+            "sites\/all\/modules\/custom\/rm_main_menu\/js\/sidr.js": 1,
+            "sites\/all\/libraries\/sidr\/dist\/jquery.sidr.min.js": 1,
+            "sites\/all\/libraries\/superfish\/dist\/js\/superfish.min.js": 1,
+            "sites\/all\/libraries\/tooltipster\/js\/tooltipster.bundle.min.js": 1,
+            "sites\/all\/libraries\/waypoints\/lib\/jquery.waypoints.min.js": 1,
+            "sites\/all\/libraries\/waypoints\/lib\/shortcuts\/sticky.min.js": 1,
+            "sites\/all\/libraries\/slick\/slick\/slick.min.js": 1,
+            "sites\/all\/modules\/features\/RM-IO-Browse-Page\/io_browse_page\/js\/io-browse-page.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/script.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/pardot-tracking.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/ga_tracking.js": 1,
+            "sites\/all\/themes\/realty_mogul\/js\/utm_tracking.js": 1,
+            "sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js": 1,
+            "sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js": 1
+        }
+    },
+    "autologout": {
+        "timeout": 7200000,
+        "timeout_padding": 30000,
+        "message": "You are about to be logged out of the system due to inactivity. Do you wish to remain logged in?",
+        "redirect_url": "\/user\/login?destination=node\/193744\u0026autologout_timeout=1",
+        "title": "RealtyMogul.com Alert",
+        "refresh_only": false,
+        "no_dialog": 0
+    },
+    "colorbox": {
+        "opacity": "0.85",
+        "current": "{current} of {total}",
+        "previous": "\u00ab Prev",
+        "next": "Next \u00bb",
+        "close": "Close",
+        "maxWidth": "98%",
+        "maxHeight": "98%",
+        "fixed": true,
+        "mobiledetect": true,
+        "mobiledevicewidth": "480px"
+    },
+    "jcarousel": {
+        "ajaxPath": "\/jcarousel\/ajax\/views"
+    },
+    "jquery_ui_multiselect_widget": {
+        "module_path": "sites\/all\/modules\/contrib\/jquery_ui_multiselect_widget",
+        "multiple": 0,
+        "filter": 1,
+        "subselector": ".use-ui-multiselect",
+        "selectedlist": "4",
+        "autoOpen": 0,
+        "header": 1,
+        "height": "175",
+        "classes": "",
+        "filter_auto_reset": 0,
+        "filter_width": "100",
+        "jquery_ui_multiselect_widget_path_match_exclude": ""
+    },
+    "page_load_progress": {
+        "delay": "10",
+        "elements": ".form-submit.step-3, .invest-alert.not-signed span.button a"
+    },
+    "pardot": {
+        "pardot_a_id": "43732",
+        "pardot_c_id": "76960",
+        "score": ""
+    },
+    "quicktabs": {
+        "qt_io_fund_details": {
+            "name": "io_fund_details",
+            "tabs": {
+                "0": {
+                    "vid": "io_fund_details",
+                    "display": "property",
+                    "args": "%1",
+                    "view_path": "node%2F193744",
+                    "view_dom_id": 1,
+                    "ajax_args": "193744",
+                    "actual_args": [
+                        "193744"
+                    ]
+                },
+                "2": {
+                    "vid": "io_fund_details",
+                    "display": "investment",
+                    "args": "%1",
+                    "view_path": "node%2F193744",
+                    "view_dom_id": 2,
+                    "ajax_args": "193744",
+                    "actual_args": [
+                        "193744"
+                    ]
+                },
+                "3": {
+                    "vid": "io_fund_details",
+                    "display": "assets",
+                    "args": "%1",
+                    "view_path": "node%2F193744",
+                    "view_dom_id": 3,
+                    "ajax_args": "193744",
+                    "actual_args": [
+                        "193744"
+                    ]
+                },
+                "4": {
+                    "vid": "io_fund_details",
+                    "display": "management",
+                    "args": "%1",
+                    "view_path": "node%2F193744",
+                    "view_dom_id": 4,
+                    "ajax_args": "193744",
+                    "actual_args": [
+                        "193744"
+                    ]
+                },
+                "5": {
+                    "vid": "io_fund_details",
+                    "display": "financials",
+                    "args": "%1",
+                    "view_path": "node%2F193744",
+                    "view_dom_id": 5,
+                    "ajax_args": "193744",
+                    "actual_args": [
+                        "193744"
+                    ]
+                },
+                "6": {
+                    "vid": "io_fund_details",
+                    "display": "faq",
+                    "args": "%1",
+                    "view_path": "node%2F193744",
+                    "view_dom_id": 6,
+                    "ajax_args": "193744",
+                    "actual_args": [
+                        "193744"
+                    ]
+                }
+            },
+            "pardot": {
+                "pardot_a_id": "43732",
+                "pardot_c_id": "76960",
+                "score": ""
+            }
+        }
+    },
+    "ioFields": {
+        "capitalStack": [
+            {
+                "label": "Line of Credit",
+                "pct": 1,
+                "value": "1",
+                "color": "#b7b7b7"
+            }
+        ]
+    },
+    "rm_analytics": {
+        "io": {
+            "ioId": "193744",
+            "ioTitle": "MogulREIT I",
+            "fundsRaised": "0",
+            "targetAmount": "50000000",
+            "percentageRaised": 0
+        },
+        "io_google_analytics_page": {
+            "title": "Investment Opportunity Viewed",
+            "url": "https:\/\/www.realtymogul.com",
+            "path": "\/#tracking-investment-opportunity-viewed-regA-193744",
+            "referrer": "https:\/\/www.realtymogul.com"
+        },
+        "io_google_analytics_track": {
+            "category": "Investment Opportunity",
+            "label": "regA",
+            "action": "Viewed",
+            "value": "193744"
+        },
+        "google_analytics_identify": {
+            "Employer": null,
+            "Networth": null,
+            "Income": null,
+            "GTKY Status": "not_submitted",
+            "Cooling Off Start Date": "1472558303",
+            "Roles": "pre-accredited investor, non-authenticated user",
+            "Referral Source": null,
+            "Date of Birth": null
+        },
+        "segment_uid": "190880"
+    },
+    "responsive_menus": [
+        {
+            "toggler_text": "\u2630",
+            "selectors": [
+                "body.front .block-main-menu .menu ",
+                "body.context-residential-loans .block-main-menu .menu ",
+                "body.context-commercial-loans .block-main-menu .menu ",
+                "body.context-equity-capital .block-main-menu .menu ",
+                "body.page-user-register .block-main-menu .menu",
+                "body.context-investors .block-main-menu .menu ",
+                "body.page-get-financing .block-main-menu .menu",
+                "body.page-eform-submit-accreditation .block-main-menu .menu ",
+                "body.page-eform-submit-getting-to-know-you .block-main-menu .menu ",
+                "body.page-eform-getting-to-know-you-confirm .block-main-menu .menu ",
+                "body.context-were-sorry .block-main-menu .menu",
+                "body.page-user-password .block-main-menu .menu ",
+                "body.page-user .block-main-menu .menu ",
+                "body.page-toboggan .block-main-menu .menu",
+                "body.context-milestone150 .block-main-menu .menu",
+                "body.context-about-us .block-main-menu .menu",
+                "body.context-careers .block-main-menu .menu",
+                "body.io-equity .block-main-menu .menu",
+                "body.context-learn-center .block-main-menu .menu",
+                "body.context-blog .block-main-menu .menu",
+                "body.context-search .block-main-menu .menu",
+                "body.context-contact-us .block-main-menu .menu",
+                "body.context-blog-categories .block-main-menu .menu",
+                "body.context-investment-opportunities .block-main-menu .menu",
+                "body.context-ebooks .block-main-menu .menu"
+            ],
+            "media_size": "800",
+            "remove_attributes": true,
+            "responsive_menus_style": "responsive_menus_simple"
+        }
+    ],
+    "olark": {
+        "uid": "190880",
+        "name": "usman_siddiqui11",
+        "mail": "usman_siddiqui11@hotmail.com",
+        "roles": "roles pre-accredited investor, non-authenticated user",
+        "userpage": "https:\/\/www.realtymogul.com\/users\/usmansiddiqui11",
+        "loggedinas": "logged in as \u003Ca href=\u0022https:\/\/www.realtymogul.com\/users\/usmansiddiqui11\u0022\u003Eusman_siddiqui11\u003C\/a\u003E",
+        "disable_ios": 1,
+        "enabled": 1
+    },
+    "omega": {
+        "layouts": {
+            "primary": "normal",
+            "order": [
+                "narrow",
+                "normal"
+            ],
+            "queries": {
+                "narrow": "all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)",
+                "normal": "all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"
+            }
+        }
+    }
+});
+//--><!]]>
+</script>
+     <!--<script type="text/javascript" src="/misc/jQuery.dPassword.js" >
+  </script> -->
+  <link rel="image_src" type="image/png" href="/sites/all/themes/realty_mogul/logo.png" />
+
+  <!-- Facebook Remarketing Tracking Pixel code for every page -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+_fbq.push(['addPixelId', '628149513930972']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=628149513930972&amp;ev=NoScript" /></noscript>
+
+<!-- browser update script informs users that they need to upgrade browser  -->
+<script type="text/javascript">
+var $buoop = {};
+$buoop.ol = window.onload;
+window.onload=function(){
+ try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+ var e = document.createElement("script");
+ e.setAttribute("type", "text/javascript");
+ e.setAttribute("src", "//browser-update.org/update.js");
+ document.body.appendChild(e);
+}
+</script>
+ <!-- end browser update script informs users that they need to upgrade browser  -->
+  <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta name="format-detection" content="telephone=no">
+</head>
+<body class="html not-front logged-in page-node page-node- page-node-193744 node-type-investment-opportunity io-equity io-fund context-investment-opportunity">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+      <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix zone-branding-investment_opportunity">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-branding region-branding-investment_opportunity omega alpha" id="region-branding">
+  <div class="region-inner region-branding-inner">
+    <div class="branding-data clearfix">
+      <div class="logo-img"><a href="logo.png"><img alt="Estateup_Logo" /></a></div>
+          </div>
+    <div class="block block-rm-main-menu block-menu block-rm-main-menu-menu odd block-without-title" id="block-rm-main-menu-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <a id="responsive-menu-button" href="#sidr-main">Menu</a><div id="navigation"><ul class="rm-menu"><li class="first"><a href="/dashboard">My Dashboard</a></li>
+<li><a href="/investment-opportunities?main-menu=invest">Invest</a></li>
+<li><a href="/get-financing">Start a Project</a><
+<li><a href="/resource-center/articles">FAQ</a>
+
+
+<li class="join last"><a href="/user">My Account</a><ul class="join"><li class="first"><a href="/user">Profile</a></li>
+<li class="last"><a href="/user/logout">Logout</a></li>
+</ul></li>
+</ul></div><div id="responsive-navigation"><ul class="rm-menu"><li class="first"><a href="/dashboard">My Dashboard</a></li>
+<li><a href="/investment-opportunities?main-menu=invest">Invest</a></li>
+<li><a href="/get-financing">Get Financing</a><ul><li class="first"><a href="/commercial-loans">Commercial Loans</a></li>
+<li class="last"><a href="/equity-capital">Equity Capital</a></li>
+</ul></li>
+<li><a href="/resource-center/articles">Resource Center</a><ul><li class="first"><a href="/resource-center/articles">Articles</a></li>
+<li><a href="/resource-center/faqs">FAQS</a></li>
+<li><a href="/resource-center/glossary">Glossary</a></li>
+<li><a href="/resource-center/videos">Videos</a></li>
+<li class="last"><a href="/resource-center/adviser">Investment Adviser</a></li>
+</ul></li>
+<li class="join last"><a href="/user">My Account</a><ul class="join"><li class="first"><a href="/user">Profile</a></li>
+<li class="last"><a href="/user/logout">Logout</a></li>
+</ul></li>
+</ul></div>    </div>
+  </div>
+</div>  </div>
+</div>
+  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix zone-menu-investment_opportunity">  
+  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+    <div class="grid-12 region region-menu region-menu-investment_opportunity" id="region-menu">
+  <div class="region-inner region-menu-inner">
+      </div>
+</div>
+  </div>
+</div></header>  
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix zone-content-investment_opportunity">  
+
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        <div class="grid-12 region region-content region-content-investment_opportunity" id="region-content">
+<div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-views pane-io-fund-details"   class="panel-pane pane-views pane-io-fund-details">
+  
+      
+  
+  <div class="pane-content">
+    <div class="view view-io-fund-details view-id-io_fund_details view-display-id-content_top view-dom-id-cd793a54b51842d711cf23b5fb47aa9b">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="io-equity-content-top-header">
+  <div class="io-equity-content-top-header__name">
+    ESTATEUP Project Details  </div>
+     
+
+<div class="io-equity-content-top-wrapper--wide">
+      <div class="io-equity-content-top-images--wide">
+                    <div class="io-equity-content-top-images__hero">
+          <img src="/sites/default/files/io_page_hero.jpg"/>
+        </div>
+                    <div class="io-equity-content-top-images__thumbs">
+          <div class="field-content"><div class="item-list"><ul><li class="first"><a href="https://www.realtymogul.com/sites/default/files/io_page_101.jpg" title="MogulREIT I" class="colorbox" rel="gallery-node-193744-bJOeZIYfzIk"><img typeof="foaf:Image" src="sign_back.jpeg" width="60" height="60" alt="" title="" /></a></li><li><a href="sign_back.jpeg" title="Estateup" class="colorbox" rel="gallery-node-193744-bJOeZIYfzIk"><img typeof="foaf:Image" src="#" width="60" height="60" alt="" title="" /></a></li><li class="last"><a href="#" title="MogulREIT I" class="colorbox" rel="gallery-node-193744-bJOeZIYfzIk"><img typeof="foaf:Image" src="#" width="60" height="60" alt="" title="" /></a></li></ul></div></div>        </div>
+          </div>
+    <div class="io-equity-content-top-overview">
+    <div class="io-equity-overview">
+      <div class="io-equity-overview-inner">
+        <div class="io-equity-overview__header">
+          Overview
+        </div>
+                  <div class="io-equity-overview__row">
+            <span class="io-equity-overview__label">
+              Investment Type            </span>
+            <span class="io-equity-overview__value">
+              <div class="field-content">Fund</div>            </span>
+          </div>
+                          <div class="io-equity-overview__row">
+            <span class="io-equity-overview__label">
+              Property Type            </span>
+            <span class="io-equity-overview__value">
+              <div class="field-content">Commercial Real Estate</div>            </span>
+          </div>
+                          <div class="io-equity-overview__row">
+            <span class="io-equity-overview__label">
+              Objectives            </span>
+            <span class="io-equity-overview__value field-name-field-investment-objective-short">
+             Ready for Investin
+            </span>
+          </div>
+                          <div class="io-equity-overview__row">
+            <span class="io-equity-overview__label">
+              Minimum Investment            </span>
+            <span class="io-equity-overview__value">
+              <div class="field-content">$5,500</div>            </span>
+          </div>
+                          <div class="io-equity-overview__row">
+            <span class="io-equity-overview__label">
+              Minimum Asset Yield              <div class="io-equity__tooltip" title="This represents the minimum yield of assets in the Fund, not the minimum yield to investors. Investor returns will be lower than the weighted average return of the Fund’s assets due to origination, operation, servicing, and management fees."></div>
+            </span>
+            <span class="io-equity-overview__value">
+              <div class="field field-name-field-target-investment-yield field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">7%</div></div></div>            </span>
+          </div>
+                          <div class="io-equity-overview__row">
+            <span class="io-equity-overview__label">
+              Liquidity              <div class="io-equity__tooltip" title="Redemption can be limited or at a discount. For more information please review the Quarterly Redemption Plan terms of our Offering Circular."></div>
+            </span>
+            <span class="io-equity-overview__value">
+              <div class="field field-name-field-liquidity field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Quarterly</div></div></div>            </span>
+          </div>
+        
+        <div class="io-equity-overview__bottom">
+                      <div class="io-equity-overview__btn-smart-txt investment-open">
+              Starting at $2,500            </div>
+                                          <div class="io-equity-overview__btn-smart">
+              <a class="button invest" href="/investor.html">Invest</a>            </div>
+                                <div class="io-equity-overview__btn-watch">
+              <span class="field-content"><span class="[field_investment_status]"><span class="flag-wrapper flag-watchlist flag-watchlist-193744">
+      <a href="/flag/flag/watchlist/193744?destination=node/193744&amp;token=fljtAVKA4sitdq28VXuas930SPbDV5fdz3zDZWYvn7A" title="Add this investment to your watch list" class="flag flag-action flag-link-toggle" rel="nofollow">Watch Investment</a><span class="flag-throbber">&nbsp;</span>
+    </span>
+</span></span>            </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="io-equity-content-top-btns">
+  
+<a class="colorbox-load colorbox webinar" href="/vef/load/806a0b2a3581a14d6f946da5160a90b0?width=640&height=365">
+<div class="io-equity-content-top-btns__btn io-equity-content-top-btns__btn--webinar">
+<div class="io-equity-content-top-btns__btn-txt">
+
+        <div class="io-equity-content-top-btns__btn-txt-top">
+          View the
+        </div>
+        <div class="io-equity-content-top-btns__btn-txt-bottom">
+          Webinar
+        </div>
+</div>
+</div>
+</a>
+      <div class="io-equity-content-top-btns__btn io-equity-content-top-btns__btn--documents-wrapper io-equity-content-top-btns__btn--offering-circular-wrapper">
+      <div class="ctools-collapsible-container ctools-collapsed"><div class="ctools-collapsible-handle">
+        <a class="io-equity-content-top-btns__btn io-equity-content-top-btns__btn--circular" href="#">
+          <div class="io-equity-content-top-btns__btn-txt">
+            <div class="io-equity-content-top-btns__btn-txt-top">
+              Download
+            </div>
+            <div class="io-equity-content-top-btns__btn-txt-bottom">
+              Offering Circular
+            </div>
+          </div>
+        </a>
+            </div><div class="ctools-collapsible-content"><div class="io-equity-content-top-btns__files"><div class="field field-name-field-offering-circular field-type-file field-label-hidden"><div class="field-items"><div class="field-item even"><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular.pdf" type="application/pdf; length=4404544" data-fid="28824" target="_blank" title="mr1_offering_circular.pdf">Offering Circular (PDF)</a></span></div></div></div></div></div></div>    </div>
+        <div class="io-equity-content-top-btns__btn io-equity-content-top-btns__btn--documents-wrapper">
+      <div class="ctools-collapsible-container ctools-collapsed"><div class="ctools-collapsible-handle">
+        <a class="io-equity-content-top-btns__btn io-equity-content-top-btns__btn--documents" href="#">
+          <div class="io-equity-content-top-btns__btn-txt">
+            <div class="io-equity-content-top-btns__btn-txt-top">
+              Download
+            </div>
+            <div class="io-equity-content-top-btns__btn-txt-bottom">
+              Documents
+            </div>
+          </div>
+        </a>
+            </div><div class="ctools-collapsible-content"><div class="io-equity-content-top-btns__files"><div class="field-content"><div class="item-list"><ul><li class="first"><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_subscription_agreement.pdf" type="application/pdf; length=215232" data-fid="29221" target="_blank" title="mr1_subscription_agreement.pdf">Subscription Agreement (PDF)</a></span></li><li><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_operating_agreement.pdf" type="application/pdf; length=2972583" data-fid="29223" target="_blank" title="mr1_operating_agreement.pdf">Operating Agreement (PDF)</a></span></li><li><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_oc_supplement_01_20160823.pdf" type="application/pdf; length=71886" data-fid="29492" target="_blank" title="mr1_oc_supplement_01_20160823.pdf">Offering Circular Supplement #1 8-23-16 (PDF)</a></span></li><li class="last"><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_oc_supplement_02_20160824.pdf" type="application/pdf; length=118194" data-fid="29612" target="_blank" title="mr1_oc_supplement_02_20160824.pdf">Offering Circular Supplement #2 8-24-16 (PDF)</a></span></li></ul></div></div></div></div></div>    </div>
+    <a class="colorbox-inline io-equity-content-top-btns__btn io-equity-content-top-btns__btn--contact io-equity-btn-contact" href="?inline=true#rm-modal-contact-form">
+    <div class="io-equity-content-top-btns__btn-txt">
+      <div class="io-equity-content-top-btns__btn-txt-top">
+        Contact
+      </div>
+      <div class="io-equity-content-top-btns__btn-txt-bottom">
+        Investor Relations
+      </div>
+    </div>
+  </a>
+  <div id="rm-modal-contact-form" class="hidden">
+      </div>
+
+</div>
+
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-quicktabs-io-fund-details io-equity-content-main-tabs"   class="panel-pane pane-block pane-quicktabs-io-fund-details io-equity-content-main-tabs">
+  
+  <div class="io-equity-content-main-tabs-inside-wrapper">    
+  
+  <div class="pane-content">
+    <div  id="quicktabs-io_fund_details" class="quicktabs-wrapper quicktabs-style-nostyle"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-nostyle"><li class="active first"><a href="/investment-opportunity/193744?qt-io_fund_details=0#qt-io_fund_details" id="quicktabs-tab-io_fund_details-0" class="active">Highlights</a></li><li><a href="/investment-opportunity/193744?qt-io_fund_details=2#qt-io_fund_details" id="quicktabs-tab-io_fund_details-2" class="active">Investment</a></li><li><a href="/investment-opportunity/193744?qt-io_fund_details=3#qt-io_fund_details" id="quicktabs-tab-io_fund_details-3" class="active">Assets</a></li><li><a href="/investment-opportunity/193744?qt-io_fund_details=4#qt-io_fund_details" id="quicktabs-tab-io_fund_details-4" class="active">Management</a></li><li><a href="/investment-opportunity/193744?qt-io_fund_details=5#qt-io_fund_details" id="quicktabs-tab-io_fund_details-5" class="active">Financials</a></li><li class="last"><a href="/investment-opportunity/193744?qt-io_fund_details=6#qt-io_fund_details" id="quicktabs-tab-io_fund_details-6" class="active">FAQ</a></li></ul></div><div id="quicktabs-container-io_fund_details" class="quicktabs_main quicktabs-style-nostyle"><div  id="quicktabs-tabpage-io_fund_details-0" class="quicktabs-tabpage "><div class="view view-io-fund-details view-id-io_fund_details view-display-id-property view-dom-id-aed244c0504bc232ad5b18973f9c530e">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="io-equity-sideblock io-equity-property-sideblock">
+  <div class="io-equity-sideblock__row--header">Quick Look</div>
+
+      <div class="io-equity-sideblock__row io-equity-sideblock__row--first">
+      <div class="io-equity-sideblock__row_label">
+        Launch Date      </div>
+      <div class="io-equity-sideblock__row_value">
+        <div class="field field-name-field-launch-date field-type-datetime field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-08-16T00:00:00-07:00">08/16/16</span></div></div></div>      </div>
+    </div>
+        <div class="io-equity-sideblock__row">
+      <div class="io-equity-sideblock__row_label">
+        Anticipated Fund Assets      </div>
+      <div class="io-equity-sideblock__row_value">
+        <div class="field field-name-field-asset-class field-type-list-text field-label-hidden"><div class="field-items"><div class="field-item even">Debt &amp; Equity</div></div></div>      </div>
+    </div>
+        <div class="io-equity-sideblock__row">
+      <div class="io-equity-sideblock__row_label">
+        Target Property Types      </div>
+      <div class="io-equity-sideblock__row_value">
+        <div class="field field-name-field-property-type field-type-list-text field-label-hidden"><div class="field-items"><div class="field-item even">Commercial Real Estate</div></div></div>      </div>
+    </div>
+        <div class="io-equity-sideblock__row">
+      <div class="io-equity-sideblock__row_label">
+        Number of Assets Acquired to Date
+      </div>
+      <div class="io-equity-sideblock__row_value">
+                  2              </div>
+    </div>
+  
+
+
+      <div class="io-equity-sideblock__row">
+      <div class="io-equity-sideblock__row_label">
+        Minimum Investment      </div>
+      <div class="io-equity-sideblock__row_value">
+        <div class="field field-name-field-minimum-investment field-type-number-integer field-label-hidden"><div class="field-items"><div class="field-item even">$2,500</div></div></div>      </div>
+    </div>
+  </div>
+
+<div class="io-equity-main io-equity-property-main">
+
+      <div class="io-equity-main__section io-equity-property-main__why-we-like-it">
+      <h2>Why We Like It</h2>
+      <div class="item-list"><ul class="icon_checkmark--green"><li class="first">Fund intends to be diversified across property types, investment types, and geographies. </li><li>Aims to provide a steady stream of quarterly dividends. </li><li>Potential capital appreciation.</li><li>The Fund is distributed and operates exclusively online, allowing for higher efficiency and lower fees compared to traditional similar investments. </li><li class="last">Each transaction is reviewed by Realty Mogul’s team of experienced real estate and finance professionals.</li></ul></div>    </div>
+  
+      <div class="io-equity-main__section io-equity-property-main__summary">
+      <h2>Summary</h2>
+      <div class="io-equity-main__section-content io-equity-padding-left-right--20"<div class="field-content"><p>ESTATEUP I (the "Fund") is a commercial real estate fund, structured as an online Real Estate Investment Trust ("REIT"), designed with the goals of diversification, cash flow, and equity appreciation. The Fund was formed to invest in and manage a diversified portfolio of commercial real estate investments, including loans, equity in commercial real estate ventures and other real estate-related assets. </p>
+<p>ESTATEUp I’s <strong>purpose</strong> is to provide investors like you an opportunity to invest in a commercial real estate fund without paying the high upfront fees and selling commissions that have been typical in REITs like these, thereby investing a higher percentage of your investment in real property to increase total returns. We are able to do this because we go directly to you, our investors, online, on RealtyMogul.com.</p>
+<p>The Fund’s primary <strong>investment</strong> <strong>objectives</strong> are to pay attractive and consistent cash distributions and preserve, protect, increase, and return its investors’ capital contributions.</p>
+<p><strong>Additional highlights:</strong></p>
+<ul><li>The Fund expects to pay quarterly distributions starting the second full quarter of operation.</li>
+<li>The Fund will provide certain redemption opportunities, quarterly.</li>
+<li>The Fund seeks to raise $50 million. It is offering 5,000,000 shares at the initial price of $10 per share.</li>
+<li>The price per share shall be fixed until 9/30/2017, and will be recalculated based on the Fund’s Net Asset Value (NAV) thereafter.</li>
+<li>MogulREIT I is audited by Cohn Reznick and administered by Opus Fund Services.</li>
+</ul><p> <span style="font-size:12px;">Please refer to the full <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank">o</a><a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular.pdf" target="_blank">ffering circular</a> to get a detailed overview of MogulREIT I , including a discussion of fees charged by the Fund.</span></p>
+</div>      </div>
+    </div>
+  
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div  id="quicktabs-tabpage-io_fund_details-2" class="quicktabs-tabpage quicktabs-hide"><div class="view view-io-fund-details view-id-io_fund_details view-display-id-investment view-dom-id-4b924e1c618b73faf0215ea358471b80">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="io-equity-sideblock io-equity-investment-sideblock">
+  <div class="io-equity-sideblock__row--header">Key Points</div>
+
+      <div class="io-equity-sideblock__row io-equity-sideblock__row--first">
+      <div class="io-equity-sideblock__row_label">
+        Fund Legal Structure      </div>
+      <div class="io-equity-sideblock__row_value">
+                  <div class="field field-name-field-issuer-type field-type-list-text field-label-hidden">
+            <div class="field-items">
+              <div class="field-item even">Limited Liability Company</div>
+            </div>
+          </div>
+              </div>
+    </div>
+        <div class="io-equity-sideblock__row">
+      <div class="io-equity-sideblock__row_label">
+        Intended Fund Tax Qualification      </div>
+      <div class="io-equity-sideblock__row_value">
+        <div class="field field-name-field-fund-tax-qualification field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">REIT</div></div></div>      </div>
+    </div>
+        <div class="io-equity-sideblock__row">
+      <div class="io-equity-sideblock__row_label">
+        Investor Tax Reporting      </div>
+      <div class="io-equity-sideblock__row_value">
+        <div class="field field-name-field-investor-tax-reporting field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">1099-Div</div></div></div>      </div>
+    </div>
+        <div class="io-equity-sideblock__row">
+      <div class="io-equity-sideblock__row_label">
+        Subscription      </div>
+      <div class="io-equity-sideblock__row_value">
+        <div class="field field-name-field-subscription field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Ongoing</div></div></div>      </div>
+    </div>
+        <div class="io-equity-sideblock__row">
+      <div class="io-equity-sideblock__row_label">
+        Liquidity        <div class="io-equity__tooltip" title="Redemption can be limited or at a discount. For more information please review the Quarterly Redemption Plan terms of our Offering Circular."></div>
+      </div>
+      <div class="io-equity-sideblock__row_value">
+        <div class="field field-name-field-liquidity field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Quarterly</div></div></div>      </div>
+    </div>
+  
+</div>
+
+<div class="io-equity-main io-equity-investment-main">
+    <div class="io-equity-main__section io-equity-investment-main__investment-highlights">
+    <div class="ctools-collapsible-container"><div class="ctools-collapsible-handle">Investment Objectives</div><div class="ctools-collapsible-content"><div class="field field-name-field-investment-objective field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>MogulREIT I's investment objectives are:</p>
+<ul><li>to pay attractive and consistent cash distributions; and</li>
+<li>to preserve, protect, increase and return your capital contribution.</li>
+</ul></div></div></div></div></div>  </div>
+      <div class="io-equity-main__section io-equity-investment-main__investment_strategy">
+  <div class="ctools-collapsible-container ctools-collapsed"><div class="ctools-collapsible-handle">Investment Strategy</div><div class="ctools-collapsible-content"><div class="field-content"><p>The Fund intends to invest in and manage a diversified portfolio of commercial real estate investments.</p>
+<p><strong>The Fund can Invest:</strong></p>
+<ul><li>In both debt (mortgages) and equity real estate-related investments.</li>
+<li>In most major commercial property types, like apartment buildings, retail centers, offices, self-storage facilities, and more.</li>
+<li>Across the entire United States.</li>
+</ul><p><strong>The Fund intends to hold:</strong></p>
+<ul><li>At least 55% of its assets in debt (mortgage) related securities.</li>
+<li>Up to 45% of its assets in other real estate-related assets, which may include equity interests in companies whose business is to own and operate commercial real estate.</li>
+</ul><p style="line-height: 20.8px;"><strong>The Fund will <u>not</u> invest in:</strong></p>
+<ul style="line-height: 20.8px;"><li>New construction / ground up development.</li>
+<li>Raw land as a stand alone investment.</li>
+<li>Hotels / hospitality.</li>
+</ul><p style="line-height: 20.8px;"><strong>The Fund's goal is to create a portfolio that supports low volatility, consistent cash distributions, and the potential for capital appreciation:</strong></p>
+<ul style="line-height: 20.8px;"><li>Its focus on investing in debt will emphasize cash distributions to investors and preservation of their investments.</li>
+<li>Its focus on investing in equity will emphasize both returns to investors through rental income and capital appreciation.</li>
+</ul><p></p><div class="media media-element-container media-media_original"><div id="file-29615" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/file/mr1capstack20160824jpg">mr1_cap_stack_20160824.jpg</a></h2>
+    
+  
+  <div class="content">
+    <img height="470" width="644" class="media-element file-media-original" typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/mr1_cap_stack_20160824.jpg" alt="" title="" /></div>
+
+  
+</div>
+</div>
+<p>Mogul REIT I is affiliated with Realty Mogul, Co., which has an underwriting process, developed by its management team over their extensive real estate careers in a variety of market conditions.</p>
+<p>This underwriting process focuses on four aspects of a transaction:</p>
+<ol><li>The property (condition, financials, comparable properties, tenants, etc.).</li>
+<li>The location (population, employers, transportation, etc.).</li>
+<li>The real estate company (background, credit, experience, references).</li>
+<li>Third party reports (property management company, lender, environmental and title reports, etc.).</li>
+</ol></div></div></div>  </div>
+      <div class="io-equity-main__section io-equity-investment-main__comparables">
+  <div class="ctools-collapsible-container ctools-collapsed"><div class="ctools-collapsible-handle">Market Opportunities</div><div class="ctools-collapsible-content"><div class="field-content"><p><span style="line-height:1.6">The Fund's Manager believes that the near and intermediate-term market for </span><span style="line-height: 20.8px;">commercial real estate </span><span style="line-height:1.6">investment is compelling from a risk-return perspective. Given the prospect of low growth for the economy, it favors a strategy that combines:</span></p>
+<ul><li><span style="line-height:1.6">Targeting senior and mezzanine debt to maximize current income, with significant subordinate capital and downside structural protections.</span></li>
+<li><span style="line-height:1.6">Targeting equity securities to share the upside of asset appreciation with our shareholders.</span></li>
+</ul><p>This flexible approach to investing in any U.S. geography and in any of the major commercial real estate property types, including apartment buildings, self-storage facilities, retail centers and office buildings, should allow the Fund to quickly take advantage of opportunities created by market changes. This investment strategy, combined with the experience and expertise of the Manager’s management team, should provide opportunities to invest in assets with attractive returns and strong structural features.</p>
+<p><u>More specifically:</u></p>
+<p><span style="color:#000000;"><strong>There is an opportunity in the small balance commercial market, as it is growing, but is still underserved and fragmented.</strong></span></p>
+<p>Small balance commercial (“SBC”) originations (under $5 million in value) have been increasing gradually since 2009, and have reached an all-time peak in 2015 at $180 billion according to Boxwood Means, LLC.</p>
+<p>                                    <img alt="" class="media-image attr__typeof__foaf:Image img__fid__28875 img__view_mode__media_large attr__format__media_large" height="336" src="https://www.realtymogul.com/sites/default/files/styles/large/public/1_1.png?itok=AxaXY4LQ" typeof="foaf:Image" width="480" /></p>
+<p>Even though the volume of SBC debt originations is on the rise, traditional lenders and national banks have poor penetration into the SBC market, which remains underserved and highly fragmanted, as supported by data from Boxwood Means and Realtors.com.</p>
+<p><span style="line-height: 1.6;">In 2015, the top fifteen small balance commercial lenders, most of which are large national banks, controlled approximately </span><span style="line-height: 1.6;">21.2% of the market (compared with 24% in 2012). This fragmentation has reduced the accessibility and efficiency in SBC while </span><span style="line-height: 1.6;">increasing overall costs for property owners raising funds.</span></p>
+<p>                                          <img alt="" class="media-image attr__typeof__foaf:Image img__fid__29020 img__view_mode__media_original attr__format__media_original" height="707" src="https://www.realtymogul.com/sites/default/files/picture1f.png" typeof="foaf:Image" width="764" /></p>
+<p>                                       <img alt="" class="media-image attr__typeof__foaf:Image img__fid__28877 img__view_mode__media_large attr__format__media_large" height="270" src="https://www.realtymogul.com/sites/default/files/styles/large/public/3.png?itok=FVM9lhRq" typeof="foaf:Image" width="480" /></p>
+<p>Upon further analysis, the opportunity for SBC appears more compelling, as the price gap between large and small properties is the widest it has been in the last eight years, dating back to the last market peak. This means that while large properties recovered at a rapid pace since the crisis, small properties did not keep up. In fact, as of November 2015, prices for significant assets were 29.3% higher than SBC assets, a very wide gap in the context of the last eight years.</p>
+<p>                                            <img alt="" class="media-image attr__typeof__foaf:Image img__fid__28878 img__view_mode__media_large attr__format__media_large" height="303" src="https://www.realtymogul.com/sites/default/files/styles/large/public/4.png?itok=htminfV-" typeof="foaf:Image" width="435" /></p>
+<p>Sales of SBC properties also hit a relative peak in 2015, reaching $93 million and pushing demand up not only for SBC debt, but also SBC equity.</p>
+<p><span style="color:#000000;"><strong>This opportunity is expanded further by changes in the private equity fund market.</strong></span></p>
+<p align="left">Concentration of fundraising among the largest private equity funds has increased the difficulty for real estate companies to raise equity or mezzanine investments of less than $10 million.</p>
+<p align="left">One of the responses to the 2008 recession, according to a Prequin Global Private Equity Report, has been growth in the average size of investment funds. This was driven by large investors’ recent tendency to invest more of their capital with managers that have extensive track records, which has contributed to the raising of much larger funds. In 2014, funds with assets under management of $1.5 billion or more accounted for 58% of all private equity capital raised, while first-time managers accounted for only 7% of capital raised, and the average fund size hit a record of greater than $600 million. As larger funds typically focused on larger deals in order to deploy their capital fully and effectively, it became more difficult for real estate companies to raise capital in amounts less than $10 million.</p>
+<p align="left">                                                <img alt="" class="media-image attr__typeof__foaf:Image img__fid__28879 img__view_mode__media_large attr__format__media_large" height="338" src="https://www.realtymogul.com/sites/default/files/styles/large/public/7.jpg?itok=tWAYnbb4" typeof="foaf:Image" width="408" /></p>
+<p><strong>There is currently an opportunity in secondary and tertiary markets across the U.S.</strong></p>
+<p>The Moody’s/RCA Major Markets (MM) Index that includes commercial/multi-family transactions indicates that the six gateway cities of New York, Los Angeles, San Francisco, Chicago, Boston and Washington, DC have recovered 115.1% from their low and, as of August 2015, were 32.5% above the pre-financial crisis peak level of December 2007. This rate of growth would indicate price peaks approaching or having peaked in the major markets. In contrast, the Non Major Market (NMM) Index from Moody’s/RCA suggests that asset prices in secondary and tertiary markets are recovering at a more reasonable rate, consistent with national demand fundamentals. The NMM index increased 12.9% from August 2014 to August 2015 and cumulatively has regained 72.5% of its losses since the market peak of December 2007.</p>
+<p>Similar to the observed recovery gap between small and large properties across the U.S., there appears to be a recovery gap between major and non-major markets.</p>
+<p>                                         <img alt="" class="media-image attr__typeof__foaf:Image img__fid__28880 img__view_mode__media_large attr__format__media_large" height="382" src="https://www.realtymogul.com/sites/default/files/styles/large/public/8.png?itok=ZrBnDfJi" typeof="foaf:Image" width="480" /></p>
+<p>This is further supported by the delta between capitalization rates in Major Markets as compared to Non Major Markets. The chart below illustrates the gap between capitalization rates between real estate in NMM and MM, which are selling at a higher capitalization rate (the equivalent of a price premium).</p>
+<p>                                          <img alt="" class="media-image attr__typeof__foaf:Image img__fid__28881 img__view_mode__media_large attr__format__media_large" height="384" src="https://www.realtymogul.com/sites/default/files/styles/large/public/9.png?itok=k5D74WJ0" typeof="foaf:Image" width="480" /></p>
+<p>Despite the difference in capitalization rates and pricing, Non Major Markets are yielding similar returns to Major Markets and the overall market, indicating a premium in cost of financing and the creation of a potential opportunity.</p>
+<p>                                          <img alt="" class="media-image attr__typeof__foaf:Image img__fid__28882 img__view_mode__media_large attr__format__media_large" height="384" src="https://www.realtymogul.com/sites/default/files/styles/large/public/10.png?itok=_GhAzFGA" typeof="foaf:Image" width="480" /></p>
+<p><span style="font-size:12px;">Note: The foregoing statements may contain forward-looking statements and are based upon our current expectations, plans, estimates, assumptions and beliefs that involve numerous risks and uncertainties.  Although we believe that the expectations reflected in such forward-looking statements are based on reasonable assumptions, actual results and performance could differ materially from those set forth in the forward-looking statements.</span></p>
+</div></div></div>  </div>
+        <div class="io-equity-main__section io-equity-investment-main__risk-mitigants">
+    <div class="ctools-collapsible-container ctools-collapsed"><div class="ctools-collapsible-handle">Risk Factors</div><div class="ctools-collapsible-content"><div class="field-content"><p><span style="line-height: 1.6;">Investing in the Fund's common shares is speculative and involves substantial risks. The Fund</span><span style="line-height: 20.8px;"> cannot assure you that The Fund will attain the its objectives or that the value of the Fund's assets will not decrease. Therefore, y</span><span style="line-height: 1.6;">ou should purchase these securities only if you can afford a complete loss of your investment. </span></p>
+<p><span style="line-height: 1.6;">You should carefully review the “Risk Factors” section of this </span><a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular.pdf" style="line-height: 1.6;" target="_blank">offering circular</a><span style="line-height: 1.6;">, beginning on page 29, which contains a detailed discussion of the material risks that you should consider before you invest in our common shares. These risks include the following:</span></p>
+<ul><li><span style="line-height: 1.6;">MogulREIT I has no prior operating history.</span></li>
+<li><span style="line-height: 1.6;">The Fund's ability to implement its investment strategy is dependent, in part, upon its ability to successfully </span><span style="line-height: 1.6;">conduct this offering through the Realty Mogul Platform, which makes an investment in the Fund more speculative.</span></li>
+<li><span style="line-height: 1.6;">This is a blind pool offering, and the Fund is not committed to acquiring any particular investments with the net proceeds of this offering.</span></li>
+<li><span style="line-height: 1.6;">There are conflicts of interest between the Fund, its Manager and its affiliates.</span></li>
+<li><span style="line-height: 1.6;">Failure to qualify as a REIT would cause the Fund to be taxed as a regular corporation, which would substantially reduce funds available for distributions to our shareholders.</span></li>
+<li><span style="line-height: 1.6;">The Fund may allocate the net proceeds from this offering to investments with which you may not agree.</span></li>
+</ul></div></div></div>    </div>
+  
+</div>
+
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div  id="quicktabs-tabpage-io_fund_details-3" class="quicktabs-tabpage quicktabs-hide"><div class="view view-io-fund-details view-id-io_fund_details view-display-id-assets view-dom-id-8260803a172719ae6f49cf50cba2dcb6">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="io-equity-main io-equity-assets-main">
+
+  <h2>MogulREIT I Assets</h2>
+      <div class="io-equity-main__section">
+      <div class="io-equity-main__section-content io-equity-padding-left-right--20">
+        <div class="field field-name-field-assets-description field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><span style="line-height: 20.8px;">The following describes assets that </span>MogulREIT I<span style="line-height: 20.8px;"> has acquired. It does not include any investments made with idle cash in liquid real-estate related securities.</span></p>
+</div></div></div>      </div>
+    </div>
+  
+      <div class="io-equity-main__section io-equity-property-main__assets">
+      <div class="io-equity-main__section-content assets__property-list">
+        <div class="view view-asset view-id-asset view-display-id-teasers view-dom-id-06717425ed4c9e305ec390be38165566">
+        
+  
+  
+      <div class="view-content">
+        <div>
+    <div class="assets__property-item" data-entityid="4">
+    <!-- image container -->
+    <div class="assets__image-container">
+     <!-- image -->
+              <div class="assets__property-image">
+          <a class="colorbox-load" data-track="click" data-rm-analytics-description="IO Fund - Assets - Card image" data-rm-analytics-entityid="4" href="/rm_asset/4/modal?width=100%25&amp;height=100%25&amp;scrolling=true&amp;opacity=.5&amp;className=asset-modal"><div class="field field-name-field-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/io_browse_page/public/synchrony_pic_2.jpeg?itok=zfLfUN-N" width="600" height="400" alt="" /></div></div></div></a>        </div>
+            <!-- image -->
+    </div>
+    <!-- /image-container -->
+
+    <div class="assets__content-container">
+
+      <!-- property title -->
+      <div class="assets__property-title">
+        <span class="field-content"><a class="colorbox-load" data-track="click" data-rm-analytics-description="IO Fund - Assets - Card title" data-rm-analytics-entityid="4" href="/rm_asset/4/modal?width=100%25&amp;height=100%25&amp;scrolling=true&amp;opacity=.5&amp;className=asset-modal">Synchrony Financial Office</a></span>      </div>
+      <!-- /property title -->
+
+      <!-- property blurb -->
+      <div class="assets__property-blurb">
+              <div class="field field-name-field-blurb field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">100% Leased Office Building With Long Term Lease</div></div></div>            </div>
+      <!-- /property blurb -->
+
+      <!-- field details -->
+
+      <!-- amount invested -->
+              <div class="assets__property-field-group">
+          <div class="assets__property-field-label">Amount Invested</div>
+          <div class="assets__property-field-value">
+            <div class="field field-name-field-amount-invested field-type-number-decimal field-label-hidden"><div class="field-items"><div class="field-item even">$2,000,000.00</div></div></div>          </div>
+        </div>
+            <!-- /amount invested -->
+
+      <!-- investment type -->
+              <div class="assets__property-field-group">
+          <div class="assets__property-field-label">Investment Type</div>
+          <div class="assets__property-field-value">
+            <div class="field field-name-field-asset-investment-type field-type-list-text field-label-hidden"><div class="field-items"><div class="field-item even">Preferred Equity</div></div></div>          </div>
+        </div>
+            <!-- /investment type -->
+
+      <!-- property type -->
+              <div class="assets__property-field-group">
+          <div class="assets__property-field-label">Property Type</div>
+          <div class="assets__property-field-value"><div class="field field-name-field-property-type field-type-list-text field-label-hidden"><div class="field-items"><div class="field-item even">Office</div></div></div></div>
+        </div>
+            <!-- /property type -->
+
+      <!-- location -->
+              <div class="assets__property-field-group">
+          <div class="assets__property-field-label">Location</div>
+          <div class="assets__property-field-value"><div class="field field-name-field-address field-type-addressfield field-label-hidden"><div class="field-items"><div class="field-item even"><span class="addressfield-citystate">Canton, OH</span></div></div></div></div>
+        </div>
+            <!-- /location -->
+
+      <!-- field details -->
+    </div>
+
+    <!-- /assets__content-container -->
+
+    <!-- smart button -->
+    <div class="assets_details-button"><a data-track="click" data-rm-analytics-entityid="4" data-rm-analytics-description="IO Fund - Assets - View details" class="button colorbox-load" href="/rm_asset/4/modal?width=100%25&height=100%25&scrolling=true&opacity=.5&className=asset-modal">View Details</a></div>
+    <!-- smart button -->
+
+</div>
+<!-- /assets__property -->
+  </div>
+  <div>
+    <div class="assets__property-item" data-entityid="5">
+    <!-- image container -->
+    <div class="assets__image-container">
+     <!-- image -->
+              <div class="assets__property-image">
+          <a class="colorbox-load" data-track="click" data-rm-analytics-description="IO Fund - Assets - Card image" data-rm-analytics-entityid="5" href="/rm_asset/5/modal?width=100%25&amp;height=100%25&amp;scrolling=true&amp;opacity=.5&amp;className=asset-modal"><div class="field field-name-field-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/io_browse_page/public/ca_self_storage_0.png?itok=r-SojzrG" width="600" height="400" alt="" /></div></div></div></a>        </div>
+            <!-- image -->
+    </div>
+    <!-- /image-container -->
+
+    <div class="assets__content-container">
+
+      <!-- property title -->
+      <div class="assets__property-title">
+        <span class="field-content"><a class="colorbox-load" data-track="click" data-rm-analytics-description="IO Fund - Assets - Card title" data-rm-analytics-entityid="5" href="/rm_asset/5/modal?width=100%25&amp;height=100%25&amp;scrolling=true&amp;opacity=.5&amp;className=asset-modal">California Self-Storage Facility</a></span>      </div>
+      <!-- /property title -->
+
+      <!-- property blurb -->
+      <div class="assets__property-blurb">
+              <div class="field field-name-field-blurb field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Self-storage conversion in high-occupancy market</div></div></div>            </div>
+      <!-- /property blurb -->
+
+      <!-- field details -->
+
+      <!-- amount invested -->
+              <div class="assets__property-field-group">
+          <div class="assets__property-field-label">Amount Invested</div>
+          <div class="assets__property-field-value">
+            <div class="field field-name-field-amount-invested field-type-number-decimal field-label-hidden"><div class="field-items"><div class="field-item even">$3,915,000.00</div></div></div>          </div>
+        </div>
+            <!-- /amount invested -->
+
+      <!-- investment type -->
+              <div class="assets__property-field-group">
+          <div class="assets__property-field-label">Investment Type</div>
+          <div class="assets__property-field-value">
+            <div class="field field-name-field-asset-investment-type field-type-list-text field-label-hidden"><div class="field-items"><div class="field-item even">Mezzanine Debt</div></div></div>          </div>
+        </div>
+            <!-- /investment type -->
+
+      <!-- property type -->
+              <div class="assets__property-field-group">
+          <div class="assets__property-field-label">Property Type</div>
+          <div class="assets__property-field-value"><div class="field field-name-field-property-type field-type-list-text field-label-hidden"><div class="field-items"><div class="field-item even">Self-storage</div></div></div></div>
+        </div>
+            <!-- /property type -->
+
+      <!-- location -->
+              <div class="assets__property-field-group">
+          <div class="assets__property-field-label">Location</div>
+          <div class="assets__property-field-value"><div class="field field-name-field-address field-type-addressfield field-label-hidden"><div class="field-items"><div class="field-item even"><span class="addressfield-citystate">Garden Grove, CA</span></div></div></div></div>
+        </div>
+            <!-- /location -->
+
+      <!-- field details -->
+    </div>
+
+    <!-- /assets__content-container -->
+
+    <!-- smart button -->
+    <div class="assets_details-button"><a data-track="click" data-rm-analytics-entityid="5" data-rm-analytics-description="IO Fund - Assets - View details" class="button colorbox-load" href="/rm_asset/5/modal?width=100%25&height=100%25&scrolling=true&opacity=.5&className=asset-modal">View Details</a></div>
+    <!-- smart button -->
+
+</div>
+<!-- /assets__property -->
+  </div>
+  <div>
+    <div class="assets__property-item placeholder count-2 three-false placeholder-0 even"></div>  </div>
+  <div>
+    <div class="assets__property-item placeholder count-2 three-false placeholder-1 even"></div>  </div>
+  <div>
+    <div class="assets__property-item placeholder count-2 three-false placeholder-2 even"></div>  </div>
+  <div>
+    <div class="assets__property-item placeholder count-2 three-false placeholder-3 even"></div>  </div>
+  <div>
+    <div class="assets__property-item placeholder count-2 three-false placeholder-4 even"></div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>      </div>
+    </div>
+  
+      <div class="io-equity-main__section io-equity-property-main__disclaimer">
+      <div class="io-equity-main__section-content io-equity-padding-left-right--20">
+        <div class="field field-name-field-assets-disclaimer field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><span style="font-family:arial,helvetica,sans-serif;">For additional details around asset acquisitions please visit the <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular.pdf" target="_blank">offering circular</a> or this <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_oc_supplement_02_20160824.pdf" target="_blank">supplement</a>.</span></p>
+</div></div></div>      </div>
+    </div>
+  
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div  id="quicktabs-tabpage-io_fund_details-4" class="quicktabs-tabpage quicktabs-hide"><div class="view view-io-fund-details view-id-io_fund_details view-display-id-management view-dom-id-64fee35540daeea6f98c575aa8d7f017">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="io-equity-company"><div class="io-equity-main"><h2 class="io-equity-company__name">RM Adviser</h2><div class="io-equity-padding-left-right--20"><h3>Overview</h3>
+                          <div class="io-equity-company__body"><p>MogulREIT I is managed by RM Adviser, LLC, a SEC registered investment adviser and a wholly-owned subsidiary of Realty Mogul, Co. </p>
+<p>RM Adviser, which manages MogulREIT’s day-to-day operations, will have access to Realty Mogul’s deep team of real estate and finance professionals and will leverage their collective experience in originating, underwriting, and servicing billions of dollars in real estate-related assets over the course of their careers.</p>
+<p>This team will make all the decisions regarding the selection, negotiation, financing and disposition of the Fund’s investments, subject to the limitations in the LLC Agreement and the Offering Circular. It will also structure, underwrite and originate many of the products in which the Fund will invest, as this provides for the best opportunity to control borrower and partner relationships and optimize the terms of the Fund’s investments. Finally, it will also provide asset management, marketing, investor relations and other administrative services on behalf of MogulREIT I, with the goal of maximizing its cash dividends and preserving its invested capital.</p>
+<p>MogulREIT I and RM Adviser will have access to the entire executive bench of Realty Mogul, Co. You can find further information about Realty Mogul, Co. and its leadership team on its website bios <a href="https://www.realtymogul.com/about-us" target="_blank">here</a>.</p>
+</div><a href="/" class="io-equity-company__link" target="_blank"></a></div></div><div class="io-equity-sideblock io-equity-management-sideblock">
+              <div class="io-equity-sideblock__row--header">Management</div><div class="io-equity-sideblock__row io-equity-management-sideblock__company_logo">
+        
+  
+  
+      
+        
+      
+          <img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/350_wide/public/rm_adviser_llc-02.jpg?itok=lWPLTEQ0" width="350" height="62" alt="" />    
+    
+  
+  
+  
+  
+  
+  
+</div><div class="io-equity-sideblock__row io-equity-management-sideblock__teaser">
+                <div class="io-equity-sideblock__cell io-equity-management-sideblock__teaser-photo"><a href="/?inline=true#team-member-modal-211492" data-team-member-modal="team-member-modal-211492" class="colorbox-inline colorbox-io-equity-team-member"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/jilliene_helman_headshot_1.jpg?itok=lL-rhOlU" width="180" height="180" alt="" /></a></div>
+                <div class="io-equity-sideblock__cell  io-equity-management-sideblock__teaser-name">Jilliene Helman<br><span class="io-equity-management-sideblock__teaser--job-title">Chief Executive Officer</span></div>
+                
+              </div><div id="team-member-modal-211492" class="hidden io-equity-team-member__modal">
+                <div class="io-equity-team-member__modal-left"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/jilliene_helman_headshot_1.jpg?itok=lL-rhOlU" width="180" height="180" alt="" /></div>
+                <div class="io-equity-team-member__modal-right">
+                  <h3 class="io-equity-team-member__modal-name">Jilliene Helman</h3><div class="io-equity-team-member__modal-job-title">Chief Executive Officer</div>
+                  <div class="io-equity-team-member__modal-body"><p>Jilliene Helman serves as RM Adviser's Chief Executive Officer. Since May 2012, Ms. Helman has served as the Chief Executive Officer and a director of Realty Mogul, Co., where she is responsible for Realty Mogul, Co.’s strategic direction and operations. In this capacity, she has approved over $200 million of investments with property values worth over $800 million. From July 2008 to September 2012, Ms. Helman served in a variety of capacities at Union Bank, including as a Management Training Associate; an Assistant Vice President, Sales Development Manager; and Vice President, Corporate Risk Management. Ms. Helman held these positions across the wealth management, finance and risk management departments of Union Bank. Ms. Helman is a Certified Wealth Strategist and holds Series 7, Series 63 and Series 24 licenses. Ms. Helman has a Bachelor of Science in Business Administration degree from Georgetown University.​</p>
+<p>Jilliene is a member of RM Adviser's initial Investment Committee. </p>
+</div></div>
+              </div><div class="io-equity-sideblock__row io-equity-management-sideblock__teaser">
+                <div class="io-equity-sideblock__cell io-equity-management-sideblock__teaser-photo"><a href="/?inline=true#team-member-modal-211493" data-team-member-modal="team-member-modal-211493" class="colorbox-inline colorbox-io-equity-team-member"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/elizabeth_braman.jpg?itok=zOx-sgXb" width="180" height="180" alt="" /></a></div>
+                <div class="io-equity-sideblock__cell  io-equity-management-sideblock__teaser-name">Elizabeth Braman<br><span class="io-equity-management-sideblock__teaser--job-title">Chief Production Officer</span></div>
+                
+              </div><div id="team-member-modal-211493" class="hidden io-equity-team-member__modal">
+                <div class="io-equity-team-member__modal-left"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/elizabeth_braman.jpg?itok=zOx-sgXb" width="180" height="180" alt="" /></div>
+                <div class="io-equity-team-member__modal-right">
+                  <h3 class="io-equity-team-member__modal-name">Elizabeth Braman</h3><div class="io-equity-team-member__modal-job-title">Chief Production Officer</div>
+                  <div class="io-equity-team-member__modal-body"><p>Elizabeth Braman serves as RM Adviser's Chief Production Officer. Since May 2014, Ms. Braman has served as the Chief Production Officer of Realty Mogul, Co., where she is responsible for procuring new products and bringing new equity and debt investment opportunities to the Realty Mogul Platform. From November 2012 to May 2014, Ms. Braman served as Chief Production Officer at ReadyCap Commercial, a provider of small-balance commercial real estate financing backed by Waterfall Asset Management, a firm with $5.4 billion in assets under management, where she headed originations. From May 2011 to October 2012, Ms. Braman served as a Senior Vice President, Commercial Lending at Skyline Financial Corp., a mortgage banking and brokerage firm. Ms. Braman is a Certified Commercial Investment Member (CCIM) and a licensed attorney. Ms. Braman has more than 15 years of experience in commercial real estate. Ms. Braman has a Bachelor of Arts degree from American University and a Master of Business Administration and a Juris Doctor degree from George Washington University.</p>
+<p>Elizabeth is a member of RM Adviser's initial Investment Committee. </p>
+</div></div>
+              </div><div class="io-equity-sideblock__row io-equity-management-sideblock__teaser">
+                <div class="io-equity-sideblock__cell io-equity-management-sideblock__teaser-photo"><a href="/?inline=true#team-member-modal-211530" data-team-member-modal="team-member-modal-211530" class="colorbox-inline colorbox-io-equity-team-member"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/i-87w7f8s-x2_1.jpg?itok=sV6AliSd" width="180" height="180" alt="" /></a></div>
+                <div class="io-equity-sideblock__cell  io-equity-management-sideblock__teaser-name">Karen Fleck<br><span class="io-equity-management-sideblock__teaser--job-title">Chief Financial Officer</span></div>
+                
+              </div><div id="team-member-modal-211530" class="hidden io-equity-team-member__modal">
+                <div class="io-equity-team-member__modal-left"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/i-87w7f8s-x2_1.jpg?itok=sV6AliSd" width="180" height="180" alt="" /></div>
+                <div class="io-equity-team-member__modal-right">
+                  <h3 class="io-equity-team-member__modal-name">Karen Fleck</h3><div class="io-equity-team-member__modal-job-title">Chief Financial Officer</div>
+                  <div class="io-equity-team-member__modal-body"><p>Karen Fleck serves as RM Adviser's Chief Financial Officer. Since May 2016, Ms. Fleck has served as the Senior Vice President of Realty Mogul, Co. From March 2015 through May 2016, Ms. Fleck was the Controller of Realty Mogul, Co. From March 2011 to March 2015, Ms. Fleck served as the Chief Financial Officer of American Assets Investment Management, LLC and American Assets Capital Advisers, LLC, which are both Registered Investment Advisors, and American Assets, Inc., an investment holding company. At these companies, she was responsible for financial management and accounting. Prior to joining American Assets, Inc., Ms. Fleck served as a supervisor at RSM US LLP where she worked for a wide range of audit clients, including public company clients registered with the SEC, and oversaw many complex areas of GAAP accounting. Ms. Fleck is a Certified Public Accountant. Ms. Fleck has a Bachelor of Science degree and a Master of Science in Accounting degree from the University of Connecticut.</p>
+</div></div>
+              </div><div class="io-equity-sideblock__row io-equity-management-sideblock__teaser">
+                <div class="io-equity-sideblock__cell io-equity-management-sideblock__teaser-photo"><a href="/?inline=true#team-member-modal-211531" data-team-member-modal="team-member-modal-211531" class="colorbox-inline colorbox-io-equity-team-member"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/ggsgsdg_1.jpg?itok=mhPDH7LL" width="180" height="180" alt="" /></a></div>
+                <div class="io-equity-sideblock__cell  io-equity-management-sideblock__teaser-name">Ryan Sakamoto<br><span class="io-equity-management-sideblock__teaser--job-title">General Counsel </span></div>
+                
+              </div><div id="team-member-modal-211531" class="hidden io-equity-team-member__modal">
+                <div class="io-equity-team-member__modal-left"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/ggsgsdg_1.jpg?itok=mhPDH7LL" width="180" height="180" alt="" /></div>
+                <div class="io-equity-team-member__modal-right">
+                  <h3 class="io-equity-team-member__modal-name">Ryan Sakamoto</h3><div class="io-equity-team-member__modal-job-title">General Counsel </div>
+                  <div class="io-equity-team-member__modal-body"><p>Ryan Sakamoto serves as RM Adviser's General Counsel and Secretary. Since June 2015, Mr. Sakamoto has served as the General Counsel of Realty Mogul, Co., where he is responsible for managing all legal and regulatory matters. Mr. Sakamoto has more than 18 years of experience as an attorney, and has been the lead in-house attorney for companies in the financial services and technology industries for the last decade. From October 2011 to June 2015, Mr. Sakamoto was the General Counsel and Chief Administrative Officer at Wedbush, Inc., a diversified financial services and investment firm, which provides private and institutional brokerage, investment banking, equity research, fixed income, public finance, correspondent clearing, and asset management services to its clients through a registered broker-dealer and two registered investment advisers. From June 2006 to October 2011, Mr. Sakamoto served as Senior Vice President, General Counsel and Secretary of Madison Tyler Holdings, LLC, an electronic trading firm. Earlier in his career, Mr. Sakamoto practiced corporate and securities law at Riordan &amp; McKinzie and McDermott Will &amp; Emery. Mr. Sakamoto has a Bachelor of Arts degree, magna cum laude, from Harvard College, a Master of Business Administration degree from the University of California, Los Angeles and a Juris Doctor degree from the University of California, Berkeley’s Boalt Hall School of Law.</p>
+</div></div>
+              </div><div class="io-equity-sideblock__row io-equity-management-sideblock__teaser">
+                <div class="io-equity-sideblock__cell io-equity-management-sideblock__teaser-photo"><a href="/?inline=true#team-member-modal-211532" data-team-member-modal="team-member-modal-211532" class="colorbox-inline colorbox-io-equity-team-member"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/sagadgadg.jpg?itok=iOUEDRcj" width="180" height="180" alt="" /></a></div>
+                <div class="io-equity-sideblock__cell  io-equity-management-sideblock__teaser-name">Justin Hughes<br><span class="io-equity-management-sideblock__teaser--job-title">Chief Technology Officer</span></div>
+                
+              </div><div id="team-member-modal-211532" class="hidden io-equity-team-member__modal">
+                <div class="io-equity-team-member__modal-left"><img typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/styles/180x180_crop_from_top/public/sagadgadg.jpg?itok=iOUEDRcj" width="180" height="180" alt="" /></div>
+                <div class="io-equity-team-member__modal-right">
+                  <h3 class="io-equity-team-member__modal-name">Justin Hughes</h3><div class="io-equity-team-member__modal-job-title">Chief Technology Officer</div>
+                  <div class="io-equity-team-member__modal-body"><p>Justin Hughes serves as RM Adviser's Chief Technology Officer. Since May 2012, Mr. Hughes has served as the Chief Technology Officer and a director of Realty Mogul, Co. From September 2007 to May 2012, Mr. Hughes was an independent contractor supporting his clients with web application development, digital marketing and other IT-related services. Mr. Hughes is a licensed real estate professional in California. Mr. Hughes holds Series 7, Series 63 and Series 24 licenses. Mr. Hughes has a Bachelor of Science degree from the University of California, Berkeley.</p>
+</div></div>
+              </div></div></div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div  id="quicktabs-tabpage-io_fund_details-5" class="quicktabs-tabpage quicktabs-hide"><div class="view view-io-fund-details view-id-io_fund_details view-display-id-financials view-dom-id-7e9676e9543566eb19598600671d6826">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="io-equity-main io-equity-financials-main">
+    <div class="io-equity-main__section io-equity-financials-main__source-and-uses">
+  <div class="ctools-collapsible-container"><div class="ctools-collapsible-handle">Estimated Use of Proceeds</div><div class="ctools-collapsible-content"><div class="field-content"><p>​​<span style="line-height: 22.4px;">The table below describes the Fund’s estimated use of proceeds, assuming it raises the maximum offering amount of $50,000,000:</span></p>
+<p><img alt="" class="media-image attr__typeof__foaf:Image img__fid__28954 img__view_mode__media_original attr__format__media_original" height="302" src="https://www.realtymogul.com/sites/default/files/use_of_proceeds_1.jpg" typeof="foaf:Image" width="644" /></p>
+<p style="line-height: 20.8px;"><span style="font-size: 12px;">1 This is a "best efforts" offering. All estimates based on maximum offering amount.</span></p>
+<p style="line-height: 20.8px;"><span style="font-size: 12px;">2  3 Estimated maximum. For a breakdown of this amount and plan of payment/reimbursement, please visit</span><span style="font-size: 12px; line-height: 1.6;"> the </span><a href="http://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular.pdf" style="font-size: 12px; line-height: 1.6;" target="_blank">offering circular</a><span style="font-size: 12px; line-height: 1.6;">.</span></p>
+<p style="line-height: 20.8px;"><span style="font-size: 12px;">4 Investment made by RM Sponsor, the Fund's affiliate.</span></p>
+<p><span style="font-size:12px;">To learn more about the Fund's estimated use of proceeds, expenses, costs, and fees, please refer to our full <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank">o</a><a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular.pdf" target="_blank">ffering circular</a><a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank"> </a></span></p>
+</div></div></div>  </div>
+  
+    <div class="io-equity-main__section io-equity-financials-main__distributions">
+    <div class="ctools-collapsible-container ctools-collapsed"><div class="ctools-collapsible-handle">Distributions</div><div class="ctools-collapsible-content"><div class="field-content"><p>The Fund's goal is to generate returns in the form of income through quarterly distributions and capital growth through increases in its Net Asset Value ("NAV") per share. Over the course of your investment, your distributions plus the change in NAV per share (either positive or negative), less any applicable redemption fees, will produce your total return.</p>
+<ul><li>Distributions are expected to be paid quarterly starting the first quarter of 2017; however, the Fund's Manager may declare other periodic distributions as circumstances dictate.</li>
+<li>Distributions will be paid to shareholders as of the record dates selected by the Fund's Manager.</li>
+<li>Any distributions the Fund makes will be at the discretion of its Manager, and will be based on, among other factors, its present and reasonably projected future cash flow, REIT distribution requirements, and additional Fund tax considerations.</li>
+<li>Any distributions made will directly impact the Fund's Net Asset Value (“NAV”), by reducing the amount of our assets.</li>
+<li>REIT distributions may be treated as ordinary income, capital gains, and/or return of capital for tax purposes, each of which may be taxed at a different rate for different investors. Because each investor’s tax considerations are different, it is recommended that you consult with your tax advisor.  You also should review the section of this <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank">offering circular</a> entitled “U.S. Federal Income Tax Considerations,” including for a discussion of the special rules applicable to distributions in redemption of shares and liquidating distributions.</li>
+</ul></div></div></div>  </div>
+  
+    <div class="io-equity-main__section io-equity-financials-main__distributions">
+    <div class="ctools-collapsible-container ctools-collapsed"><div class="ctools-collapsible-handle">Liquidity</div><div class="ctools-collapsible-content"><div class="field field-name-field-liquidity-long field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>While you should view your investment as long-term, we have adopted a redemption plan, whereby shareholders may require that we redeem up to 25% of their shares quarterly while this offering is ongoing. During the first 3 years of our operation (following the record date of the first purchase of common shares by a person other than our Sponsor), the per share redemption price will be calculated based on the lesser of $9.50 or the most current NAV per share value. Beginning on the third anniversary of our operation, the per share redemption price will be calculated based on the most current NAV per share value. Shares may not be redeemed until they have been held for at least six months.</p>
+<p>The redemption price will be subject to the following price discounts depending upon when the shares are redeemed:</p>
+<p></p><div class="media media-element-container media-media_original"><div id="file-29494" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/file/mr1redemptionjpg">mr1_redemption.jpg</a></h2>
+    
+  
+  <div class="content">
+    <img height="376" width="644" class="media-element file-media-original" typeof="foaf:Image" src="https://www.realtymogul.com/sites/default/files/mr1_redemption.jpg" alt="" title="" /></div>
+
+  
+</div>
+</div>
+<ul><li>There is no regular trading market for the Fund's shares.</li>
+<li>There are limitations on number of shares that could be redeemed during a quarter.​ Additionally, there is no guarantee that the funds set aside for the redemption plan will be sufficient to accommodate all requests made in any quarter.</li>
+<li>For more information about MogulREIT I's redemption plan or to submit a redemption request, please email <a href="mailto:MogulREITI@realtymogul.com">MogulREITI@realtymogul.com</a>.</li>
+</ul><p><span style="font-size:12px;">To learn more about MogulREIT I's redemption plan, please refer to the full <a href="http://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank">offering circular</a>.</span></p>
+</div></div></div></div></div>  </div>
+  
+  
+  <div class="io-equity-main__section io-equity-financials-main__fees">
+    <div class="ctools-collapsible-container ctools-collapsed"><div class="ctools-collapsible-handle">Management Compensation and Other Fees</div><div class="ctools-collapsible-content"><div class="field-content"><div><span style="line-height: 20.8px;">The items below summarize the full compensation and fees table available in the </span><a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" style="line-height: 20.8px;" target="_blank">offering circular</a><span style="line-height: 20.8px;">.</span></div>
+<p> </p>
+<ul><li><span style="color: rgb(44, 45, 48); line-height: 22px; widows: 1;">There are no upfront selling commissions charged to the Fund or its investors. A Realty Mogul affiliate will pay a sales commission of 0.33% to North Capital Private Securities ("NCPS"), a third party broker-dealer. A portion of that commission will be paid to employees of Realty Mogul who are registered representatives of NCPS.</span><span style="color: rgb(34, 34, 34); line-height: 20.8px; text-align: justify;"> </span></li>
+<li><span style="color: rgb(34, 34, 34); line-height: 20.8px; text-align: justify;">Organizational and offering costs are estimated to be between $300,000 and $1,500,000.</span></li>
+<li><span style="color: rgb(34, 34, 34); line-height: 20.8px; text-align: justify;">MogulREIT I will pay its Manager a quarterly asset management fee at an annualized rate of 1% payable in arrears. </span></li>
+<li><span style="color: rgb(34, 34, 34); line-height: 20.8px; text-align: justify;">For loans in the Fund, Realty Mogul or one of its affiliates that originates the loan will be paid a servicing fee of 0.5% of the original value of the asset for performing loans.  </span></li>
+<li><span style="color: rgb(34, 34, 34); line-height: 20.8px; text-align: justify;">If a loan is or becomes non-performing, an additional special servicing fee equal to an annualized rate of 1% of the original value of the asset for non-performing loans will be paid to Realty Mogul or its affiliate in addition to any third party special servicing expenses. </span></li>
+<li><span style="color: rgb(34, 34, 34); line-height: 20.8px; text-align: justify;">Acquisition and origination fees will be paid directly by borrowers, sponsors, or issuers to Realty Mogul, one of its affiliates, or a third party broker dealer. </span></li>
+<li><span style="color: rgb(34, 34, 34); line-height: 20.8px; text-align: justify;">Other operating expenses will be incurred by or paid by the Fund.</span></li>
+</ul><p class="rtejustify"><span style="font-size:12px;"><span style="line-height: 17.6px;">To learn more about our estimated use of proceeds, and </span>MogulREIT<span style="line-height: 17.6px;"> I's estimated expenses, costs, and fees, please refer to our full </span><a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" style="font-size: 11px; line-height: 17.6px;" target="_blank">o</a><a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular.pdf" style="font-size: 11px; line-height: 17.6px;" target="_blank">ffering circular</a><a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" style="font-size: 11px; line-height: 17.6px;" target="_blank"> </a></span></p>
+</div></div></div>  </div>
+  
+
+</div>
+
+	<div class="io-equity-sideblock io-equity-financials-sideblock">
+		<div class="io-equity-sideblock__row--header">Documents</div>
+			<div class="io-equity-sideblock__row io-equity-sideblock__row--first">
+				<div class="io-equity-sideblock__row_value">
+					<div class="field-content"><div class="item-list"><ul><li class="first"><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_subscription_agreement.pdf" type="application/pdf; length=215232" data-fid="29221" target="_blank" title="mr1_subscription_agreement.pdf">Subscription Agreement (PDF)</a></span></li><li><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_operating_agreement.pdf" type="application/pdf; length=2972583" data-fid="29223" target="_blank" title="mr1_operating_agreement.pdf">Operating Agreement (PDF)</a></span></li><li><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_oc_supplement_01_20160823.pdf" type="application/pdf; length=71886" data-fid="29492" target="_blank" title="mr1_oc_supplement_01_20160823.pdf">Offering Circular Supplement #1 8-23-16 (PDF)</a></span></li><li class="last"><span class="file"><img class="file-icon" alt="" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_oc_supplement_02_20160824.pdf" type="application/pdf; length=118194" data-fid="29612" target="_blank" title="mr1_oc_supplement_02_20160824.pdf">Offering Circular Supplement #2 8-24-16 (PDF)</a></span></li></ul></div></div>				</div>
+			</div>
+	</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div  id="quicktabs-tabpage-io_fund_details-6" class="quicktabs-tabpage quicktabs-hide"><div class="view view-io-fund-details view-id-io_fund_details view-display-id-faq view-dom-id-84c9f79ef1d33582a22553d6063fbd72">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="io-equity-main io-equity-faq-main">
+
+      <div class="io-equity-main__section io-equity-faq__investor-faq">
+      <h2>Investor Questions</h2>
+      <div class="io-equity-main__section-content io-equity-padding-left-right--20">
+        <div class="field-content">No questions have yet been asked.</div>      </div>
+    </div>
+  
+  <div class="io-equity-main__section io-equity-faq__general-faq">
+    <h2>General Questions</h2>
+    <div class="io-equity-main__section-content io-equity-padding-left-right--20">
+      <div class="accordion">
+<h3 class="question"><a href="#">What is Mogul REIT I?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">MogulREIT I is a limited liability company formed to invest in and manage a diversified portfolio of commercial real estate investments, such as loans, equity in commercial real estate ventures, and other real estate-related assets.</p>
+
+<p class="rtejustify">MogulREIT<span style="line-height: 20.8px; text-align: justify;">&nbsp;I is a registered, non-traded REIT. That means that it is registered with the Securities and Exchange Commission, but is not traded on a stock exchange.&nbsp;</span>MogulREIT<span style="line-height: 20.8px; text-align: justify;">&nbsp;I intends to qualify as a REIT beginning with its taxable year ending December 31, 2016.</span><span style="line-height: 20.8px;">&nbsp; &nbsp;&nbsp;</span></p>
+</div>
+
+<h3 class="question"><a href="#">What is a REIT?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">A REIT, or a Real Estate Investment Trust, is an entity that:</p>
+
+<ul>
+	<li class="rtejustify">Owns or finances income producing real estate.</li>
+	<li class="rtejustify">Allows investors to invest in portfolios of properties through the purchase of stock.</li>
+	<li class="rtejustify">Qualifies as a “real estate investment trust” for U.S. federal income tax purposes and is therefore generally not subject to federal corporate income taxes on its net income that is distributed, which substantially eliminates the “double taxation” treatment (i.e., taxation at both the corporate and shareholder levels) that generally results from investments in a corporation.</li>
+	<li class="rtejustify">Pays distributions to its shareholders of at least 90% of its REIT taxable income.&nbsp;</li>
+</ul>
+</div>
+
+<h3 class="question"><a href="#">What&nbsp;types of properties or investments go into MogulREIT I?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">MogulREIT I can invest in a variety of property types, including but not limited to, multifamily, office, industrial, self-storage, and retail real estate opportunities. MogulREIT I can invest in various commercial real estate-related equity and debt assets across these different property types.&nbsp;</p>
+</div>
+
+<h3 class="question"><a href="#">Who can invest in MogulREIT I?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">MogulREIT I is available to both accredited and non-accredited investors. For non-accredited investors, limitations based on the investor’s annual income or net worth apply to the amount that may be invested.</p>
+</div>
+
+<h3 class="question"><a href="#">What is the minimum amount I can invest in MogulREIT I?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">The initial minimum investment is $2,500.</p>
+</div>
+
+<h3 class="question"><a href="#">How liquid is an investment in MogulREIT I?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">Redemptions from MogulREIT&nbsp;I are generally allowed on a quarterly basis, subject to the redemptions rights and limitations outlined in the <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank">Offering Circular</a>.</p>
+</div>
+
+<h3 class="question"><a href="#">Who is on the Manager team of MogulREIT&nbsp;I?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p>MogulREIT I is managed by&nbsp;RM&nbsp;Adviser, LLC, a SEC registered investment adviser and wholly-owned subsidiary of Realty Mogul, Co. RM Adviser, which manages MogulREIT I’s day-to-day operations, will have access to the experienced team of real estate finance professionals employed by Realty Mogul, Co., including Jilliene Helman, its Chief Executive Officer. Many of the senior executives and loan origination professionals at Realty Mogul have deep experience in the commercial real estate sector and have been in leadership roles at financial services institutions for many years. Collectively, these professionals have approximately 200 years of combined direct experience in the commercial real estate business, and have managed more than $4 billion of originations and more than $8.5 billion in underwritings in commercial real estate loans and equity investments. MogulREIT I expects to benefit from the knowledge and industry contacts, experience and judgment that these professionals have accumulated over numerous real estate cycles. Get the team bios <a href="https://www.realtymogul.com/about-us" target="_blank">here</a>.</p>
+
+<p>The credit team of Realty Mogul and its affiliates is very experienced in reviewing and underwriting commercial real estate investments. This team has substantial experience in reviewing and underwriting commercial real estate investments and has adopted approaches used by real estate finance industry leaders in its analysis of real estate capital structures and financial strategies, and these approaches will be brought to bear for MogulREIT I’s benefit.</p>
+</div>
+
+<h3 class="question"><a href="#">What services will the Manager perform?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">The Manager performs the following services: investment advisory and acquisition services (including performing due diligence on MogulREIT I’s investments), offering services, asset management services, accounting and other administrative services, shareholder services, financing services, and disposition services.</p>
+</div>
+
+<h3 class="question"><a href="#">How do you decide which investments go into MogulREIT&nbsp;I and which don't?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">MogulREIT I pursues the investment strategy using the criteria described in its <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank">Offering Circular</a>. Some opportunities may arise which could be allocated to either MogulREIT I or the RealtyMogul.com Platform. In these instances, any potential debt investment exceeding $1,000,000 and equity investment exceeding $1,500,000 will first be made available to MogulREIT I. If the fund chooses not to invest and the investment opportunity meets the investment criteria for Realty Mogul, then those investment opportunities will be made available to other investors through the RealtyMogul.com Platform. MogulREIT I may, where the investment committee of its Manager determines that the size of an investment would create undue concentration in its portfolio or that the entire investment would otherwise be unsuitable for the fund, permit a portion of an investment to be sold on the RealtyMogul.com Platform.</p>
+</div>
+
+<h3 class="question"><a href="#">What are the fees and expenses associated with MogulREIT I?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">There are no upfront selling commissions charged to investors in MogulREIT I. Organizational and offering costs are estimated to be between $300,000 and $1,500,000. A<span style="line-height: 20.8px; text-align: justify;">cquisition and origination fees will be paid directly by borrowers, sponsors, or issuers to Realty Mogul, one of its affiliates, or a third party broker dealer.</span>&nbsp;In terms of ongoing fees and expenses, MogulREIT I will pay its Manager a quarterly asset management fee at an annualized rate of 1% payable in arrears. For loans in the Fund, Realty Mogul or one of its affiliates that originates the loan will be paid a servicing fee of 0.5% of the original value of the asset for performing loans. If a loan is or becomes non-performing, an additional special servicing fee equal to an annualized rate of 1% of the original value of the asset for non-performing loans will be paid to Realty Mogul or its affiliate in addition to any third party special servicing expenses.Other operating expenses will be incurred by or paid in connection with MogulREIT I, and all are outlined in detail in the <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank">Offering Circular</a>.</p>
+</div>
+
+<h3 class="question"><a href="#">Can I invest in MogulREIT I using an SDIRA or other type of IRA?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">Unfortunately, no.&nbsp;</p>
+</div>
+
+<h3 class="question"><a href="#">How often&nbsp;does MogulREIT I intend to pay distributions?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">Distributions, if any, are generally expected to be paid on a quarterly basis.</p>
+</div>
+
+<h3 class="question"><a href="#">How&nbsp;quickly will I receive&nbsp;distributions after I invest?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">MogulREIT I is expected to pay distributions quarterly in arrears commencing in the second full quarter after the quarter in which it makes its first real estate-related investment; however, The Fund's Manager may declare other periodic distributions as circumstances dictate.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</div>
+
+<h3 class="question"><a href="#">How are the returns taxed?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">REIT distributions may be treated as ordinary income, capital gains, and/or return of capital for tax purposes, each of which may be taxed at a different rate for different investors. Because each investor’s tax considerations are different, it is recommended that you consult with your tax advisor.&nbsp; You also should review the section of this offering circular entitled “U.S. Federal Income Tax Considerations,” including for a discussion of the special rules applicable to distributions in redemption of shares and liquidating distributions.</p>
+</div>
+
+<h3 class="question"><a href="#">When will I get my detailed tax information?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p class="rtejustify">Your annual detailed tax information will be reported on Form 1099-DIV, if required, and will be provided to you in electronic form by January 31 of the year following each taxable year.</p>
+</div>
+
+<h3 class="question"><a href="#">Will I be notified of how my investment is doing?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p>Yes. Initially, the Fund will provide you with periodic updates on the performance of your investment in MogulREIT, including:</p>
+
+<ul>
+	<li>An annual report</li>
+	<li>A semi-annual report</li>
+	<li>Current event reports for specified material events within four business days of their occurrence</li>
+	<li>Supplements to the Offering Circular, if we have material information to disclose to you</li>
+	<li>Other reports that we may file or furnish to the SEC from time to time</li>
+</ul>
+
+<p>MogulREIT I or its Manager will provide this information to you by posting such information on the SEC’s website at <a href="http://www.sec.gov/">www.sec.gov</a>, on the Realty Mogul Platform at <a href="http://www.realtymogul.com/">www.realtymogul.com</a>, or via e-mail.&nbsp;</p>
+</div>
+
+<h3 class="question"><a href="#">Where can I find the full list of questions and answers regarding this offering?</a></h3>
+
+<div class="answer" style="line-height: 20.8px;">
+<p>For a full list of questions and answers, please refer to the <a href="https://www.realtymogul.com/sites/default/files/documents/mr1_offering_circular_1.pdf" target="_blank">Offering Circular</a>.</p>
+</div>
+</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="io-equity-sideblock io-equity-property-sideblock">
+  <div class="io-equity-sideblock__row--header">Want to Ask a Question?</div>
+  <div class="io-equity-sideblock__row io-equity-sideblock__row--first">
+    To submit your own question please <a class="colorbox-inline io-equity-btn-contact" href="?inline=true#rm-modal-contact-form">click here</a>.
+  </div>
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div></div></div>  </div>
+
+  
+  </div>
+  </div></div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>      </div>
+</div>
+
+<div id="rm-modal-why-we-like-it" class="hidden" data-nid="193744">
+<a id="modal-close-top" href="#" onclick="jQuery.colorbox.close(); return false;"></a>
+<h2>Why We Like It</h2>
+<div class="field field-name-field-why-we-like-it field-type-text-long field-label-above"><div class="field-label">Why We Like It:&nbsp;</div><div class="field-items"><div class="field-item even">Fund intends to be diversified across property types, investment types, and geographies. </div><div class="field-item odd">Aims to provide a steady stream of quarterly dividends. </div><div class="field-item even">Potential capital appreciation.</div><div class="field-item odd">The Fund is distributed and operates exclusively online, allowing for higher efficiency and lower fees compared to traditional similar investments. </div><div class="field-item even">Each transaction is reviewed by Realty Mogul’s team of experienced real estate and finance professionals.</div></div></div><a id="modal-close-bottom" href="#" onclick="jQuery.colorbox.close(); return false;">Close</a>
+</div>
+  </div>
+</div><div id="zone-post-content-wrapper" class="zone-wrapper zone-post-content-wrapper clearfix zone-post_content-investment_opportunity">  
+  <div id="zone-post-content" class="zone zone-post-content clearfix container-12">
+      </div>
+</div></section>  
+        
+
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix zone-footer-investment_opportunity">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-second region-footer_second-investment_opportunity" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div class="block block-block block-social-media-icons block-46 block-block-46 odd block-without-title" id="block-block-46">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="footer__social-media-icons">
+  <h4>Connect with Us</h4>
+  <!-- facebook -->
+  <a class="footer__social-media-icon footer__social-media-icon--facebook" href="https://www.facebook.com/RealtyMogul" target="_blank"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+    #Page-1 {
+      pointer-events: bounding-box;
+    }
+    #Page-1:hover #Stroke-1 {
+      stroke: #3B5998;
+    }
+    #Page-1:hover #Fill-3 {
+      fill: #3B5998;
+    }
+    </style>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD---Friendly-Copy-3" transform="translate(-580.000000, -7637.000000)">
+            <g id="Footer" transform="translate(0.000000, 7477.000000)">
+                <g id="Facebook" transform="translate(580.000000, 160.000000)">
+                    <path d="M27.1153846,29.4230769 L2.88461538,29.4230769 C1.60961538,29.4230769 0.576923077,28.3903846 0.576923077,27.1153846 L0.576923077,2.88461538 C0.576923077,1.60961538 1.60961538,0.576923077 2.88461538,0.576923077 L27.1153846,0.576923077 C28.3903846,0.576923077 29.4230769,1.60961538 29.4230769,2.88461538 L29.4230769,27.1153846 C29.4230769,28.3903846 28.3903846,29.4230769 27.1153846,29.4230769 L27.1153846,29.4230769 Z" id="Stroke-1" stroke="#A7A9AC"></path>
+                    <path d="M13.1300769,22.4176154 L16.1173846,22.4176154 L16.1173846,14.9372308 L18.2012308,14.9372308 L18.4239231,12.4322308 L16.1173846,12.4322308 L16.1173846,11.0060769 C16.1173846,10.4153077 16.2362308,10.1822308 16.8062308,10.1822308 L18.4239231,10.1822308 L18.4239231,7.58261538 L16.3550769,7.58261538 C14.1327692,7.58261538 13.1300769,8.56107692 13.1300769,10.4349231 L13.1300769,12.4322308 L11.5758462,12.4322308 L11.5758462,14.9683846 L13.1300769,14.9683846 L13.1300769,22.4176154 Z" id="Fill-3" fill="#A7A9AC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+
+  <!-- twitter -->
+  <a class="footer__social-media-icon footer__social-media-icon--twitter" href="https://twitter.com/realty_mogul" target="_blank"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+    #twitter-icon {
+      pointer-events: bounding-box;
+    }
+    #twitter-icon:hover #Stroke-1 {
+      stroke: #55ACEE;
+    }
+    #twitter-icon:hover #Fill-3 {
+      fill: #55ACEE;
+    }
+    </style>
+    <g id="twitter-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD---Friendly-Copy-3" transform="translate(-630.000000, -7637.000000)">
+            <g id="Footer" transform="translate(0.000000, 7477.000000)">
+                <g id="Twitter" transform="translate(630.000000, 160.000000)">
+                    <path d="M27.1153846,29.4230769 L2.88461538,29.4230769 C1.60961538,29.4230769 0.576923077,28.3903846 0.576923077,27.1153846 L0.576923077,2.88461538 C0.576923077,1.60961538 1.60961538,0.576923077 2.88461538,0.576923077 L27.1153846,0.576923077 C28.3903846,0.576923077 29.4230769,1.60961538 29.4230769,2.88461538 L29.4230769,27.1153846 C29.4230769,28.3903846 28.3903846,29.4230769 27.1153846,29.4230769 L27.1153846,29.4230769 Z" id="Stroke-1" stroke="#A7A9AC"></path>
+                    <path d="M7.53588462,20.6513077 C8.89165385,21.5201538 10.5012692,22.0278462 12.2308846,22.0278462 C17.9170385,22.0278462 21.1293462,17.2243846 20.9355,12.9170769 C21.5343462,12.4855385 22.0535769,11.9455385 22.4643462,11.3316923 C21.9139615,11.5751538 21.3243462,11.7401538 20.7058846,11.8128462 C21.3370385,11.4355385 21.8228077,10.8343846 22.0512692,10.119 C21.4593462,10.4697692 20.8039615,10.7247692 20.1070385,10.8620769 C19.5485769,10.2666923 18.7524231,9.89515385 17.8708846,9.89515385 C15.8943462,9.89515385 14.4416538,11.7401538 14.8881923,13.6566923 C12.3428077,13.5286154 10.0858846,12.309 8.5755,10.4559231 C7.77357692,11.8324615 8.15896154,13.6336154 9.52280769,14.5451538 C9.02088462,14.5301538 8.54896154,14.3916923 8.13588462,14.1620769 C8.10242308,15.5813077 9.11896154,16.9082308 10.5924231,17.2036154 C10.1608846,17.3213077 9.68896154,17.3478462 9.20896154,17.2555385 C9.59896154,18.474 10.7297308,19.3578462 12.0693462,19.3832308 C10.7828077,20.3928462 9.1605,20.8428462 7.53588462,20.6513077" id="Fill-3" fill="#A7A9AC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+  <!-- linkedin -->
+  <a class="footer__social-media-icon footer__social-media-icon--linkedin" href="https://www.linkedin.com/company/realty-mogul" target="_blank"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+    #linkedin-icon {
+      pointer-events: bounding-box;
+    }
+    #linkedin-icon:hover #Stroke-1 {
+      stroke: #0077B5;
+    }
+    #linkedin-icon:hover #Fill-3 {
+      fill: #0077B5;
+    }
+    </style>
+    <g id="linkedin-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD---Friendly-Copy-3" transform="translate(-488.000000, -4754.000000)">
+            <g id="Megan-Overlay" transform="translate(0.000000, 3466.000000)">
+                <g id="linkedin" transform="translate(488.000000, 1288.000000)">
+                    <path d="M27.1153846,29.4230769 L2.88461538,29.4230769 C1.60961538,29.4230769 0.576923077,28.3903846 0.576923077,27.1153846 L0.576923077,2.88461538 C0.576923077,1.60961538 1.60961538,0.576923077 2.88461538,0.576923077 L27.1153846,0.576923077 C28.3903846,0.576923077 29.4230769,1.60961538 29.4230769,2.88461538 L29.4230769,27.1153846 C29.4230769,28.3903846 28.3903846,29.4230769 27.1153846,29.4230769 L27.1153846,29.4230769 Z" id="Stroke-1" stroke="#A7A9AC"></path>
+                    <path d="M23.6178462,22.3903846 L20.289,22.3903846 L20.289,17.175 C20.289,17.175 20.289,15.1996154 18.6251538,15.1996154 C16.9601538,15.1996154 16.9601538,17.2165385 16.9601538,17.2165385 L16.9601538,22.3903846 L13.6313077,22.3903846 C13.6313077,22.3903846 13.6728462,13.6696154 13.6313077,12.8030769 L16.9601538,12.8030769 L16.9601538,14.1334615 C17.3847692,13.4780769 17.9270769,12.5457692 19.6232308,12.5457692 C21.7243846,12.5457692 23.6178462,13.92 23.6178462,16.8726923 L23.6178462,22.3903846 Z M10.1028462,11.205 C9.11053846,11.205 8.30515385,10.3996154 8.30515385,9.40846154 C8.30515385,8.415 9.11053846,7.60961538 10.1028462,7.60961538 C11.0963077,7.60961538 11.9005385,8.415 11.9005385,9.40846154 C11.9005385,10.3996154 11.0963077,11.205 10.1028462,11.205 L10.1028462,11.205 Z M8.30515385,22.3903846 L11.634,22.3903846 L11.634,12.8030769 L8.30515385,12.8030769 L8.30515385,22.3903846 Z" id="Fill-3" fill="#A7A9AC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+  <!-- google plus -->
+  <a class="footer__social-media-icon footer__social-media-icon--google" href="https://plus.google.com/+Realtymogul" target="_blank"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+    #google-icon {
+      pointer-events: bounding-box;
+    }
+    #google-icon:hover #Stroke-1 {
+      stroke: #DC4E41;
+    }
+    #google-icon:hover #Fill-3,
+    #google-icon:hover #Fill-5 {
+      fill: #DC4E41;
+    }
+    </style>
+    <g id="google-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD---Friendly-Copy-3" transform="translate(-730.000000, -7637.000000)">
+            <g id="Footer" transform="translate(0.000000, 7477.000000)">
+                <g id="google+" transform="translate(730.000000, 160.000000)">
+                    <path d="M27.1153846,29.4230769 L2.88461538,29.4230769 C1.60961538,29.4230769 0.576923077,28.3903846 0.576923077,27.1153846 L0.576923077,2.88461538 C0.576923077,1.60961538 1.60961538,0.576923077 2.88461538,0.576923077 L27.1153846,0.576923077 C28.3903846,0.576923077 29.4230769,1.60961538 29.4230769,2.88461538 L29.4230769,27.1153846 C29.4230769,28.3903846 28.3903846,29.4230769 27.1153846,29.4230769 L27.1153846,29.4230769 Z" id="Stroke-1" stroke="#A7A9AC"></path>
+                    <path d="M21.7331538,10.6081154 L21.7331538,8.53580769 L20.697,8.53580769 L20.697,10.6081154 L18.6258462,10.6081154 L18.6258462,11.6442692 L20.697,11.6442692 L20.697,13.7165769 L21.7331538,13.7165769 L21.7331538,11.6442692 L23.8054615,11.6442692 L23.8054615,10.6081154 L21.7331538,10.6081154 Z" id="Fill-3" fill="#A7A9AC"></path>
+                    <path d="M12.9736154,22.8181154 C11.1701538,22.8181154 9.86861538,21.6758077 9.86861538,20.3038846 C9.86861538,18.9608077 11.3963077,17.8011923 13.1997692,17.8208077 C15.2016923,17.8208077 16.3936154,19.0669615 16.3936154,20.3754231 C16.3936154,21.7461923 15.2801538,22.8181154 12.9736154,22.8181154 M10.8782308,11.8300385 C10.6693846,10.2400385 11.4805385,9.02273077 12.6909231,9.05965385 C13.9013077,9.09542308 14.9374615,10.4004231 15.1463077,11.9904231 C15.3551538,13.5804231 14.6582308,14.6038846 13.449,14.5669615 C12.2386154,14.5300385 11.0870769,13.4200385 10.8782308,11.8300385 M16.044,17.0500385 C14.5936154,15.9919615 14.2382308,15.3942692 15.624,14.3235 C16.404,13.7188846 16.9509231,12.9146538 16.9509231,11.9223462 C16.9509231,10.8400385 16.509,9.85811538 15.6770769,9.38157692 L16.8551538,9.38157692 L17.859,8.32926923 L13.3682308,8.32926923 C10.5643846,8.32926923 9.189,10.0092692 9.189,11.8577308 C9.189,13.7465769 10.4847692,15.2361923 13.0163077,15.2361923 C12.624,16.0277308 12.7809231,16.7604231 13.4224615,17.2819615 C9.10015385,17.2819615 8.17592308,19.1788846 8.17592308,20.6408077 C8.17592308,22.5342692 10.3509231,23.6592692 12.9609231,23.6592692 C16.5297692,23.6592692 17.9478462,21.7681154 17.9478462,20.2138846 C17.9478462,18.9492692 17.4747692,18.1219615 16.044,17.0500385" id="Fill-5" fill="#A7A9AC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+  <!-- youtube -->
+  <a class="footer__social-media-icon footer__social-media-icon--youtube" href="https://www.youtube.com/realtymogulTV" target="_blank"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+    #youtube-icon {
+      pointer-events: bounding-box;
+    }
+    #youtube-icon:hover #Stroke-1 {
+      stroke: #CD201F;
+    }
+    #youtube-icon:hover #Fill-3,
+    #youtube-icon:hover #Fill-5,
+    #youtube-icon:hover #Fill-7,
+    #youtube-icon:hover #Fill-9,
+    #youtube-icon:hover #Fill-11,
+    #youtube-icon:hover #Fill-13 {
+      fill: #CD201F;
+    }
+    </style>
+    <g id="youtube-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD---Friendly-Copy-3" transform="translate(-780.000000, -7637.000000)">
+            <g id="Footer" transform="translate(0.000000, 7477.000000)">
+                <g id="Page-1" transform="translate(780.000000, 160.000000)">
+                    <path d="M27.1153846,29.4230769 L2.88461538,29.4230769 C1.60961538,29.4230769 0.576923077,28.3903846 0.576923077,27.1153846 L0.576923077,2.88461538 C0.576923077,1.60961538 1.60961538,0.576923077 2.88461538,0.576923077 L27.1153846,0.576923077 C28.3903846,0.576923077 29.4230769,1.60961538 29.4230769,2.88461538 L29.4230769,27.1153846 C29.4230769,28.3903846 28.3903846,29.4230769 27.1153846,29.4230769 L27.1153846,29.4230769 Z" id="Stroke-1" stroke="#A7A9AC"></path>
+                    <path d="M17.292,13.2443077 C17.5827692,13.2443077 17.9843077,13.0931538 18.4008462,12.6004615 L18.4008462,13.1693077 L19.3585385,13.1693077 L19.3585385,8.01392308 L18.4008462,8.01392308 L18.4008462,11.9277692 C18.2831538,12.0743077 18.0235385,12.3131538 17.8366154,12.3131538 C17.6312308,12.3131538 17.5816154,12.1735385 17.5816154,11.967 L17.5816154,8.01276923 L16.6227692,8.01276923 L16.6227692,12.3235385 C16.6227692,12.8323846 16.7785385,13.2443077 17.292,13.2443077" id="Fill-3" fill="#A7A9AC"></path>
+                    <path d="M14.0126538,9.44134615 C14.0126538,9.15865385 14.1430385,8.94980769 14.4130385,8.94980769 C14.7061154,8.94980769 14.8318846,9.15288462 14.8318846,9.44134615 L14.8318846,11.8401923 C14.8318846,12.1205769 14.6888077,12.3282692 14.4315,12.3282692 C14.1661154,12.3282692 14.0126538,12.1113462 14.0126538,11.8401923 L14.0126538,9.44134615 Z M13.0261154,11.8828846 C13.0261154,12.7909615 13.5015,13.2651923 14.4315,13.2651923 C15.2022692,13.2651923 15.8091923,12.7494231 15.8091923,11.8828846 L15.8091923,9.35711538 C15.8091923,8.54942308 15.2080385,7.97134615 14.4315,7.97134615 C13.5857308,7.97134615 13.0261154,8.52865385 13.0261154,9.35711538 L13.0261154,11.8828846 Z" id="Fill-5" fill="#A7A9AC"></path>
+                    <path d="M10.7388462,13.1697692 L11.8188462,13.1697692 L11.8188462,10.3336154 L13.0742308,6.17976923 L11.9780769,6.17976923 L11.2869231,8.97323077 L10.5415385,6.17976923 L9.45576923,6.17976923 L10.7388462,10.3336154 L10.7388462,13.1697692 Z" id="Fill-7" fill="#A7A9AC"></path>
+                    <path d="M21.4021154,20.3071154 L19.6563462,20.3071154 L19.6563462,21.2336538 C19.6563462,21.6017308 19.6875,21.9201923 20.0544231,21.9201923 C20.4398077,21.9201923 20.4628846,21.6605769 20.4628846,21.2336538 L20.4628846,20.8921154 L21.4021154,20.8921154 L21.4021154,21.2613462 C21.4021154,22.2063462 20.9959615,22.7809615 20.0336538,22.7809615 C19.1613462,22.7809615 18.7159615,22.1451923 18.7159615,21.2613462 L18.7159615,19.0563462 C18.7159615,18.2036538 19.2790385,17.6128846 20.1028846,17.6128846 C20.9786538,17.6128846 21.4021154,18.1690385 21.4021154,19.0563462 L21.4021154,20.3071154 Z M18.0271154,21.6305769 C18.0271154,22.2375 17.8009615,22.7094231 17.1928846,22.7094231 C16.8582692,22.7094231 16.5790385,22.5871154 16.3251923,22.2698077 L16.3251923,22.6471154 L15.4032692,22.6471154 L15.4032692,15.9894231 L16.3251923,15.9894231 L16.3251923,18.1332692 C16.5305769,17.8828846 16.8109615,17.6751923 17.1363462,17.6751923 C17.8055769,17.6751923 18.0271154,18.2394231 18.0271154,18.9051923 L18.0271154,21.6305769 Z M14.5125,22.6471154 L13.5998077,22.6471154 L13.5998077,22.1059615 C13.4313462,22.3044231 13.2559615,22.4567308 13.0748077,22.5617308 C12.5832692,22.8432692 11.9071154,22.8375 11.9071154,21.8405769 L11.9071154,17.7375 L12.8209615,17.7375 L12.8209615,21.5001923 C12.8209615,21.6975 12.8682692,21.8313462 13.0632692,21.8313462 C13.2409615,21.8313462 13.4890385,21.6040385 13.5998077,21.4632692 L13.5998077,17.7375 L14.5125,17.7375 L14.5125,22.6471154 Z M10.8559615,22.6471154 L9.82788462,22.6471154 L9.82788462,16.9563462 L8.76403846,16.9563462 L8.76403846,15.9894231 L11.9198077,15.9894231 L11.9198077,16.9563462 L10.8559615,16.9563462 L10.8559615,22.6471154 Z M20.6498077,14.3428846 L9.35019231,14.3428846 C8.13634615,14.3428846 7.15211538,15.3271154 7.15211538,16.5421154 L7.15211538,22.0944231 C7.15211538,23.3082692 8.13634615,24.2925 9.35019231,24.2925 L20.6498077,24.2925 C21.8636538,24.2925 22.8478846,23.3082692 22.8478846,22.0944231 L22.8478846,16.5421154 C22.8478846,15.3271154 21.8636538,14.3428846 20.6498077,14.3428846 L20.6498077,14.3428846 Z" id="Fill-9" fill="#A7A9AC"></path>
+                    <path d="M20.0638846,18.4723846 C19.7258077,18.4723846 19.6554231,18.7112308 19.6554231,19.0481538 L19.6554231,19.5443077 L20.4631154,19.5443077 L20.4631154,19.0481538 C20.4631154,18.7146923 20.3915769,18.4723846 20.0638846,18.4723846" id="Fill-11" fill="#A7A9AC"></path>
+                    <path d="M16.5138462,18.5026154 C16.4492308,18.5349231 16.3880769,18.5845385 16.3246154,18.6526154 L16.3246154,21.7126154 C16.3996154,21.7922308 16.4723077,21.8499231 16.5415385,21.8845385 C16.6892308,21.9595385 16.9073077,21.9664615 17.0076923,21.8349231 C17.0619231,21.7656923 17.0873077,21.6526154 17.0873077,21.4968462 L17.0873077,18.9606923 C17.0873077,18.7956923 17.0538462,18.6687692 16.9903846,18.5833846 C16.8807692,18.438 16.6730769,18.4218462 16.5138462,18.5026154" id="Fill-13" fill="#A7A9AC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+  <!-- instagram -->
+  <a class="footer__social-media-icon footer__social-media-icon--instagram" href="https://www.instagram.com/realty_mogul" target="_blank">
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+    #insta-icon {
+      pointer-events: bounding-box;
+    }
+    #insta-icon:hover #Stroke-1 {
+      stroke: #3F729B;
+    }
+    #insta-icon:hover #Fill-3 {
+      fill: #3F729B;
+    }
+    </style>
+    <g id="insta-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD---Friendly-Copy-3" transform="translate(-830.000000, -7637.000000)">
+            <g id="Footer" transform="translate(0.000000, 7477.000000)">
+                <g id="insta" transform="translate(830.000000, 160.000000)">
+                    <path d="M27.1153846,29.4230769 L2.88461538,29.4230769 C1.60961538,29.4230769 0.576923077,28.3903846 0.576923077,27.1153846 L0.576923077,2.88461538 C0.576923077,1.60961538 1.60961538,0.576923077 2.88461538,0.576923077 L27.1153846,0.576923077 C28.3903846,0.576923077 29.4230769,1.60961538 29.4230769,2.88461538 L29.4230769,27.1153846 C29.4230769,28.3903846 28.3903846,29.4230769 27.1153846,29.4230769 L27.1153846,29.4230769 Z" id="Stroke-1" stroke="#A7A9AC"></path>
+                    <path d="M21.5491154,20.1298846 C21.5491154,20.9525769 20.8798846,21.6218077 20.0571923,21.6218077 L10.5079615,21.6218077 C9.68526923,21.6218077 9.01719231,20.9525769 9.01719231,20.1298846 L9.01719231,13.7571923 L11.3398846,13.7571923 C11.1391154,14.2510385 11.0271923,14.7898846 11.0271923,15.3552692 C11.0271923,17.7021923 12.9356538,19.6106538 15.2825769,19.6106538 C17.6295,19.6106538 19.5391154,17.7021923 19.5391154,15.3552692 C19.5391154,14.7898846 19.4248846,14.2510385 19.2252692,13.7571923 L21.5491154,13.7571923 L21.5491154,20.1298846 Z M13.0614231,13.7571923 C13.5598846,13.0671923 14.3687308,12.6148846 15.2825769,12.6148846 C16.1975769,12.6148846 17.0064231,13.0671923 17.5048846,13.7571923 C17.8291154,14.2083462 18.0229615,14.7587308 18.0229615,15.3552692 C18.0229615,16.8656538 16.7929615,18.0945 15.2825769,18.0945 C13.7721923,18.0945 12.5433462,16.8656538 12.5433462,15.3552692 C12.5433462,14.7587308 12.7371923,14.2083462 13.0614231,13.7571923 L13.0614231,13.7571923 Z M20.9202692,9.36680769 L21.2641154,9.36565385 L21.2641154,9.70719231 L21.2641154,12.0033462 L18.6345,12.0125769 L18.6264231,9.37373077 L20.9202692,9.36680769 Z M20.0571923,7.57257692 L10.5079615,7.57257692 C8.84988462,7.57257692 7.49988462,8.92142308 7.49988462,10.5806538 L7.49988462,13.7571923 L7.49988462,20.1298846 C7.49988462,21.7891154 8.84988462,23.1379615 10.5079615,23.1379615 L20.0571923,23.1379615 C21.7164231,23.1379615 23.0652692,21.7891154 23.0652692,20.1298846 L23.0652692,13.7571923 L23.0652692,10.5806538 C23.0652692,8.92142308 21.7164231,7.57257692 20.0571923,7.57257692 L20.0571923,7.57257692 Z" id="Fill-3" fill="#A7A9AC"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+</div>    </div>
+  </div>
+</div><div class="block block-menu block-menu-footer-menu block-menu-menu-footer-menu even block-without-title" id="block-menu-menu-footer-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-484"><a href="/about-us">About Us</a></li>
+<li class="leaf menu-2510"><a href="/careers">Careers</a></li>
+<li class="leaf menu-2213"><a href="/contact-us">Contact Us</a></li>
+<li class="leaf menu-1701"><a href="/news-press">Press</a></li>
+<li class="leaf menu-2479"><a href="/glossary">Glossary</a></li>
+<li class="leaf menu-760"><a href="/privacy-policy">Privacy</a></li>
+<li class="last leaf menu-761"><a href="/terms-service">Terms of Service</a></li>
+</ul>    </div>
+  </div>
+</div><div class="block block-block block-copyright block-1 block-block-1 odd block-without-title" id="block-block-1">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p>Estateup.com is a real estate crowdfunding website operated by RM Technologies, LLC, a subsidiary of Realty Mogul, Co. (collectively with its affiliates, "Realty Mogul"). Equity securities are offered through North Capital Private Securities Corp. ("NCPS"), a registered broker-dealer and member <a href="http://www.finra.org/" target="_blank">FINRA</a>/<a href="http://www.sipc.org/" target="_blank">SIPC</a>.</p>
+<p>By accessing this site and any pages thereof, you agree to be bound by our <a href="/terms-service" target="_blank">Terms of Service</a> and <a href="/privacy-policy" target="_blank">Privacy Policy</a>.</p>
+
+  </div>
+</div><div class="block block-block block-23 block-block-23 even block-without-title" id="block-block-23">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <!-- Google Code for Remarketing Tag -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 996788786;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/996788786/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div></footer>  </div>
+  <div class="region region-page-bottom region-page_bottom-investment_opportunity" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <form id="autologout-cache-check"><input type="hidden" id="autologout-cache-check-bit" value="0" /></form><!-- begin olark code -->
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('8595-709-10-6572');/*]]>*/</script><noscript><a href="https://www.olark.com/site/8595-709-10-6572/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+<!-- end olark code -->  </div>
+</div><script type="text/javascript" src="https://www.realtymogul.com/sites/default/files/advagg_js/js__2g3tdLP4IHR8hpjRA1oaTZUGLdgDQW-HVhQihu14Tlk__f8eFQO14v_1cVvcBlqGGtIo7vyXwjO1SiPlcRyQcjQ8__dz0BG_nuUuMoBxAVm_4dKGoJvwHLYSmGcE9QAApoekQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+analytics.trackLink(jQuery('.smart-btn-wrap a.button.invest'), 'Clicked "Ready to Invest"', {
+  ioid: Drupal.settings.rm_analytics.io.ioid,
+  title: Drupal.settings.rm_analytics.io.title
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($, Drupal, window, document, undefined) {
+  Drupal.behaviors.investmentOpportunityClicks = {
+    attach: function (context, settings) {
+
+      /*
+       * Utility function that grabs all attributes of an element and puts them into an array
+       * http://stackoverflow.com/questions/2048720/get-all-attributes-from-a-html-element-with-javascript-jquery
+      */
+      $.fn.attrs = function(attrs) {
+        var t = $(this);
+        if (attrs) {
+          // Set attributes
+          t.each(function(i, e) {
+            var j = $(e);
+            for (var attr in attrs) {
+              j.attr(attr, attrs[attr]);
+            };
+          });
+          return t;
+        } else {
+          // Get attributes
+          var a = {},
+          r = t.get(0);
+          if (r) {
+            r = r.attributes;
+            for (var i in r) {
+              var p = r[i];
+              // only load attributes that have a value
+              if (p.nodeName !== undefined) {
+                // ensure that we load non data attributes
+                var s = p.nodeName;
+                s.toString();
+                if (s.indexOf('data') < 0) {
+                  if (typeof p.nodeValue !== 'undefined') a[p.nodeName] = p.nodeValue;
+                }
+              }
+            }
+          }
+          return a;
+        }
+      };
+
+      // send data to Google Analytics
+      $('body.node-type-investment-opportunity').once('node-type-investment-opportunity-rm-analytics', function() {
+        var props_ga_page = {};
+        var props_ga_track = {};
+        $.each(Drupal.settings.rm_analytics.io_google_analytics_page, function(index, value) {
+          props_ga_page[index] = value;
+        });
+        $.each(Drupal.settings.rm_analytics.io_google_analytics_track, function(index, value) {
+          props_ga_track[index] = value;
+        });
+        analytics.page('Investment Opportunity Viewed - Google Analytics - Page', props_ga_page);
+        analytics.track('Investment Opportunity Viewed - Google Analytics - Track', props_ga_track);
+      });
+
+      // Photos
+      $(".io-equity-content-top-images__thumbs a").once().click(function() {
+        analytics.track('Investment opportunity - Clicked on photo', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          position: $(this).parent().index()+1,
+          src: $(this).find("img").attr("src")
+        });
+      });
+      $(".io-equity-colorbox-images__nav-buttons #cboxPrevious").once().click(function() {
+        analytics.track('Investment opportunity - Clicked on previous arrow', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          position: $(this).parents('.io-equity-colorbox-images__nav').find('#cboxCurrent').text(),
+          src: $(this).parents('#cboxContent').find('#cboxLoadedContent img').attr("src")
+        });
+      });
+      $(".io-equity-colorbox-images__nav-buttons #cboxNext").once().click(function() {
+        analytics.track('Investment opportunity - Clicked on next arrow', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          position: $(this).parents('.io-equity-colorbox-images__nav').find('#cboxCurrent').text(),
+          src: $(this).parents('#cboxContent').find('#cboxLoadedContent img').attr("src")
+        });
+      });
+
+      // Webinar
+      $(".io-equity-content-top-btns__btn--webinar").once().click(function() {
+        // capture which webinar action, view or register
+        var webinarAction = $('.io-equity-content-top-btns__btn--webinar .io-equity-content-top-btns__btn-txt-top').text().trim();
+        analytics.track('Investment opportunity - Clicked on webinar button', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          action: webinarAction,
+        });
+        // track time between opening webinar colorbox and closing it
+        var start = new Date().getTime();
+        $('.webinar').colorbox({
+            onClosed: function(){
+              var end = new Date().getTime();
+              var duration = end - start;
+              analytics.track('Investment opportunity - Closed webinar modal', {
+                ioId: Drupal.settings.rm_analytics.io.ioId,
+                ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+                action: webinarAction,
+                duration: duration
+              });
+            },
+        });
+      });
+
+      // Download Documents
+      $(".io-equity-content-top-btns__btn--documents-wrapper span.file a").once().click(function() {
+        analytics.track('Investment opportunity - Downloaded documents', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          filepath: $(this).attr("href"),
+          filename: $(this).text(),
+          fid: $(this).attr("data-fid"),
+          area: 'content top'
+        });
+      });
+      $(".io-equity-sideblock span.file a").once().click(function() {
+        analytics.track('Investment opportunity - Downloaded documents', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          filepath: $(this).attr("href"),
+          filename: $(this).text(),
+          fid: $(this).attr("data-fid"),
+          area: 'content side'
+        });
+      });
+
+      // Contact Investor Relations
+      $(".io-equity-content-top-btns__btn--contact").once().click(function() {
+        analytics.track('Investment opportunity - Clicked on contact investor relations', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          area: 'content top'
+        });
+      });
+      $(".io-equity-sideblock a.io-equity-btn-contact").once().click(function() {
+        analytics.track('Investment opportunity - Clicked on contact investor relations', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          area: 'content side'
+        });
+      });
+
+      // Smart button actions
+      $(".io-equity-overview__btn-smart a.button").once().click(function() {
+        // detect invest actions
+        if (!$(this).hasClass("waitlist")) {
+          analytics.track('Investment opportunity - Made investment', {
+            ioId: Drupal.settings.rm_analytics.io.ioId,
+            ioTitle: Drupal.settings.rm_analytics.io.ioTitle
+          });
+        }
+      });
+
+      // Tabs
+      $('ul.quicktabs-tabs a').once().click(function() {
+        analytics.track('Investment opportunity - Clicked on tab', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          tab: $(this).text()
+        });
+      });
+
+      // Property
+      $('.io-equity-property-main__location-information iframe').once('mouseOverGoogleMap', function() {
+        var isOverIframe = false,
+        windowLostBlur = function () {
+            if (isOverIframe === true) {
+                // DO STUFF
+                isOverIframe = false;
+            }
+        };
+        $(window).focus();
+        $(this).mouseenter(function(){
+          isOverIframe = true;
+          analytics.track('Investment opportunity - Moused over google map', {
+            ioId: Drupal.settings.rm_analytics.io.ioId,
+            ioTitle: Drupal.settings.rm_analytics.io.ioTitle
+          });
+        });
+        $(this).mouseleave(function(){
+          isOverIframe = false;
+          analytics.track('Investment opportunity - Moused out of google map', {
+            ioId: Drupal.settings.rm_analytics.io.ioId,
+            ioTitle: Drupal.settings.rm_analytics.io.ioTitle
+          });
+        });
+        $(window).blur(function () {
+            windowLostBlur();
+        });
+      })
+      $('.io-equity-property-main__location-information img').once().click(function() {
+        analytics.track('Investment opportunity - Clicked on aerial image', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle
+        });
+      });
+
+      // Accordian Sections
+      $('#quicktabs-io_equity_details .ctools-toggle').once().click(function() {
+        analytics.track('Investment opportunity - Clicked on accordion', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          tab: $('ul.quicktabs-tabs li.active a').text(),
+          accordion: $(this).next().text()
+        });
+      });
+      $('#quicktabs-io_equity_details .ctools-collapsible-handle').once().click(function() {
+        analytics.track('Investment opportunity - Clicked on accordion', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          tab: $('ul.quicktabs-tabs li.active a').text(),
+          accordion: $(this).text()
+        });
+      });
+
+      // Management
+      $(".io-equity-management-sideblock__teaser .colorbox-io-equity-team-member").once().click(function() {
+        analytics.track('Investment opportunity - Clicked on bio', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          teamMemberName: $(this).parents('.io-equity-management-sideblock__teaser').find('.io-equity-management-sideblock__teaser-name').text(),
+          teamMemberId: $(this).data('team-member-modal').replace('team-member-modal-', '')
+        });
+      });
+      $(".io-equity-management-sideblock__linkedin a").once().click(function() {
+        analytics.track('Investment opportunity - Clicked on linkedin icon', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          teamMemberName: $(this).parents('.io-equity-management-sideblock__teaser').find('.io-equity-management-sideblock__teaser-name').text(),
+          area: 'teaser',
+          teamMemberId: $(this).parents('.io-equity-management-sideblock__teaser').find('.colorbox-io-equity-team-member').data('team-member-modal').replace('team-member-modal-', '')
+        });
+      });
+      $(".io-equity-team-member__modal-right .icon-linkedin-31x31").once().click(function() {
+        analytics.track('Investment opportunity - Clicked on linkedin icon', {
+          ioId: Drupal.settings.rm_analytics.io.ioId,
+          ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+          teamMemberName: $(this).parents('.io-equity-team-member__modal-right').find('.io-equity-team-member__modal-name').text(),
+          area: 'modal',
+          teamMemberId: $(this).parents('.io-equity-team-member__modal').attr('id').replace('team-member-modal-', '')
+        });
+      });
+
+      // New data attribute-based tracking for IO Fund Assets section
+      /*
+       * Segment tracking functions
+      */
+      $('[data-track="rollover"]').once('rm-analytics', function(){
+        $(this).mouseover(function () {
+          var props = {};
+          // get rmAnalytics data attributes
+          $.each($(this).data(), function(item, value) {
+            if (item.indexOf('rmAnalytics') !== -1) {
+              props[item] = value;
+            }
+          });
+          props['rmAnalyticsElement'] = $(this).prop("tagName");
+          props['rmAnalyticsHtml'] = $(this).html();
+          // get other attributes with custom attrs function
+          $.each($(this).attrs(), function(item, value) {
+            props[item] = value;
+          });
+          // check to see if it has an img tag as a child, if so load in those atrtibutes
+          if ($(this).has("img").length > 0) {
+            $.each($(this).find("img").attrs(), function(item, value) {
+              props[item] = value;
+            });
+          }
+          // send segment call
+          analytics.track('Rollover - '+props['rmAnalyticsDescription'], props);
+        });
+      });
+
+      $('[data-track="click"]').once('rm-analytics', function(){
+        $(this).click(function () {
+          var props = {};
+          // get rmAnalytics data attributes
+          $.each($(this).data(), function(item, value) {
+            if (item.indexOf('rmAnalytics') !== -1) {
+              props[item] = value;
+            }
+          });
+          props['rmAnalyticsElement'] = $(this).prop("tagName");
+          props['rmAnalyticsHtml'] = $(this).html();
+          // get other attributes with custom attrs function
+          $.each($(this).attrs(), function(item, value) {
+            props[item] = value;
+          });
+          // check to see if it has an img tag as a child, if so load in those atrtibutes
+          if ($(this).has("img").length > 0) {
+            $.each($(this).find("img").attrs(), function(item, value) {
+              props[item] = value;
+            });
+          }
+          // send segment call
+          analytics.track('Click - '+props['rmAnalyticsDescription'], props);
+        });
+      });
+
+      $('[data-track="track-link"]').once('rm-analytics', function(){
+        var props = {};
+        // get rmAnalytics data attributes
+        $.each($(this).data(), function(item, value) {
+          if (item.indexOf('rmAnalytics') !== -1) {
+            props[item] = value;
+          }
+        });
+        props['rmAnalyticsElement'] = $(this).prop("tagName");
+        props['rmAnalyticsHtml'] = $(this).html();
+        // get other attributes with custom attrs function
+        $.each($(this).attrs(), function(item, value) {
+          props[item] = value;
+        });
+        // check to see if it has an img tag as a child, if so load in those atrtibutes
+        if ($(this).has("img").length > 0) {
+          $.each($(this).find("img").attrs(), function(item, value) {
+            props[item] = value;
+          });
+        }
+        // send segment call
+        analytics.trackLink($(this), 'Click - '+props['rmAnalyticsDescription'], props);
+      });
+
+      // Map in Asset modal
+      $('.asset-modal .field-name-field-map iframe').once('mouseOverGoogleMap', function() {
+        var isOverIframe = false,
+        windowLostBlur = function () {
+            if (isOverIframe === true) {
+                // DO STUFF
+                isOverIframe = false;
+            }
+        };
+        $(window).focus();
+        $(this).mouseenter(function(){
+          isOverIframe = true;
+          analytics.track('IO Fund - Asset - Modal - Moused over google map', {
+            ioId: Drupal.settings.rm_analytics.io.ioId,
+            ioTitle: Drupal.settings.rm_analytics.io.ioTitle
+          });
+        });
+        $(this).mouseleave(function(){
+          isOverIframe = false;
+          analytics.track('IO Fund - Asset - Modal - Moused out of google map', {
+            ioId: Drupal.settings.rm_analytics.io.ioId,
+            ioTitle: Drupal.settings.rm_analytics.io.ioTitle
+          });
+        });
+        $(window).blur(function () {
+            windowLostBlur();
+        });
+      })
+
+    }
+  };
+})(jQuery, Drupal, this, this.document);
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+analytics.track('Investment opportunity - Viewed', {
+  ioId: Drupal.settings.rm_analytics.io.ioId,
+  ioTitle: Drupal.settings.rm_analytics.io.ioTitle,
+  fundsRaised: Drupal.settings.rm_analytics.io.fundsRaised,
+  targetAmount: Drupal.settings.rm_analytics.io.targetAmount,
+  percentageRaised: Drupal.settings.rm_analytics.io.percentageRaised
+});
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($) {
+    $(document).ready(function() {
+        var mainMenu = $('.block-main-menu ul.menu'),
+            footerMenu = $('.block-menu-menu-footer-menu ul.menu'),
+            menuRegex = /menu-(\d+)$/;
+
+        trackTheLink(mainMenu, 'Main Menu');
+        trackTheLink(footerMenu, 'Footer Menu');
+
+
+        /**
+         * Track the link
+         * @param menu
+         * @param menuName
+         */
+        function trackTheLink(menu, menuName) {
+            $('a', menu).each(function(index, item) {
+                var parent = $(item).parent(),
+                    classesList = parent.prop('class').split(/\s+/);
+
+                $.each(classesList, function(index, classname) {
+                    var matches = menuRegex.exec(classname);
+                    if (matches && matches.length > 0) {
+                        if ($(item).text() !== '') {
+                            var obj = {
+                                mlid: parseInt(matches[1]),
+                                menu: menuName,
+                                title: $(item).text(),
+                                path: $(item).attr('href'),
+                            };
+                            analytics.trackLink($(item), 'Menu Link Clicked', obj);
+                        }
+                        return;
+                    }
+                });
+            });
+        };
+    });
+})(jQuery);
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($, Drupal, window, document, undefined) {
+  Drupal.behaviors.shareNewsletter = {
+    attach: function (context, settings) {
+
+      analytics.trackLink(jQuery('.share-link-newsletter'), 'Clicked "Share Link Newsletter"', function (link) {
+        return {
+          shareLocation: $('a',link).data('share-location'),
+          shareSocialType: $('a',link).data('share-social-type'),
+          shareContent: $('a',link).data('share-content'),
+          shareEmail: $('a',link).data('share-email'),
+        };
+      });
+
+    }
+  };
+})(jQuery, Drupal, this, this.document);
+
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($) {
+  var props_identify = {};
+  $.each(Drupal.settings.rm_analytics.google_analytics_identify, function (index, value) {
+    props_identify[index] = value;
+  });
+  analytics.identify(Drupal.settings.rm_analytics.segment_uid, props_identify);
+}(jQuery));
+
+//--><!]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"aa9df7661e","applicationID":"8413498","transactionName":"ZVVRN0cCWEZSVkANCVwfcgBBCllbHEVVAwNtXVINVARTR2xbWwADbUZaBkI8RlRUUA==","queueTime":0,"applicationTime":1113,"atts":"SRJSQQ8YS0g=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

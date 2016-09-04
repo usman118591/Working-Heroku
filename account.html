@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EstateUp </title>
+<meta name="keywords" content="Crowdfunding , Fundraising, f" />
+<meta name="description" content="Fundraising Script CV2" />
+<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/simple-line-icons/css/simple-line-icons.min.css">
+	<!-- Theme CSS -->
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/css/theme.css">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/css/theme-elements.css">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/css/theme-blog.css">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/css/theme-shop.css">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/css/theme-animate.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/rs-plugin/css/settings.css" media="screen">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/rs-plugin/css/layers.css" media="screen">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/rs-plugin/css/navigation.css" media="screen">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/circle-flip-slideshow/css/component.css" media="screen">
+        <link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/nivo-slider/nivo-slider.css" media="screen">
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/nivo-slider/default/default.css" media="screen">
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/css/skins/skin-corporate-6.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/css/custom.css">
+
+<link rel="stylesheet" type="text/css" href="http://bootstrap.crowdphp.com/public/runtime/statics/57b0aeb02387e6c4d40cee922bd93ff4.css" />
+<script type="text/javascript" src="http://bootstrap.crowdphp.com/public/runtime/statics/761bb57bc5af412920dd9a56dc02a960.js"></script>
+<script type="text/javascript">
+var APP_ROOT = '';
+var LOADER_IMG = 'http://bootstrap.crowdphp.com/app/Tpl/bootstrap/images/lazy_loading.gif';
+var ERROR_IMG = 'http://bootstrap.crowdphp.com/app/Tpl/bootstrap/images/image_err.gif';
+</script>
+
+<script type='text/javascript'  src='/public/region.js'></script>
+<!--[if IE 6]>
+	<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	DD_belatedPNG.fix('img , .banner .btn_tit ul li.on , .banner .btn_tit ul li , .mx_1 , .mx_2 , .mx_3 , .mx_4 , .xzdq1 , .zcz , .timeline-left-gray , .deal_log_title .title , .timeline-comment-top , .timeline-start span , .pageleft a , .dz , .kj , .mf , .boxaddress , .xzdq , .con6 .sub , .fx i , .attention_focus_deal i , .head_down_icon , .banner .prev , .banner .next , .mxr_1 , .mxr_2 , .mxr_3 , .shenhe .shenhe_info li , .mod_title i , .box4 .mod_cont3 .leader_t , .box4 .mod_cont3 .leader_w , .box4 .mod_cont3 .leader_r , .box4 .mod_cont3 .leader_x , .box4 .mod_cont3 .leader_p , .step_box , .pageleft a i , .invester_all .col_a , .article_l li.on , .article_box .article_r_list h3 , .deals_cate_equity .equity_box .equity_box_l .inf_2 i , .fa , .send_message , .sidebar ul li .sidetop , .sidebar ul li .sidetop:hover , .header .header_nav_box .main_publish .btn_publish , .login_tip span a.zc_phone , .icon_arrow_down , .homeleft .menutitle .icons , .uinfo_settting .set , .u_header .u_total_box , .u_header .u_img .u_img_bg , .jcDateIco'); 
+	</script>
+<[endif]-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/modernizr/modernizr.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".search_cate").bind('click',function(){
+			$(this).attr("checked",true).addClass("cur").siblings().attr("checked",false).removeClass("cur");
+			$("input[name='type']").val($(this).attr("livalue"));
+		});
+		
+		//Solve the input value can not support the placeholder problems in ie
+		var doc=document,inputs=doc.getElementsByTagName('input'),supportPlaceholder='placeholder'in doc.createElement('input'),placeholder=function(input){var text=input.getAttribute('placeholder'),defaultValue=input.defaultValue;
+		if(defaultValue==''){
+			input.value=text}
+			input.onfocus=function(){
+				if(input.value===text){
+				this.value=''
+				}
+			};
+			input.onblur=function(){
+				if(input.value===''){
+					this.value=text
+				}
+			}
+		};
+		if(!supportPlaceholder){
+			for(var i=0,len=inputs.length;i<len;i++){
+				var input=inputs[i],text=input.getAttribute('placeholder');
+				if(input.type==='text'&&text){
+					placeholder(input)
+				}
+			}
+		}
+	});
+
+	function check_tg(){
+		var is_tg=0,
+			is_user_tg=0,
+			is_user_investor=1,
+			check_login=$("input[name='check_login']").val();
+		if(check_login){
+			if(is_tg){
+				if(!is_user_tg){
+					$.showErr("Your account is not completed ,Goto the accounts Page",function(){
+						window.location.href=APP_ROOT +"/index.php?ctl=collocation&act=CreateNewAcct&user_type=0&user_id=19";
+					});
+				}else{
+					window.location.href="/index.php?ctl=project&act=choose";
+				}
+			}else{
+				
+				if(is_user_investor ==1){
+					window.location.href="/index.php?ctl=project&act=choose";
+				}else if(is_user_investor ==2){
+					$.showErr("Your identity is being checked, Please contact our staff or wait .");
+				}
+				else{
+					$.showErr("You are not authorized to start a project ,Please make sure your account is verfied!",function(){
+						window.location.href="{url r='settings#security' p='method=setting-id-box'}";
+					});
+				}
+				
+			}
+		}
+		else{
+			show_pop_login();
+		}
+	}
+</script>
+</head>
+<body>
+<div class="body">
+<header id="header" class="header-narrow" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": false}'>
+				<div class="header-body">
+						<div class="header-top">
+						<div class="container">
+							<div class="row">
+							<div class="col-md-3 col-sm-5">
+								<form action="" method="get" class="form-inline" role="form">
+					<select name="lang" onchange="this.form.submit()" class="form-control">
+          			<option value="">+ Language</option>
+					<option value="en_US">English&nbsp;&nbsp;&nbsp;</option>
+          			<option value="ar_AE">Arabic</option>
+          			
+					</select>
+		</form>
+							</div>
+							
+							<div class="header-search hidden-xs pull-right">
+					
+								<form action="/deals.html" method="post" id="header_search_form">
+								<div class="input-group">
+		
+				
+				<input type="text" id="header_keyword" name="k" placeholder="Search Projects" class="form-control">
+				<span class="input-group-btn">
+											<button class="btn btn-default" type="submit" id="header_submit" ><i class="fa fa-search"></i></button>
+				</span>
+													<input type="hidden" name="type" value="0"/>		
+								</div>
+			</form>
+			
+							</div>
+							
+							</div>
+						</div>
+					</div>
+					
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column header-column col-sm-6 col-md-4 col-xs-6 col-lg-3">
+								<div class="header-logo">
+									<a href="">
+										<img src="logo.png">
+									</a>
+								</div>
+							</div>
+							<div class="header-column col-sm-6 col-md-8 col-xs-6  col-lg-9">
+								<div class="header-row">
+									<div class="header-nav">
+										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+											<i class="fa fa-bars"></i>
+										</button>
+										<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+											<nav>
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="">
+	<a href="/index.html"  target="" title="Home">Home</a>	
+	</li>
+			<li>
+	
+				<a href="javascript:check_tg();" class="btn_publish">Start a project</a>
+				<input type="hidden" name="check_login" value="19">
+	</li>
+														<li id="headerAccount" class="dropdown dropdown-mega dropdown-mega-signin signin logged">
+														<a href="page-login.html" class="dropdown-toggle">
+															<i class="fa fa-user"></i> test														<i class="fa fa-caret-down"></i></a>
+														<ul class="dropdown-menu">
+															<li>
+															
+																<div class="dropdown-mega-content">
+															
+																	<div class="row">
+																		<div class="col-md-4">
+																			<div class="user-avatar">
+																				<div class="img-thumbnail">
+												<a href='#' style='text-align:center; display:inline-block;'><img src='ak.jpg'  /></a>																				</div>
+																			</div>
+																			<div><small><strong>Akarshan</strong></small></div><div><small>CEO</small></div>
+																				
+																		</div>
+																		<div class="col-md-4">
+																				<ul class="list-account-options">
+																				<li><span><a href="/home.html"><i class="fa fa-tasks"></i> Account</a></span></li>
+																				<li><a href="/news-fav.html"><i class="fa fa-refresh"></i> Updates</a></li>
+																				<li><a href="/comment.html"><i class="fa fa-comments"></i> Reviews</a></li>
+																				<li><a href="/notify.html" class="badge1" data-badge="7 "><i class="fa fa-send"></i> Notices</a></li>
+			
+																			</ul>
+																		</div>
+																		<div class="col-md-4">
+																			<ul class="list-account-options">
+																				<li><a href="/settings.html"><i class="fa fa-gears"></i> Settings</a></li> 
+																				<li><a href="/account.html"><i class="fa fa-rocket"></i> Projects</a></li>
+																				<li><a href="/message.html" class="badge1" data-badge="1"><i class="fa fa-envelope"></i> Messages</a></li>
+																				<li><a href="/user-loginout.html"><i class="fa fa-sign-out"></i> Logout </a></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																
+															</li>
+														</ul>
+													</li>
+																										
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header><div class="clearfix"></div>
+ 
+<link rel="stylesheet" type="text/css" href="http://bootstrap.crowdphp.com/public/runtime/statics/2cbf85fa67ae1e2ae50751fc720fe822.css" />
+<script type='text/javascript' src='/public/script/ofc/js/swfobject.js'></script>
+<style>
+	#con_one_1{width:100%;display:block;}
+</style>
+<script type="text/javascript">
+	$(function(){
+		var ofc_swf="/public/script/ofc/open-flash-chart.swf";
+		var invest_stroke_url = '%2Fajax-get_invest_stroke.html';
+		load_ofc("invest_chart",invest_stroke_url,'100%',500,ofc_swf);
+	});
+    function jump(hrf){
+    	location.href = hrf;
+    }
+</script>
+<style type="text/css">
+	.u_money_box .recharge.mt60{
+		margin-top:60px;
+	}
+</style>
+<div class="u_header">
+	<div class="">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+		<div class="u_img_box f_l">
+			<div class="u_img f_l mr20">
+				<div class="u_img_bg"></div>
+				<a href='/home/id-19.html' style='text-align:center; display:inline-block;'><img src='logo.png'  /></a>			</div>
+			<div class="u_infobox f_l">
+				<div class="u_l1 user_name">
+					<span class="f24">Akarshan</span>
+						                <img src="tick.png" alt="Membership Level" class="level_icon" />
+									</div>
+				<div class="u_l1 time">
+					<div class="f_l">Last online:</div>
+					<div class="f_l name">2016/09/30</div>
+				</div>
+				<div class="u_l1 position">
+										<i class="icon iconfont">&#xe619;</i>UAEA&nbsp;DXB									</div>
+				<div class='u_l1 uinfo_settting'>
+	                <a class='set smobilepassed' href='/settings-security/method-setting-mobile-box.html' title="Mobile Verified">Mobile Verification</a>
+	                <a class='set saccountpassed' href='/settings-security/method-setting-id-box.html' title="Accredited Investor Verified">Investor Status</a>
+	                <a class='set semailpassed' href='/settings-security/method-setting-email-box.html' title="Email Verified">E-mail Verfication</a>
+	                <a class='set spaypwdpassed' href='/settings-security/method-setting-pass-box.html' title="Payment password Set">Payment password</a>
+	                <a class='set ssetting' href="/settings.html" title="Account settings">Account settings</a>
+	            </div>
+			</div>
+		</div>
+		</div>
+
+		<div class="col-md-6">
+		<div class="u_money_box f_r">
+			<div id="u_money_other" class="u_total_box trusteeship_total_box f_r" style="display:none;">
+            	<div class="u_total_m">
+            		<div class="f_l mr20">
+            			<h3>Balance</h3>
+            			<span class="u_money J_u_money_0 theme_fcolor" id="u_money_other_money"></span>
+            		</div>
+            		<div class="f_r tr">
+            			<h3>Security Deposit</h3>
+            			<span class="u_money J_u_money_2 sincerity_money" id="u_money_other_freeze"></span>
+            		</div>
+            	</div>
+            </div>
+            <div id="u_money_main" class="u_total_box f_r mr10">
+            	<div class="u_total_m">
+            		<div class="f_l mr20">
+            			<h3>Balance</h3>
+            			<span class="u_money f_red">$0.00</span>
+            		</div>
+            		<div class="f_r tr">
+            			<h3>Earnest Money</h3>
+            			<span class="u_money sincerity_money">$0.00</span>
+            		</div>
+            	</div>
+            </div>
+            <div class="blank10"></div>
+            <div class="recharge f_r">
+            	                
+                <a href="/account-money_carry_bank.html" class="ui-small-button bg_red btn_inchange mr10">Withdrawal</a>
+            </div>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+	(function(){
+			})();
+</script>
+<script type="text/javascript">
+(function(){
+	var email=$("input[name='s_email']").val() ,
+	 	mobile=$("input[name='s_mobile']").val() ,
+	 	paypassword=$("input[name='s_paypassword']").val() ,
+	 	investor_status=$("input[name='s_investor_status']").val() ,
+		s_array=new Array(email,mobile,paypassword,investor_status);
+ 	for(var i=0; i<s_array.length; i++){
+     	if(s_array[i] == "" || s_array[i] == 0 || typeof(s_array[i]) == "undefined"){
+          	s_array.splice(i,1);
+          	i= i-1;
+ 		}        
+ 	}
+ 	var total_length=4 ,
+ 		s_array_length=s_array.length ,
+ 		security_val=((s_array_length/total_length)*100);
+	$("#security_val").text(security_val+"%");
+	$("#progress").animate({width:security_val+"%"},1000);
+})();
+</script><section id="settingsIndex">
+<!--Start Middle -->
+<div class="container">
+	<div class="row">
+	<div class="col-md-3">
+	<div class="xnav-side-menu">
+    <div class="brand">
+	</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li><div class="homeleft">
+			<div class="homeleft_title">
+		Profile Completed:<span class="f_r b" id="security_val">50%</span>
+		
+		<div class="progress_bg">
+			<span class="theme_bgcolor" id="progress"></span>
+		</div>
+		<input type="hidden" name="s_email" value="test@test.com" />
+		<input type="hidden" name="s_mobile" value="11111111111" />
+		<input type="hidden" name="s_paypassword" value="202cb962ac59075b964b07152d234b70" />
+		<input type="hidden" name="s_investor_status" value="1" />
+	</div></div></li>
+				<li  data-toggle="collapse" data-target="#sideaccountmenu" class="collapsed active">
+                 <i class="fa fa-plug fa-lg"></i> Account Management <span class="xarrow"></span>
+                </li>
+                <ul class="sub-menu collapse" id="sideaccountmenu">
+                    <li class="active" id="accountlink"><a href="/home.html">Account</a></li>
+                    <li ><a href="#">Credit</a></li>
+                    
+                    <li ><a href="#">My withdrawal</a></li>
+                    
+                </ul>
+                <li data-toggle="collapse" data-target="#projectmanagement" class="collapsed">
+                  <i class="fa fa-leaf fa-lg"></i> Project management <span class="xarrow"></span>
+                </li>  
+                <ul class="sub-menu collapse" id="projectmanagement">
+                  <li >
+				  <a href="/account.html">My Funded Projects</a>
+                  </li>
+				  <li >
+				  <a href="/account-project.html">
+				 My Projects			     	</a>
+				  </li>
+                  	<li >
+					<a href="/account-focus.html">
+					Following					</a>
+					</li>
+					<li >
+					<a href="/account-recommend.html" class="a3">
+						Recommended					</a>
+					</li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#accountProfile" class="collapsed ">
+                  <i class="fa fa-user fa-lg"></i> Profile <span class="xarrow"></span>
+                </li>
+                <ul class="sub-menu collapse" id="accountProfile">
+                  <li >
+					<a href="/settings.html">Settings</a>
+				  </li>
+		          <li >
+				<a href="/settings-security.html">Security</a>
+				
+			
+		</li>
+                </ul>
+
+                <li data-toggle="collapse" data-target="#accountMessageCenter" class="collapsed  ">
+                  <i class="fa fa-envelope fa-lg"></i> Message Center <span class="xarrow"></span>
+                </li>
+                <ul class="sub-menu collapse" id="accountMessageCenter">
+				<li >
+			  <a href="/comment.html" >Project Reviews</a>
+		      </li>
+				<li>
+				<a href="/news.html" >Project Updates</a>
+			</li>
+			<li >
+				<a href="/message.html" >Messages</a>
+			</li>
+			<li >
+			<a href="/notify.html" >Notifications</a>
+			</li>
+				</ul>
+				
+				
+				
+				<li data-toggle="collapse" data-target="#accountRefer" class="collapsed ">
+                  <i class="fa fa-hand-o-right fa-lg"></i> Refer <span class="xarrow"></span>
+                </li>
+                <ul class="sub-menu collapse" id="accountRefer">
+				<li >
+					<a href="/referral.html">My referrals</a>
+				</li>
+				</ul>
+            </ul>
+     </div>
+</div>
+<script type="text/javascript">
+(function(){
+	var email=$("input[name='s_email']").val() ,
+	 	mobile=$("input[name='s_mobile']").val() ,
+	 	paypassword=$("input[name='s_paypassword']").val() ,
+	 	investor_status=$("input[name='s_investor_status']").val() ,
+		s_array=new Array(email,mobile,paypassword,investor_status);
+ 	for(var i=0; i<s_array.length; i++){
+     	if(s_array[i] == "" || s_array[i] == 0 || typeof(s_array[i]) == "undefined"){
+          	s_array.splice(i,1);
+          	i= i-1;
+ 		}        
+ 	}
+ 	var total_length=4 ,
+ 		s_array_length=s_array.length ,
+ 		security_val=((s_array_length/total_length)*100);
+	$("#security_val").text(security_val+"%");
+	$("#progress").animate({width:security_val+"%"},1000);
+})();
+</script> 
+	</div>
+	<div class="col-md-9">
+	<div class="homeright pageright f_r">	
+		<!--Investment recorded within six months of starting-->
+		<div>
+			<div class="u_m_title_t f_red">6 months Records</div>
+            <div class="blank20"></div>
+            <div id="invest_chart"></div>
+		</div>
+		<!--Within six months of the end of the investment recorded-->
+	</div>
+    <div class="blank0"></div>
+</div>
+	</div></div></div>
+	</section>
+<footer class="short" id="footer">
+				<div class="container">
+					<div class="row">
+					<div class="footer-ribbon">
+							<span>Get in Touch</span>
+						</div>
+			<div class="col-md-9 col-xs-9">
+			<div class="row">
+															<div class="col-md-3 col-xs-2">
+							<h5>About</h5>
+							<ul class="list list-icons list-icons-sm">
+														<li><i class="fa fa-caret-right"></i><a href="/about/81.html" >User Levels</a></li>
+														<li><i class="fa fa-caret-right"></i><a href="/about/69.html" >Contact</a></li>
+														<li><i class="fa fa-caret-right"></i><a href="/about/68.html" >About Us</a></li>
+														</ul>
+						</div>
+																				<div class="col-md-3 col-xs-2">
+							<h5>Help</h5>
+							<ul class="list list-icons list-icons-sm">
+														<li><i class="fa fa-caret-right"></i><a href="/Help/77.html" >Projects we like</a></li>
+														<li><i class="fa fa-caret-right"></i><a href="index.php?ctl=faq" >Faq</a></li>
+														</ul>
+						</div>
+																				<div class="col-md-3 col-xs-2">
+							<h5>Learn more</h5>
+							<ul class="list list-icons list-icons-sm">
+														<li><i class="fa fa-caret-right"></i><a href="/how-to/80.html" >How to start</a></li>
+														<li><i class="fa fa-caret-right"></i><a href="user-register" >Sign up</a></li>
+														</ul>
+						</div>
+																				<div class="col-md-3 col-xs-2">
+							<h5>Whats New</h5>
+							<ul class="list list-icons list-icons-sm">
+														<li><i class="fa fa-caret-right"></i><a href="/new/78.html" >Copyright</a></li>
+														<li><i class="fa fa-caret-right"></i><a href="/new/75.html" >Terms</a></li>
+														</ul>
+						</div>
+												</div>
+			
+				<div class="row">
+				<ul class="list list-inline text-center">
+								<li><a href="/help-term.html" title="Terms">Terms</a></li>
+								<li><a href="/help-intro.html" title="Services">Services</a></li>
+								<li><a href="/help-privacy.html" title="Privacy Policy">Privacy Policy</a></li>
+								<li><a href="/help-about.html" title="About">About</a></li>
+								<li><a href="/help-write_guide.html" title="Creator Handbook">Creator Handbook</a></li>
+								<li><a href="/help-8.html" title="Check">Blog</a></li>
+								</ul>
+				</div>
+				 <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p>Estateup.com is a real estate crowdfunding website. Equity securities are offered through North Capital Private Securities Corp. ("NCPS"), a registered broker-dealer and member <a href="http://www.finra.org/" target="_blank">FINRA</a>/<a href="http://www.sipc.org/" target="_blank">SIPC</a>.</p>
+<p>By accessing this site and any pages thereof, you agree to be bound by our <a href="/terms-service" target="_blank">Terms of Service</a> and <a href="/privacy-policy" target="_blank">Privacy Policy</a>.</p>
+
+  </div>
+</div>
+			</div>
+			
+				</div>
+			</footer> -->
+</div>
+		<!-- Vendor -->
+		
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/common/common.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/jquery.stellar/jquery.stellar.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/vendor/vide/vide.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/js/views/view.home.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="http://bootstrap.crowdphp.com/app/Tpl/bootstrap/js/theme.init.js"></script>
+</body>
+</html> 

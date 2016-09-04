@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EstateUp</title>
+<meta name="keywords" content="Crowdfunding , Fundraising, f" />
+<meta name="description" content="Fundraising Script CV2" />
+<link rel="stylesheet" type="text/css" href="http://demo.crowdphp.com/public/runtime/statics/ec227dcf9c5e18692c777930cb610a44.css" />
+<script type="text/javascript" src="http://demo.crowdphp.com/public/runtime/statics/f3ef9db8468ca2aa68bc4b72ce8b95d2.js"></script>
+<script type="text/javascript">
+var APP_ROOT = '';
+var LOADER_IMG = 'http://demo.crowdphp.com/app/Tpl/cv4/images/lazy_loading.gif';
+var ERROR_IMG = 'http://demo.crowdphp.com/app/Tpl/cv4/images/image_err.gif';
+</script>
+<script type='text/javascript'  src='/public/region.js'></script>
+<!--[if IE 6]>
+	<script src="http://demo.crowdphp.com/app/Tpl/cv4/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	DD_belatedPNG.fix('img , .banner .btn_tit ul li.on , .banner .btn_tit ul li , .mx_1 , .mx_2 , .mx_3 , .mx_4 , .xzdq1 , .zcz , .timeline-left-gray , .deal_log_title .title , .timeline-comment-top , .timeline-start span , .pageleft a , .dz , .kj , .mf , .boxaddress , .xzdq , .con6 .sub , .fx i , .attention_focus_deal i , .head_down_icon , .banner .prev , .banner .next , .mxr_1 , .mxr_2 , .mxr_3 , .shenhe .shenhe_info li , .mod_title i , .box4 .mod_cont3 .leader_t , .box4 .mod_cont3 .leader_w , .box4 .mod_cont3 .leader_r , .box4 .mod_cont3 .leader_x , .box4 .mod_cont3 .leader_p , .step_box , .pageleft a i , .invester_all .col_a , .article_l li.on , .article_box .article_r_list h3 , .deals_cate_equity .equity_box .equity_box_l .inf_2 i , .fa , .send_message , .sidebar ul li .sidetop , .sidebar ul li .sidetop:hover , .header .header_nav_box .main_publish .btn_publish , .login_tip span a.zc_phone , .icon_arrow_down , .homeleft .menutitle .icons , .uinfo_settting .set , .u_header .u_total_box , .u_header .u_img .u_img_bg , .jcDateIco'); 
+	</script>
+<![endif]-->
+</head>
+<body>
+<div class="header" id="J_head">
+	<div class="header_top wrap">
+		<div class="logo f_l">
+			<a class="link" href="/">
+								<span style='display:inline-block; width:200px; height:78px; background:url(logo.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=logoa.png, sizingMethod=scale);_background-image:none;'></span>			</a>
+		</div>
+		<div class="header_search f_l">
+			<form action="/deals.html" method="post" id="header_search_form">
+				 
+     			<a href="javascript:void(0);" livalue="0" class="search_cate cur" checked="checked">Projects</a>
+         		<a href="javascript:void(0);" livalue="1" class="search_cate">Investments</a>
+																<div class="blank0"></div>	
+				<input type="text" id="header_keyword" name="k" placeholder="Search Projects" class="seach_text">
+				<input type="button" value="Find" class="seach_submit" id="header_submit" />
+				 
+					<input type="hidden" name="type" value="0"/>				
+					<input type="hidden" name="redirect" value="1"/>		
+															</form>	
+        </div>
+        <div class="f_r" style="width:320px;">		
+			<div class="login_tip">	
+<span>	
+<form action="" method="get" class="form-horizontal" role="form">
+					<select name="lang" onchange="this.form.submit()" class="form-control">
+          			<option value="">+ Language</option>
+					<option value="en_US">English&nbsp;&nbsp;&nbsp;</option>
+          			<option value="ar_AE">Arabic</option>
+          		
+					</select>
+		</form>
+</span>
+	 	<span>
+		<a href="javascript:void(0);" id="mymessage" style="padding: 0 6px;
+	border-right: 1px solid #d2d2d2; display:none;">News <b class="head_down_icon"></b></a>
+		<a href="javascript:void(0);" id="mycenter" style="">test<s class="icon_arrow icon_arrow_down"></s></a>
+		<i class="line"></i>
+		<a href="/user-loginout.html" title="Drop out" id="user_login_out" style="padding: 0 6px; ">Logout</a>
+				<a href="javascript:void(0);" id="zc_phone" class="zc_phone pr">
+			App<s class="icon_arrow icon_arrow_down"></s>
+		</a>
+			</span>
+	<div id="mymessage_drop" style="position:absolute; display:none;">
+		<div class="drop_box">
+			<span><a href="/news-fav.html">Updates</a></span>
+			<span><a href="/comment.html">View Comments</a></span>
+			<span><a href="messages.html">View Messages</a></span>
+			<span class="last"><a href="notify.html">(0) Notifications</a></span>
+		</div>
+	</div>
+	<div id="mycenter_drop" style="position:absolute; display:none;">
+		<div class="drop_box mycenter_drop">
+			<span><a href="signup_2.html">Dashboard</a></span>
+			<span><a href="/home.html">Account</a></span>
+			<span><a href="/account.html">Projects</a></span>
+			<span><a href="/settings.html">Settings</a></span>
+			<span><a href="/news-fav.html">Updates</a></span>
+			<span><a href="/comment.html">Comments</a></span>
+			<span><a href="/message.html">Messages</a></span>
+			<span class="last"><a href="/notify.html">(7) Notifications</a></span>
+		</div>
+	</div>
+	
+		
+	<div id="zc_phone_drop" style="position:absolute; display:none;">
+		<div class="zc_phone_drop">
+								</div>
+	</div>
+</div> 
+			<div id="user_notify_tip" style="position:absolute; z-index:1; display:none; margin-top:45px;">		
+			<div class="notify_tip_box1" id="close_user_notify">
+				
+											</div>
+		</div>
+			</div>
+		<div class="blank0"></div>
+	</div>
+	<div class="header_nav theme_bgcolor">
+		<div class="header_nav_box">
+			<ul class="main_nav f_l">
+								<li class="">
+					<a href="signup_2.html"  target="" title="Discover">Discover</a>	
+				</li>
+								<li class="">
+					<a href="/deals/r-classic.html"  target="" title="Classic">My Account</a>	
+				</li>
+				<li class="">
+					<a href="investor.html"  target="" title="Classic">Invest</a>	
+				</li>
+				<li class="">
+					<a href="#"  target="" title="Classic">Learn More</a>	
+				</li>
+							</ul>
+						<div class="main_publish f_r">
+				<a href="javascript:check_tg();" class="btn_publish"></a>
+				<input type="hidden" name="check_login" value="19">
+			</div>
+					</div>
+	</div>		
+</div>
+<script type="text/javascript">
+	(function(){
+		if(!($(".zc_phone_drop").children().length)){
+			$(".zc_phone").remove();
+		}
+	})();
+	$(function(){
+		$(".search_cate").bind('click',function(){
+			$(this).attr("checked",true).addClass("cur").siblings().attr("checked",false).removeClass("cur");
+			$("input[name='type']").val($(this).attr("livalue"));
+		});
+		
+		//Solve the input value can not support the placeholder problems in ie
+		var doc=document,inputs=doc.getElementsByTagName('input'),supportPlaceholder='placeholder'in doc.createElement('input'),placeholder=function(input){var text=input.getAttribute('placeholder'),defaultValue=input.defaultValue;
+		if(defaultValue==''){
+			input.value=text}
+			input.onfocus=function(){
+				if(input.value===text){
+				this.value=''
+				}
+			};
+			input.onblur=function(){
+				if(input.value===''){
+					this.value=text
+				}
+			}
+		};
+		if(!supportPlaceholder){
+			for(var i=0,len=inputs.length;i<len;i++){
+				var input=inputs[i],text=input.getAttribute('placeholder');
+				if(input.type==='text'&&text){
+					placeholder(input)
+				}
+			}
+		}
+	});
+
+	function check_tg(){
+		var is_tg=0,
+			is_user_tg=0,
+			is_user_investor=1,
+			check_login=$("input[name='check_login']").val();
+		if(check_login){
+			if(is_tg){
+				if(!is_user_tg){
+					$.showErr("Your account is not completed ,Goto the accounts Page",function(){
+						window.location.href=APP_ROOT +"/index.php?ctl=collocation&act=CreateNewAcct&user_type=0&user_id=19";
+					});
+				}else{
+					window.location.href="/index.php?ctl=project&act=choose";
+				}
+			}else{
+				
+				if(is_user_investor ==1){
+					window.location.href="/index.php?ctl=project&act=choose";
+				}else if(is_user_investor ==2){
+					$.showErr("Your identity is being checked, Please contact our staff or wait .");
+				}
+				else{
+					$.showErr("You are not authorized to start a project ,Please make sure your account is verfied!",function(){
+						window.location.href="/settings-security/method-setting-id-box.html";
+					});
+				}
+				
+			}
+		}
+		else{
+			show_pop_login();
+		}
+	}
+</script> 
+<link rel="stylesheet" type="text/css" href="http://demo.crowdphp.com/public/runtime/statics/decd506af06cc359acc26b41b147ced8.css" />
+<script type='text/javascript' src='/public/script/ofc/js/swfobject.js'></script>
+<style>
+	#con_one_1{width:100%;display:block;}
+</style>
+<script type="text/javascript">
+	$(function(){
+		var ofc_swf="/public/script/ofc/open-flash-chart.swf";
+		var invest_stroke_url = '%2Fajax-get_invest_stroke.html';
+		load_ofc("invest_chart",invest_stroke_url,'100%',500,ofc_swf);
+	});
+    function jump(hrf){
+    	location.href = hrf;
+    }
+</script>
+<style type="text/css">
+	.u_money_box .recharge.mt60{
+		margin-top:60px;
+	}
+</style>
+<div class="u_header">
+	<div class="u_box">
+		<div class="u_img_box f_l">
+			<div class="u_img f_l mr20">
+				<div class="u_img_bg"></div>
+				<a href='/home/id-19.html' style='text-align:center; display:inline-block;'><img src='/public/avatar/default/noavatar_9.JPG'  /></a>			</div>
+			<div class="u_infobox f_l">
+				<div class="u_l1 user_name">
+					<span class="f24">test</span>
+						                <img src="#" alt="Membership Level" class="level_icon" />
+									</div>
+				<div class="u_l1 time">
+					<div class="f_l">Last online:</div>
+					<div class="f_l name">2016/09/01</div>
+				</div>
+				<div class="u_l1 position">
+										<i class="icon iconfont">&#xe619;</i>USA&nbsp;LA									</div>
+				<div class='u_l1 uinfo_settting'>
+	                <a class='set smobilepassed' href='/settings-security/method-setting-mobile-box.html' title="Mobile Authentication,AlreadyRecognizeCertificate">Mobile Authentication</a>
+	                <a class='set saccountpassed' href='/settings-security/method-setting-id-box.html' title="Verified,AlreadyRecognizeCertificate">Verified</a>
+	                <a class='set semailpassed' href='/settings-security/method-setting-email-box.html' title="E-mail certification,AlreadyRecognizeCertificate">E-mail certification</a>
+	                <a class='set spaypwdpassed' href='/settings-security/method-setting-pass-box.html' title="Payment password,It has been set">Payment password</a>
+	                <a class='set ssetting' href="/settings.html" title="Account settings">Account settings</a>
+	            </div>
+			</div>
+		</div>
+		<div class="u_money_box f_r">
+			<div id="u_money_other" class="u_total_box trusteeship_total_box f_r" style="display:none;">
+            	<div class="u_total_m">
+            		<div class="f_l mr20">
+            			<h3>Balance</h3>
+            			<span class="u_money J_u_money_0 theme_fcolor" id="u_money_other_money"></span>
+            		</div>
+            		<div class="f_r tr">
+            			<h3>Security Deposit</h3>
+            			<span class="u_money J_u_money_2 sincerity_money" id="u_money_other_freeze"></span>
+            		</div>
+            	</div>
+            </div>
+            <div id="u_money_main" class="u_total_box f_r mr10">
+            	<div class="u_total_m">
+            		<div class="f_l mr20">
+            			<h3>Balance</h3>
+            			<span class="u_money f_red">$0.00</span>
+            		</div>
+            		<div class="f_r tr">
+            			<h3>Earnest Money</h3>
+            			<span class="u_money sincerity_money">$0.00</span>
+            		</div>
+            	</div>
+            </div>
+            <div class="blank10"></div>
+            <div class="recharge f_r">
+            	                
+                <a href="/account-money_carry_bank.html" class="ui-small-button bg_red btn_inchange mr10">Withdrawal</a>
+            </div>
+		</div>
+		<div class="blank"></div>
+	</div>
+</div>
+<script type="text/javascript">
+	(function(){
+			})();
+</script><div class="dlmain Myhomepage">
+    <div class="homeleft pageleft f_l ">
+	<div class="homeleft_title">
+		<span class="f12">Account Security level:</span><span class="f_r b" id="security_val">50%</span>
+		<div class="blank5"></div>
+		<div class="progress_bg">
+			<span class="theme_bgcolor" id="progress"></span>
+		</div>
+		<input type="hidden" name="s_email" value="test@test.com" />
+		<input type="hidden" name="s_mobile" value="11111111111" />
+		<input type="hidden" name="s_paypassword" value="098f6bcd4621d373cade4e832627b4f6" />
+		<input type="hidden" name="s_investor_status" value="1" />
+	</div>
+	<div class="menutitle menutitle_account">
+		<span class="f_l"><i class="icons"></i>Account Management</span>
+		<i class="icon iconfont iconfont_right">&#xe61a;</i>
+		<i class="icon iconfont iconfont_down">&#xe61b;</i>
+		<div class="blank0"></div>
+	</div>
+	<ul class="homemenulist">
+		<li class="select">
+			<a href="/home.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont">&#xe61a;</i><span>Dashboard</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-credit.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Financial records</span>
+				</div>
+			</a>
+		</li>
+		
+		<li >
+			<a href="/account-money_carry_bank.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>My withdrawal</span>
+				</div>
+			</a>
+		</li>
+			</ul>
+	<div class="menutitle menutitle_item">
+		<span class="f_l"><i class="icons"></i>Project management</span>
+		<i class="icon iconfont iconfont_right">&#xe61a;</i>
+		<i class="icon iconfont iconfont_down">&#xe61b;</i>
+		<div class="blank0"></div>
+	</div>
+	<ul class="homemenulist">
+		<li >
+			<a href="funded_project.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>My Funded projects</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-project.html" class="a2">
+				<div class="text">
+					<i class="icon iconfont"></i><span>My Projects</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/account-focus.html" class="a3">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Follow</span>
+				</div>
+			</a>
+		</li>
+
+ 	</ul>
+	<div class="menutitle menutitle_set">
+		<span class="f_l"><i class="icons"></i>Profile</span>
+		<i class="icon iconfont iconfont_right">&#xe61a;</i>
+		<i class="icon iconfont iconfont_down">&#xe61b;</i>
+		<div class="blank0"></div>
+	</div>
+	<ul class="homemenulist">
+ 		<li >
+			<a href="settings.html" class="a5">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Personal</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="setting-security.html" class="a12">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Security</span>
+				</div>
+			</a>
+		</li>
+ 		
+	</ul>
+	<div class="menutitle menutitle_news">
+		<span class="f_l"><i class="icons"></i>Message Center</span><i class="icon iconfont">&#xe61a;</i>
+	</div>
+	<ul class="homemenulist">
+		
+		<li>
+			<a href="/news-fav.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Project Updates</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/message.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Messages</span>
+				</div>
+			</a>
+		</li>
+		<li >
+			<a href="/notify.html" class="a1">
+				<div class="text">
+					<i class="icon iconfont"></i><span>Notifications</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="menutitle menutitle_invite">
+		<span class="f_l"><i class="icons"></i>Refer</span><i class="icon iconfont">&#xe61a;</i>
+	</div>
+	<ul class="homemenulist">
+		<li >
+			<a href="/referral.html" class="a3">
+				<div class="text">
+					<i class="icon iconfont"></i><span>My referrals</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+(function(){
+	var email=$("input[name='s_email']").val() ,
+	 	mobile=$("input[name='s_mobile']").val() ,
+	 	paypassword=$("input[name='s_paypassword']").val() ,
+	 	investor_status=$("input[name='s_investor_status']").val() ,
+		s_array=new Array(email,mobile,paypassword,investor_status);
+ 	for(var i=0; i<s_array.length; i++){
+     	if(s_array[i] == "" || s_array[i] == 0 || typeof(s_array[i]) == "undefined"){
+          	s_array.splice(i,1);
+          	i= i-1;
+ 		}        
+ 	}
+ 	var total_length=4 ,
+ 		s_array_length=s_array.length ,
+ 		security_val=((s_array_length/total_length)*100);
+	$("#security_val").text(security_val+"%");
+	$("#progress").animate({width:security_val+"%"},1000);
+})();
+
+(function(){
+	$(".menutitle").removeClass(".cur");
+	$(".homemenulist").hide();
+	$(".homemenulist").each(function(){
+		var obj = $(this);
+		if(obj.find(".select").length){
+			var menutitle = obj.prev(".menutitle");
+			obj.show();
+			menutitle.addClass("cur");
+			menutitle.find(".iconfont_right").hide();
+			menutitle.find(".iconfont_down").show();
+		}
+	});
+
+	$(".homeleft").find(".menutitle").bind('click',function(e){
+		e.stopPropagation();
+		var obj = $(this);
+		var hascur = obj.hasClass("cur");
+		if(hascur){
+			obj.find(".iconfont_down").hide();
+			obj.find(".iconfont_right").show();
+			obj.removeClass("cur").next(".homemenulist").slideUp(300);
+		}
+		else{
+			obj.find(".iconfont_right").hide();
+			obj.find(".iconfont_down").show();
+			obj.addClass("cur").next(".homemenulist").slideDown(300);
+		}
+	});
+})();
+</script> 
+	<div class="homeright pageright f_r">	
+		<!--Investment recorded within six months of starting-->
+		<div>
+			<div class="u_m_title_t f_red">6 months Records</div>
+            <div class="blank20"></div>
+            <div id="invest_chart"></div>
+		</div>
+		<!--Within six months of the end of the investment recorded-->
+	</div>
+    <div class="blank0"></div>
+</div>
+<style>
+	.db .bdshare-button-style0-16 {float:left;}  
+	.db .bdshare-button-style0-16 a , .db .bdshare-button-style0-16 .bds_more {padding-left:0; background-image:none; margin-top:0;}
+	.bdshare-button-style0-16 a:hover {filter:alpha(opacity=100); opacity:1;}
+	.foot-logo img{width:90px; height:90px;}
+</style>
+<!--footer static-->
+<footer id="footer">
+		<section id="google-map">
+				
+			</section>
+		<style >
+			#footer {
+				background-color: #434A54
+			}
+		</style>
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+					<div class="footer-social">
+							<ul>
+								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+								
+								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+							</ul>
+						</div> <!--Social Pllugin In Footer-->
+						<div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+    <style>
+ul#menu li {
+    display:inline-block;
+    padding: 10px 10px;
+}
+</style>
+      <ul id="menu"><li ><a href="/about-us">About Us</a></li>
+<li ><a href="#">Contact Us</a></li>
+<li><a href="faq-template/index.html">FAQ</a></li>
+<li ><a href="#">Blog</a></li>
+<li ><a href="#">Privacy</a></li>
+<li ><a href="#">Terms of Service</a></li>
+</ul>    </div>
+  </div>
+						  
+  </div>
+</div><div class="block block-block block-copyright block-1 block-block-1 even block-without-title" id="block-block-1">
+  <div class="block-inner clearfix">
+                
+   
+						
+						
+						<p>Copyright &copy; 2016 Design and Developed By<a href="http://www.estateup.com"> EstateUp</a> </p>
+					</div>
+				</div>
+			</div>
+		</footer>				<div></div>
+			</div>	
+		</div>
+	</div>
+</div>
+<div></div>
+
+<div class="muxfb_dialog" id="muxfb_dialog">
+	<div class="muxfb_dialog_panel">
+		<i class="muxfb_dialog_close icon iconfont" id="muxfb_dialog_close">&#xe604;</i>
+		<div class="muxfb_dialog_content">
+			<div class="muxfb_left_tab_wrap">
+                <div class="muxfb_left_logo">
+                    <i class="muxfb_left_logo icon iconfont">&#xe605;</i>
+                    <span class="title">Users Feedback</span>
+                </div>
+            </div>
+			<form class="user_message_ajax" name="user_message_ajax"  action="/user_message-save_info.html">
+            <div class="muxfb_right_content muxfb_form" id="muxfb_form">
+            	<h1 class="muxfb_form_title">Feedback</h1>
+            	<div class="form_row control-group">
+					<label class="form_lable" style="height:37px;line-height:37px">Help:</label>
+					<select name="cate_id" class="ui-select field_select small">
+							              		<option value="1" selected="selected">Starting</option>
+	              			              		<option value="2" selected="selected">Suggestions</option>
+	              			              		<option value="3" selected="selected">Others</option>
+	              			              		<option value="4" selected="selected">Verification</option>
+	              							</select>
+					<div class="blank0"></div>
+				</div>
+            	<div class="form_row control-group">
+					<label class="form_lable small_form_lable">Your Name:</label>
+					<div class="pr f_l">
+						<input type="text" name="user_name" id="user_name" value="test" class="small_textbox" />
+						<span class="holder_tip">Please enter your name</span>
+					</div>
+					<div class="blank0"></div>
+					<div class="muxfb_tip user_name_tip  f_red">*The Name can not be empty</div>
+					<div class="blank0"></div>
+				</div>
+				<div class="form_row control-group">
+					<label class="form_lable small_form_lable">Your Phone:</label>
+					<div class="pr f_l">
+						<input type="text" name="tel" id="tel" value="11111111111" class="small_textbox" />
+						<span class="holder_tip">Enter your phone number</span>
+					</div>
+					<div class="blank0"></div>
+					<div class="muxfb_tip tel_tip f_red">*The phone number can not be empty!</div>
+					<div class="blank0"></div>
+				</div>
+				<div class="blank0"></div>
+				<div>Please enter your feedback:</div>
+				<textarea placeholder="Your feedback is important to us" name="content" class="textareabox"></textarea>
+				<span class="muxfb_tip content_tip f_red">*Please enter your content</span>
+				<div class="blank20"></div>
+				<input type="button" value="Send" class="ui-button theme_bgcolor" />
+				<input type="hidden" name="user_id" value="19">
+				<input type="hidden" name="ajax" value="1">
+            </div>
+		</form>	
+		</div>
+		<div class="blank0"></div>
+	</div>
+	<div class="muxfb_dialog_mask"></div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		resetWindowBox();
+		sidebarFun();
+		bind_ajax_form_custom_footer(".user_message_ajax");
+	});
+
+	// Sidebar Function
+	function sidebarFun(){
+		$("#sidebar ul li").hover(function(){
+			$(this).find(".sidebox").stop().animate({"width":"150px"},200).css("background","#3d9eeb")
+		},function(){
+			$(this).find(".sidebox").stop().animate({"width":"38px"},200).css("background","#939393")	
+		});
+		var lastRmenuStatus=false;
+		$(window).scroll(function(){
+			var _top=$(window).scrollTop();
+			if(_top>300){
+				$("#sidebar").data("expanded",true);
+			}else{
+				$("#sidebar").data("expanded",false);
+			}
+			if($("#sidebar").data("expanded")!=lastRmenuStatus){
+				lastRmenuStatus=$("#sidebar").data("expanded");
+				if(lastRmenuStatus){
+					$("#sidebar .sidetop").animate({"height":"38px"},200);
+				}else{
+					$("#sidebar .sidetop").animate({"height":"0"},200);
+				}
+			}
+		});
+		//User Comments
+		var $muxfb_dialog=$("#muxfb_dialog");
+		$muxfb_dialog.find("#muxfb_dialog_close").on('click',function(){
+			$muxfb_dialog.hide();
+		});
+		$("#link_box").on('click',function(){
+			$muxfb_dialog.show();
+		});
+	}
+
+	//Goto Top 
+	function goTop(){
+		$('html,body').animate({'scrollTop':0},100);
+	}
+	function bind_ajax_form_custom_footer(str)
+	{
+		$(str).find(".ui-button").bind("click",function(){
+			var $muxfb_form=$("#muxfb_form");
+			var $muxfb_form_user_name=$("#muxfb_form").find("input[name='user_name']");
+			var $muxfb_form_tel=$("#muxfb_form").find("input[name='tel']");
+			var $muxfb_form_content=$("#muxfb_form").find("textarea[name='content']");
+			$muxfb_form.find(".muxfb_tip").hide();
+			if($.trim($muxfb_form_user_name.val())==''){
+				$muxfb_form.find(".user_name_tip").show();
+				$muxfb_form_user_name.focus();
+				return false;
+			}
+			if($.trim($muxfb_form_tel.val())==''){
+				$muxfb_form.find(".tel_tip").show();
+				$muxfb_form_tel.focus();
+				return false;
+			}
+			if($.trim($muxfb_form_content.val())==''){
+				$muxfb_form.find(".content_tip").show();
+				$muxfb_form_content.focus();
+				return false;
+			}
+			$(str).submit();
+		});
+		$(str).bind("submit",function(){
+			var ajaxurl = $(this).attr("action");
+			var query = $(this).serialize() ;
+			$.ajax({ 
+				url: ajaxurl,
+				dataType: "json",
+				data:query,
+				type: "POST",
+				success: function(ajaxobj){
+					if(ajaxobj.status==1)
+					{
+						location.href = ajaxobj.jump;
+					}
+					else
+					{ 
+						$("."+ajaxobj.info+"_tip").show();		
+					}
+				},
+				error:function(ajaxobj)
+				{
+					if(ajaxobj.responseText!='')
+					alert(ajaxobj.responseText);
+				}
+			});
+			return false;
+		});
+	}
+</script>
+</body>
+</html> 

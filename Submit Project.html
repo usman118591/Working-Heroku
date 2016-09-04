@@ -1,0 +1,970 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Estateup</title>
+<meta name="keywords" content="Crowdfunding , Fundraising, f" />
+<meta name="description" content="Fundraising Script CV2" />
+<link rel="stylesheet" type="text/css" href="http://demo.crowdphp.com/public/runtime/statics/ec227dcf9c5e18692c777930cb610a44.css" />
+<script type="text/javascript" src="http://demo.crowdphp.com/public/runtime/statics/f3ef9db8468ca2aa68bc4b72ce8b95d2.js"></script>
+<script type="text/javascript">
+var APP_ROOT = '';
+var LOADER_IMG = 'http://demo.crowdphp.com/app/Tpl/cv4/images/lazy_loading.gif';
+var ERROR_IMG = 'http://demo.crowdphp.com/app/Tpl/cv4/images/image_err.gif';
+</script>
+<script type='text/javascript'  src='/public/region.js'></script>
+<!--[if IE 6]>
+	<script src="http://demo.crowdphp.com/app/Tpl/cv4/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	DD_belatedPNG.fix('img , .banner .btn_tit ul li.on , .banner .btn_tit ul li , .mx_1 , .mx_2 , .mx_3 , .mx_4 , .xzdq1 , .zcz , .timeline-left-gray , .deal_log_title .title , .timeline-comment-top , .timeline-start span , .pageleft a , .dz , .kj , .mf , .boxaddress , .xzdq , .con6 .sub , .fx i , .attention_focus_deal i , .head_down_icon , .banner .prev , .banner .next , .mxr_1 , .mxr_2 , .mxr_3 , .shenhe .shenhe_info li , .mod_title i , .box4 .mod_cont3 .leader_t , .box4 .mod_cont3 .leader_w , .box4 .mod_cont3 .leader_r , .box4 .mod_cont3 .leader_x , .box4 .mod_cont3 .leader_p , .step_box , .pageleft a i , .invester_all .col_a , .article_l li.on , .article_box .article_r_list h3 , .deals_cate_equity .equity_box .equity_box_l .inf_2 i , .fa , .send_message , .sidebar ul li .sidetop , .sidebar ul li .sidetop:hover , .header .header_nav_box .main_publish .btn_publish , .login_tip span a.zc_phone , .icon_arrow_down , .homeleft .menutitle .icons , .uinfo_settting .set , .u_header .u_total_box , .u_header .u_img .u_img_bg , .jcDateIco'); 
+	</script>
+<![endif]-->
+</head>
+<body>
+<div class="header" id="J_head">
+	<div class="header_top wrap">
+		<div class="logo f_l">
+			<a class="link" href="/">
+								<span style='display:inline-block; width:400px; height:55px; background:url(logo.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://demo.crowdphp.com/public/attachment/201506/19/23/5584350305662.png, sizingMethod=scale);_background-image:none;'></span>			</a>
+		</div>
+		<div class="header_search f_l">
+			<form action="/deals.html" method="post" id="header_search_form">
+				 
+     			<a href="javascript:void(0);" livalue="0" class="search_cate cur" checked="checked">Projects</a>
+         		<a href="javascript:void(0);" livalue="1" class="search_cate">Investments</a>
+																<div class="blank0"></div>	
+				<input type="text" id="header_keyword" name="k" placeholder="Search Projects" class="seach_text">
+				<input type="button" value="Find" class="seach_submit" id="header_submit" />
+				 
+					<input type="hidden" name="type" value="0"/>				
+					<input type="hidden" name="redirect" value="1"/>		
+															</form>	
+        </div>
+        <div class="f_r" style="width:320px;">		
+			<div class="login_tip">	
+<span>	
+<form action="" method="get" class="form-horizontal" role="form">
+					<select name="lang" onchange="this.form.submit()" class="form-control">
+          			<option value="">+ Language</option>
+					<option value="en_US">English&nbsp;&nbsp;&nbsp;</option>
+          			<option value="ar_AE">Arabic</option>
+          			
+					</select>
+		</form>
+</span>
+	 	<span>
+		<a href="javascript:void(0);" id="mymessage" style="padding: 0 6px;
+	border-right: 1px solid #d2d2d2; display:none;">News <b class="head_down_icon"></b></a>
+		<a href="javascript:void(0);" id="mycenter" style="">test<s class="icon_arrow icon_arrow_down"></s></a>
+		<i class="line"></i>
+		<a href="/user-loginout.html" title="Drop out" id="user_login_out" style="padding: 0 6px; ">Logout</a>
+				<a href="javascript:void(0);" id="zc_phone" class="zc_phone pr">
+			App<s class="icon_arrow icon_arrow_down"></s>
+		</a>
+			</span>
+	<div id="mymessage_drop" style="position:absolute; display:none;">
+		<div class="drop_box">
+			<span><a href="/news-fav.html">Updates</a></span>
+			<span><a href="/comment.html">View Comments</a></span>
+			<span><a href="/message.html">View Messages</a></span>
+			<span class="last"><a href="/notify.html">(0) Notifications</a></span>
+		</div>
+	</div>
+	<div id="mycenter_drop" style="position:absolute; display:none;">
+		<div class="drop_box mycenter_drop">
+			<span><a href="/home/id-19.html">Dashboard</a></span>
+			<span><a href="/home.html">Account</a></span>
+			<span><a href="/account.html">Projects</a></span>
+			<span><a href="/settings.html">Settings</a></span>
+			<span><a href="/news-fav.html">Updates</a></span>
+			<span><a href="/comment.html">Comments</a></span>
+			<span><a href="/message.html">Messages</a></span>
+			<span class="last"><a href="/notify.html">(7) Notifications</a></span>
+		</div>
+	</div>
+	
+		
+	<div id="zc_phone_drop" style="position:absolute; display:none;">
+		<div class="zc_phone_drop">
+								</div>
+	</div>
+</div> 
+			<div id="user_notify_tip" style="position:absolute; z-index:1; display:none; margin-top:45px;">		
+			<div class="notify_tip_box1" id="close_user_notify">
+				<div class="close_user_notify1"></div>
+								<span><a href="/notify.html">You have <font>7</font>  notifications</a></span>
+											</div>
+		</div>
+			</div>
+		<div class="blank0"></div>
+	</div>
+	<div class="header_nav theme_bgcolor">
+		<div class="header_nav_box">
+			<ul class="main_nav f_l">
+								<li class="">
+					<a href="/deals.html"  target="" title="Discover">Discover</a>	
+				</li>
+				<li class="">
+					<a href="/deals.html"  target="" title="Discover">My Account</a>	
+				</li>
+								<li class="">
+					<a href="/deals/r-classic.html"  target="" title="Clasic">Learn More</a>	
+				</li>
+							</ul>
+						<div class="main_publish f_r">
+				<a href="javascript:check_tg();" class="btn_publish"></a>
+				<input type="hidden" name="check_login" value="19">
+			</div>
+					</div>
+	</div>		
+</div>
+<script type="text/javascript">
+	(function(){
+		if(!($(".zc_phone_drop").children().length)){
+			$(".zc_phone").remove();
+		}
+	})();
+	$(function(){
+		$(".search_cate").bind('click',function(){
+			$(this).attr("checked",true).addClass("cur").siblings().attr("checked",false).removeClass("cur");
+			$("input[name='type']").val($(this).attr("livalue"));
+		});
+		
+		//Solve the input value can not support the placeholder problems in ie
+		var doc=document,inputs=doc.getElementsByTagName('input'),supportPlaceholder='placeholder'in doc.createElement('input'),placeholder=function(input){var text=input.getAttribute('placeholder'),defaultValue=input.defaultValue;
+		if(defaultValue==''){
+			input.value=text}
+			input.onfocus=function(){
+				if(input.value===text){
+				this.value=''
+				}
+			};
+			input.onblur=function(){
+				if(input.value===''){
+					this.value=text
+				}
+			}
+		};
+		if(!supportPlaceholder){
+			for(var i=0,len=inputs.length;i<len;i++){
+				var input=inputs[i],text=input.getAttribute('placeholder');
+				if(input.type==='text'&&text){
+					placeholder(input)
+				}
+			}
+		}
+	});
+
+	function check_tg(){
+		var is_tg=0,
+			is_user_tg=0,
+			is_user_investor=1,
+			check_login=$("input[name='check_login']").val();
+		if(check_login){
+			if(is_tg){
+				if(!is_user_tg){
+					$.showErr("Your account is not completed ,Goto the accounts Page",function(){
+						window.location.href=APP_ROOT +"/index.php?ctl=collocation&act=CreateNewAcct&user_type=0&user_id=19";
+					});
+				}else{
+					window.location.href="/index.php?ctl=project&act=choose";
+				}
+			}else{
+				
+				if(is_user_investor ==1){
+					window.location.href="/index.php?ctl=project&act=choose";
+				}else if(is_user_investor ==2){
+					$.showErr("Your identity is being checked, Please contact our staff or wait .");
+				}
+				else{
+					$.showErr("You are not authorized to start a project ,Please make sure your account is verfied!",function(){
+						window.location.href="/settings-security/method-setting-id-box.html";
+					});
+				}
+				
+			}
+		}
+		else{
+			show_pop_login();
+		}
+	}
+</script><script type="text/javascript">
+	var ROOT = '/keupload.php';
+</script>
+<link rel="stylesheet" type="text/css" href="http://demo.crowdphp.com/public/runtime/statics/1c01f9c5eaa56b60d6f1c03ba58ec09e.css" />
+<script type="text/javascript" src="http://demo.crowdphp.com/public/runtime/statics/f9c4917f2af3891976ca51ff9c64b379.js"></script>
+<script type="text/javascript">
+    var ROOT = '/m.php';
+    var VAR_MODULE = "m";
+    var VAR_ACTION = "a";
+    var WEB_SESSION_ID = 'ec87bd65b28f4af3e9dcafc9453f7083';
+    var EMOT_URL = '/public/emoticons/';
+    var MAX_FILE_SIZE = "3MB";
+    var UPLOAD_URL ='/m.php?m=File&a=do_upload&upload_type=0&dir=image' ;
+	var UPLOAD_SWF='http://demo.crowdphp.com/app/Tpl/cv4/js/plupload/Moxie.swf';
+	var UPLOAD_XAP='http://demo.crowdphp.com/app/Tpl/cv4/js/plupload//Moxie.xap/';
+	var ALLOW_IMAGE_EXT= "gif,jpg,jpeg,png,bmp";
+	var MAX_IMAGE_SIZE= "3MB";
+	function get_file_fun(name,num){
+   		$("#"+name+"_"+num).ui_upload({multi:false,
+		FileUploaded:function(ajaxobj){
+ 				if(ajaxobj.error==1)
+				{
+					$.showErr(ajaxobj.info);
+				}else{
+					$("#"+name+"_"+num+"_url").val(ajaxobj.public_url);
+					$("#"+name+"_"+num+"_image").attr('src',ajaxobj.url);
+ 				}
+			},Error:function(error){
+			$.showErr(error.message);
+ 		}});
+	}
+	function get_sigle_file_fun(name){
+   		$("#"+name).ui_upload({multi:false,
+		FileUploaded:function(ajaxobj){
+ 				if(ajaxobj.error==1)
+				{
+					$.showErr(ajaxobj.info);
+				}else{
+					$("#"+name+"_url").val(ajaxobj.public_url);
+					$("#"+name+"_image").attr('src',ajaxobj.url);
+ 				}
+			},Error:function(error){
+			$.showErr(error.message);
+ 		}});
+	}
+</script>
+<div class="demo_image" style="display:none">
+	<div class="demo_pic_box_1">
+		<div class="pic_box f_l mr20">
+			<i class="del_pic"></i>
+			<div class="pic_show" id="audit_data_legal_num">
+				<img id="audit_data_legal_num_image" src="" />
+				<input type="hidden" name="audit_data[legal_id][image][num]" id="audit_data_legal_num_url" value="" rel="num" />
+			</div>
+		</div>
+	</div>
+	<div class="demo_pic_box_2">
+      	<div class="pic_box f_l mr20">
+            <i class="del_pic"></i>
+            <div class="pic_show" id="audit_data_legal_credit_num">
+                <img id="audit_data_legal_credit_num_image" src="" />
+                <input type="hidden" name="audit_data[legal_credit][image][num]" id="audit_data_legal_credit_num_url" value="" rel="num" />
+            </div>
+        </div>
+	</div>
+	<div class="demo_pic_box_3">
+		<div class="pic_box f_l mr20">
+	        <i class="del_pic"></i>
+	        <div class="pic_show" id="audit_data_business_license_num">
+	            <img id="audit_data_business_license_num_image" src="" />
+	            <input type="hidden" name="audit_data[business_license][image][num]" id="audit_data_business_license_num_url" value="" rel="num" />
+	        </div>
+	    </div>
+	</div>
+	<div class="demo_pic_box_4">
+		 <div class="pic_box f_l mr20">
+            <i class="del_pic"></i>
+            <div class="pic_show" id="audit_data_tax_registration_certificate_num">
+                <img id="audit_data_tax_registration_certificate_num_image" src="" />
+                <input type="hidden" name="audit_data[tax_registration_certificate][image][num]" id="audit_data_tax_registration_certificate_num_url" value="" rel="num" />
+            </div>
+        </div>
+	</div>
+	<div class="demo_pic_box_5">
+	 	<div class="pic_box f_l mr20">
+            <i class="del_pic"></i>
+            <div class="pic_show" id="audit_data_organization_code_num">
+                <img id="audit_data_organization_code_num_image" src="" />
+                <input type="hidden" name="audit_data[organization_code][image][num]" id="audit_data_organization_code_num_url" value="" rel="num" />
+            </div>
+        </div>
+	</div>
+	<div class="demo_pic_box_6">
+ 	 	<div class="pic_box f_l mr20">
+            <i class="del_pic"></i>
+            <div class="pic_show" id="audit_data_company_photo_num">
+                <img id="audit_data_company_photo_num_image" src="" />
+                <input type="hidden" name="audit_data[company_photo][image][num]" id="audit_data_company_photo_num_url" value="" rel="num" />
+            </div>
+        </div>
+	</div>
+	<div class="demo_pic_box_7">
+ 	 	<div class="pic_box f_l mr20">
+            <i class="del_pic"></i>
+            <div class="pic_show" id="audit_data_site_contract_num">
+                <img id="audit_data_site_contract_num_image" src="" />
+                <input type="hidden" name="audit_data[site_contract][image][num]" id="audit_data_site_contract_num_url" value="" rel="num" />
+            </div>
+        </div>
+	</div>
+</div>
+<div class="blank20"></div>
+<div class="location_box wrap1000">
+	<div class="location f_l">
+		<i class="fl ico loc_ico mr5"></i>
+		<label>You are here:</label><a>Start New Project</a><em>>></em><a>Project Information</a>
+	</div>
+</div>
+<div class="blank10"></div>
+<div class="step_box step_box1">
+	<ul>
+		  <li class="l1 cur"><span>1</span> Company Info</li>
+        <li class="l2"><span>2</span> Project Info</li>
+        
+        <li class="l3"><span>3</span> Supporting Documents</li>
+        <li class="l4"><span>4</span> Submit</li>
+	</ul>
+</div>
+<div class="blank20"></div>
+<div class="mod_box project_edit project_agencyAdd">
+	<div class="con_tit theme_fcolor f_20">Project Information</div>
+	<form method="post" action="/index.php?ctl=project&act=investor_one_save" id="agencyAdd_stepone_form" autocomplete="off" >
+	<table width="100%" border="0" cellspacing="1" cellpadding="0" class="tab1">
+	<tbody>
+    	<tr>
+      		<td align="right"><span class="f_red">*&nbsp;</span>Project Title:</td>
+          	<td colspan="3">
+          		<div class="group">
+          			<input name="name" type="text" class="small_textbox textbox w450" id="project_names" value="">
+          			<span class="holder_tip">Enter a short description about project title</span>
+          		</div>
+          	</td>
+        </tr>
+        <tr style="display:none;">
+          	<td align="right">Project details view permissions:</td>
+          	<td colspan="3">
+          		<div class="f_l f14">
+					<span class="ui_check info_view ml20 ui_checked " type="radio" rel="info_view">
+						<input type="radio" name="investor_authority" checked="checked" value="0" />
+					</span>
+					Logged in users can view					<span class="ui_check info_view" type="radio" rel="info_view" >
+						<input type="radio" name="investor_authority"  value="1" />
+					</span>	
+					All the user needs approved by me before viewing				</div>
+			</td>
+        </tr>
+                <tr>
+          	<td align="right">Project Phase:</td>
+          	<td>
+				<select name="project_step" id="phase_id" class="ui-select field_select medium">
+					<option selected="selected" value="0" >About to begin</option>
+	              	<option  value="1">Development</option>
+	              	<option  value="2">Built</option>
+	              	<option  value="3">Selling</option>
+	              	<option  value="4">Profitable</option>
+				</select>
+        	</td>
+          	<td align="right">Previous projects?:</td>
+		  	<td>
+				<select name="has_another_project" id="has_otherpro" class="ui-select field_select small">
+					<option value="1" >Yes</option>
+              		<option value="0" selected="selected">No</option>
+				</select>
+          	</td>         
+        </tr>
+        
+          	<td align="right"><span class="f_red">*&nbsp;</span>City:</td>
+          	<td>
+      			<select name="province" class="ui-select field_select small" id="cityid-1">
+              		<option value="" rel="0">Please select a location</option>
+										<option value="Australia" class="ld-option" rel="3403" >Australia</option>
+										<option value="US" class="ld-option" rel="3401" >US</option>
+									 
+				</select>
+				<select name="city" class="ui-select field_select small" id="cityid-2">
+              		<option value="" rel="0">City</option>
+									    
+				</select>
+          	</td>
+        </tr>
+        <tr>          
+          	<td align="right"><span class="f_red">*&nbsp;</span>If established company:</td>
+          	<td>
+				<select name="business_is_exist" class="ui-select field_select small" id="found_company" onchange='is_show_createtime(this);'>
+					<option value="1" >Yes</option>
+              		<option value="0" selected="selected">No</option>
+				</select>
+          	</td> 
+			<td align="right"><span class="is_show">Est Year:</span></td>
+          	<td>
+          		<div class="is_show">
+	          		<div class="col-md-3 date input-append">
+	                    <input readonly="" type="text" class="small_textbox w100 jcDate" rel="input-text" value="" name="business_create_time" id="inputLaunchTime" placeholder="Date">
+	                    <span class="add-on"><i class="icon-calendar"></i></span>
+	                </div>
+      			</div>
+	        </td>
+    	</tr>
+        <tr id="address_and_name">
+        	<td align="right"><span class="f_red">*&nbsp;</span>Company name:</td>
+        	<td colspan="3">
+        		<div class="group">
+	        		<input type="text" name="business_name" value="" id="company_name" class="small_textbox textbox w450">
+	        		<span class="holder_tip">Please enter a company name</span>
+	        	</div>
+            </td>                  
+        </tr>
+        <tr>
+        	<td align="right"><span class="f_red">*&nbsp;</span>Office address:</td>
+        	<td colspan="3">
+        		<div class="group">
+	    			<input type="text" name="business_address" value="" id="company_address" class="small_textbox textbox w450">
+	    			<span class="holder_tip">Please enter the office address</span>
+	    		</div>
+            </td> 
+        </tr>
+        <tr>
+          	<td align="right"><span class="f_red">*&nbsp;</span>Funding:</td>
+          	<td colspan="3">
+          		<div class="group">
+	      			<input type="text" name="limit_price" value="" id="financing_amount" onkeyup="amount(this);" class="small_textbox textbox w100 mr10" />
+	      			<span class="f_l" style="line-height:37px">$ Funding amount needed</span>
+	      			<span class="holder_tip">Amount</span>
+	      		</div>
+      		</td>
+        </tr>
+		<tr>
+          	<td align="right"><span class="f_red">*&nbsp;</span>Selling shares:</td>
+          	<td colspan="3">
+          		<div class="group">
+	      			<input type="text" name="transfer_share" value="" id="financing_amount" onKeyUp="amount(this);" class="small_textbox textbox w100 mr10" />      			
+	      			<span class="f_l" style="line-height:37px">%</span>
+	      			<span class="holder_tip">Enter %</span>
+	      		</div>
+			</td>  
+        </tr>
+		<            
+        <tr>
+          	<td rowspan="2" align="right" valign="top" style="line-height:40px;"><span class="f_red">*&nbsp;</span>Project Description:
+          	</td>
+          	<td colspan="3">
+          		<div class="group">
+	          		<textarea id="project_description" name="business_descripe" rows="5" class="textareabox textbox w550 h200" onkeyup="checkstrlength(this,'#left_words',300);"></textarea>
+	          		<span class="holder_tip">Please enter Project description , not more than 300 Word</span>
+	          	</div>
+          	</td>
+    	</tr>
+        <tr>
+          	<td colspan="3" class="f_999 f14">You can enter upto<span class="f_red" id="left_words" style="">300</span>Characters</td>
+        </tr>
+        <tr>
+          	<td align="right" valign="top" style="line-height:40px;"><span class="f_red">*&nbsp;</span>Upload project image:
+          	</td>
+          	<td colspan="3">
+          		<label class="fileupload pic_show pr" id="img_project" >
+          			<img id="img_project_image" src="" />
+					<input type="button" class="filebox"  value="http://demo.crowdphp.com/app/Tpl/cv4/images/empty_thumb.gif" name="image_file" id="image_file"  style="cursor:pointer;padding: 0;height:150px;width:150px;filter: alpha(opacity=0);-moz-opacity: 0;-khtml-opacity: 0;opacity: 0;position:absolute;top:0;left:0;z-index:99;">
+				</label>
+				<input type="hidden" name="image" value="" id="img_project_url">
+				<span class="prompt" style="margin-top:3px;"></span>
+				<div colspan="3" class="f_666 f14" style="line-height:25px;"><label class="f_red">Tips:</label>Please use your best project relate image, This can not be changed later. Use Dimensions 800x556 PX, To add more images use Editor on next page          	</td>
+        </tr>
+        <tr>
+          	<td align="right">Project video URL:</td>
+          	<td colspan="3">
+          		<div class="group">
+	          		<input name="vedio" type="text" value="" size="50" class="small_textbox textbox w450" />
+	          		<span class="holder_tip">Enter the projects video url</span>
+	          	</div>
+          	</td>
+        </tr>
+       	<tr class="is_show">
+    <td align="center" colspan="4">Other profile picture (The company did not set up no)</td>
+</tr>
+<tr class="is_show">
+    <td align="center" colspan="4">
+    	<div class="f_666">
+    		<label class="f_red">Tips:</label>The following upload pictures, supportgif,jpg,jpeg,png,bmpFormat, image size does not exceed the maximum<span class="f_red b">3M</span>
+    	</div>
+    </td>
+</tr>
+<tr class="other_pic other_pic_1 is_show">
+    <td align="right">Legal representative ID:</td>
+    <td colspan="3">
+    		        <div class="pic_box f_l mr20">
+	            <i class="del_pic"></i>
+	            <div class="pic_show" id="audit_data_legal_0">
+		            <img id="audit_data_legal_0_image" src="" />
+		            <input type="hidden" name="audit_data[legal_id][image][0]" id="audit_data_legal_0_url" value="" class="input_row" rel="0" />
+		          </div>
+				  
+	          <script>
+	              get_file_fun('audit_data_legal',0);
+	          </script>
+	        </div>
+			<a href="javascript:void(0);" class="add_pic add_pic_1 theme_fcolor">+</a>
+  		        
+    </td>
+</tr>
+<tr class="other_pic other_pic_2 is_show">
+    <td align="right">The legal representative of your credit report:</td>
+    <td colspan="3">
+    		        <div class="pic_box f_l mr20">
+	            <i class="del_pic"></i>
+	            <div class="pic_show" id="audit_data_legal_credit_0">
+	                <img id="audit_data_legal_credit_0_image" src="" />
+	                <input type="hidden" name="audit_data[legal_credit][image][0]" id="audit_data_legal_credit_0_url" value="" class="input_row" rel="0" />
+	            </div>
+	            <script>
+	                get_file_fun('audit_data_legal_credit',0);
+	            </script>
+	        </div>
+	        <a href="javascript:void(0);" class="add_pic add_pic_2 theme_fcolor">+</a>
+ 				    </td>
+</tr>
+<tr class="other_pic other_pic_3 is_show">
+    <td align="right">Business license:</td>
+    <td colspan="3">
+    		        <div class="pic_box f_l mr20">
+	            <i class="del_pic"></i>
+	            <div class="pic_show" id="audit_data_business_license_0">
+	                <img id="audit_data_business_license_0_image" src="" />
+	                <input type="hidden" name="audit_data[business_license][image][0]" id="audit_data_business_license_0_url" value="" class="input_row" rel="0" />
+	            </div>
+	            <script>
+	                get_file_fun('audit_data_business_license',0);
+	            </script>
+	        </div>
+	        <a href="javascript:void(0);" class="add_pic add_pic_3 theme_fcolor">+</a>
+ 						
+    </td>
+</tr>
+
+<tr class="other_pic other_pic_5 is_show">
+    <td align="right">More Project Uploads:</td>
+    <td colspan="3">
+    		        <div class="pic_box f_l mr20">
+	            <i class="del_pic"></i>
+	            <div class="pic_show" id="audit_data_organization_code_0">
+	                <img id="audit_data_organization_code_0_image" src="" />
+	                <input type="hidden" name="audit_data[organization_code][image][0]" id="audit_data_organization_code_0_url" value="" class="input_row" rel="0" />
+	            </div>
+	            <script>
+	                get_file_fun('audit_data_organization_code',0);
+	            </script>
+	        </div>
+	        <a href="javascript:void(0);" class="add_pic add_pic_5 theme_fcolor">+</a>
+ 				    </td>
+</tr>
+<tr class="other_pic other_pic_6 is_show">
+    <td align="right">Company Photo:</td>
+    <td colspan="3">
+    		        <div class="pic_box f_l mr20">
+	            <i class="del_pic"></i>
+	            <div class="pic_show" id="audit_data_company_photo_0">
+	                <img id="audit_data_company_photo_0_image" src="" />
+	                <input type="hidden" name="audit_data[company_photo][image][0]" id="audit_data_company_photo_0_url" value="" class="input_row" rel="0" />
+	            </div>
+	            <script>
+	                get_file_fun('audit_data_company_photo',0);
+	            </script>
+	        </div>
+	        <a href="javascript:void(0);" class="add_pic add_pic_6 theme_fcolor">+</a>
+ 				    </td>
+</tr>
+<tr class="other_pic other_pic_7 is_show">
+    <td align="right">Space lease contract:</td>
+    <td colspan="3">
+    		        <div class="pic_box f_l mr20">
+	            <i class="del_pic"></i>
+	            <div class="pic_show" id="audit_data_site_contract_0">
+	                <img id="audit_data_site_contract_0_image" src="" />
+	                <input type="hidden" name="audit_data[site_contract][image][0]" id="audit_data_site_contract_0_url" value="" class="input_row" rel="0" />
+	            </div>
+	            <script>
+	                get_file_fun('audit_data_site_contract',0);
+	            </script>
+	        </div>
+	        <a href="javascript:void(0);" class="add_pic add_pic_7 theme_fcolor">+</a>
+ 				    </td>
+</tr>    </tbody>
+	</table>
+	<div class="blank20"></div>
+				<div class="button_row tc">
+	 		<input type="hidden" name="id" value="" />
+			<input type="hidden" name="savenext" value="0" />
+			<div class="ui-button ui-center-button bg_green mr10" rel="gray" id="savenow" style="*margin-left:355px;">
+				Save first step			</div>
+			<div class="ui-button ui-center-button theme_bgcolor" rel="green" id="savenext">
+				Next			</div>
+			<input type="hidden" value="1" name="ajax" />
+	
+			<div class="blank15"></div>
+		</div>
+		</form>
+	
+</div>
+<div class="blank20"></div>
+<script type="text/javascript">
+$(function(){
+	show_tip();
+	get_sigle_file_fun("img_project");
+	//_Remove picture
+	$(".del_pic").live('click',function(){
+		$(this).parent().parent().find(".add_pic").show();
+		$(this).parent(".pic_box").remove();
+	});
+	$(".pic_box").live('hover',function(){
+		$(this).find("i").toggle();
+	});
+
+	//_Instantiation Add image
+	add_pics(".demo_pic_box_1",".add_pic_1",".other_pic_1",'audit_data_legal',1);
+	add_pics(".demo_pic_box_2",".add_pic_2",".other_pic_2",'audit_data_legal_credit',2);
+	add_pics(".demo_pic_box_3",".add_pic_3",".other_pic_3",'audit_data_business_license',3);
+	add_pics(".demo_pic_box_4",".add_pic_4",".other_pic_4",'audit_data_tax_registration_certificate',4);
+	add_pics(".demo_pic_box_5",".add_pic_5",".other_pic_5",'audit_data_organization_code',5);
+	add_pics(".demo_pic_box_6",".add_pic_6",".other_pic_6",'audit_data_company_photo',6);
+	add_pics(".demo_pic_box_7",".add_pic_7",".other_pic_7",'audit_data_site_contract',7);
+});
+
+//_Add image
+var pic_num_arr = [];
+function add_pics(hide_demo,add_btn,other_pic,file_id,arr){
+ 	var demo_pic_box=$(hide_demo).html();
+ 	pic_num_arr[arr] = parseInt($(other_pic).find(".input_row").last().attr("rel"));
+ 	if(pic_num_arr[arr]>=3){
+		$(add_btn).hide();
+	}
+ 	$(add_btn).live('click',function(){
+ 		var file_ids= file_id;
+		var pic_box_num = $(other_pic).find(".pic_box").length;
+		pic_box_num ++ ;
+		if(pic_box_num <= 4){
+			pic_num_arr[arr]++;
+	       	new_pic_box=demo_pic_box.replace(/num/g,pic_num_arr[arr]);
+	        $(this).before(new_pic_box);
+	        get_file_fun(file_ids,pic_num_arr[arr]);
+	        if(pic_box_num==4){
+	        	$(this).hide();
+	        }
+		}
+	});
+}
+</script>
+
+<script type="text/javascript">
+$(function(){
+	button_hover(".ui-center-button");
+
+	//Select the date control
+    $("input.jcDate").jcDate({
+        IcoClass : "jcDateIco",
+        Event : "click",
+        Speed : 100,
+        Left :-125,
+        Top : 28,
+        format : "-",
+        Timeout : 100,
+        Oldyearall : 17,  //_Configuring the past many years
+		Newyearall : 0  //_Configuring the future for many years
+    });
+
+	//Screening type of identity
+	$(".ui_check").click(function(){
+		if($(this).attr("type")=="radio"){
+			var rel=$(this).attr("rel");
+			$(".ui_check[rel='"+rel+"']").removeClass("ui_checked");
+			$(".ui_check[rel='"+rel+"'] input").attr("checked",false);
+			$(this).addClass("ui_checked");
+			$(this).find("input").attr("checked","checked");
+		}
+		else{
+			if($(this).hasClass("ui_checked")){
+				$(this).removeClass("ui_checked");
+				$(this).find("input").attr("checked",false);
+			}
+			else{
+				$(this).addClass("ui_checked");
+				$(this).find("input").attr("checked","checked");
+			}
+		}
+	});
+});
+
+//_Detection of words
+function checkstrlength(obj,left_words,words)
+{
+	var curStr=$(obj).val();
+	var length_array=GetCharLength(curStr);
+	var curLength=length_array['iLength'];
+	var putLenght=words;
+
+   	if(curLength>words){
+		var substrAdd=length_array['substrAdd'];
+		if(substrAdd >0)
+			putLenght=putLenght+ Math.ceil(substrAdd/2)
+        var num=$(obj).val().substr(0,putLenght);
+		
+		$(obj).val(num);
+		$(left_words).text(0);
+		$.showErr("Enter up"+words);
+   	}
+   	else{
+   		var curLength=parseInt(curLength);
+        $(left_words).text(words-curLength);
+   	}
+	
+	//_Get word length
+	function GetCharLength(str)
+	{  
+		var iLength = 0;
+		var len = new Array(); 
+		len["iLength"] =0;
+		len["substrAdd"] =0;
+	    for(var i = 0; i<str.length; i++){
+			 
+			if(str.charCodeAt(i) >255){  
+		        len["iLength"] += 1;  
+		    }  
+		    else{  
+				len["iLength"] += 0.5;
+				if(len["iLength"] <= 300)
+					 len["substrAdd"] +=1;
+		    } 
+		}  
+	    return len;  
+	} 
+}
+
+</script>
+<div style="display:none;" id="show_html"></div>
+<script type="text/javascript">
+	var html_var=$("#show_html").html();
+	$(function(){
+		if(html_var){
+			$.weeboxs.open(html_var, {contentType:'text',showButton:true,showOk:true,showCancel: false,title:"Project Business Plan Writing Guide",width:800,height:300,type:'wee'});
+		}
+
+		//_Examples of whether to display Established
+		show_createtime();
+	});
+
+	//_Whether Established
+	function is_show_createtime(sel){
+		if(sel.value=='1'){
+			$(".is_show").show();
+		}
+		else if(sel.value=='0'){
+			$(".is_show").hide();
+		}
+	}
+	function show_createtime(){
+		if($('#found_company option:selected').val() == 1){
+		$(".is_show").show();
+		}
+		else{
+			$(".is_show").hide();
+		}
+	}
+</script>
+<style>
+	.db .bdshare-button-style0-16 {float:left;}  
+	.db .bdshare-button-style0-16 a , .db .bdshare-button-style0-16 .bds_more {padding-left:0; background-image:none; margin-top:0;}
+	.bdshare-button-style0-16 a:hover {filter:alpha(opacity=100); opacity:1;}
+	.foot-logo img{width:90px; height:90px;}
+</style>
+<!--footer static-->
+<div class="footer" pbid="footer" id="J_footer">
+	<div class="footer-section footer-section-1">
+		<div class="footer-wrap">
+		 			</div>
+	</div>
+	<div class="blank"></div>
+	<div class="footer-section footer-section-2">
+		<div class="footer-wrap">
+			<!--footer map start-->
+			<div class="foot-map">
+															
+													</dl>
+												</div>
+			<!--foot map end-->
+			<div class="foot-contact">
+							</div>
+		</div>
+	</div>
+	<div class="blank"></div>
+	<div class="footer-section">
+		<div class="footer-wrap">
+			<div class="blank0"></div>
+			<div class="copy_text">
+				<div class="mb15">
+									<a href="/help-term.html" title="Terms">Terms</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-intro.html" title="Services">Services</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-privacy.html" title="Privacy Policy">Privacy Policy</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-about.html" title="About">About</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-write_guide.html" title="Creator Handbook">Blog</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>									<a href="/help-8.html" title="Check">Check</a>								</div>
+				<div>All rights reserved Estateup.com &nbsp;</div>
+				<div></div>
+			</div>	
+		</div>
+	</div>
+</div>
+<div></div>
+<div class="sidebar" id="sidebar">
+	<ul>
+				<li class="ewm_box">
+			<a href="javascript:void(0);">
+			
+		<li style="border:none;">
+			<a href="javascript:goTop();" class="sidetop"></a>
+		</li>
+	</ul>
+</div>
+<div class="muxfb_dialog" id="muxfb_dialog">
+	<div class="muxfb_dialog_panel">
+		<i class="muxfb_dialog_close icon iconfont" id="muxfb_dialog_close">&#xe604;</i>
+		<div class="muxfb_dialog_content">
+			<div class="muxfb_left_tab_wrap">
+                <div class="muxfb_left_logo">
+                    <i class="muxfb_left_logo icon iconfont">&#xe605;</i>
+                    <span class="title">Users Feedback</span>
+                </div>
+            </div>
+			<form class="user_message_ajax" name="user_message_ajax"  action="/user_message-save_info.html">
+            <div class="muxfb_right_content muxfb_form" id="muxfb_form">
+            	<h1 class="muxfb_form_title">Feedback</h1>
+            	<div class="form_row control-group">
+					<label class="form_lable" style="height:37px;line-height:37px">Help:</label>
+					<select name="cate_id" class="ui-select field_select small">
+							              		<option value="1" selected="selected">Starting</option>
+	              			              		<option value="2" selected="selected">Suggestions</option>
+	              			              		<option value="3" selected="selected">Others</option>
+	              			              		<option value="4" selected="selected">Verification</option>
+	              							</select>
+					<div class="blank0"></div>
+				</div>
+            	<div class="form_row control-group">
+					<label class="form_lable small_form_lable">Your Name:</label>
+					<div class="pr f_l">
+						<input type="text" name="user_name" id="user_name" value="test" class="small_textbox" />
+						<span class="holder_tip">Please enter your name</span>
+					</div>
+					<div class="blank0"></div>
+					<div class="muxfb_tip user_name_tip  f_red">*The Name can not be empty</div>
+					<div class="blank0"></div>
+				</div>
+				<div class="form_row control-group">
+					<label class="form_lable small_form_lable">Your Phone:</label>
+					<div class="pr f_l">
+						<input type="text" name="tel" id="tel" value="11111111111" class="small_textbox" />
+						<span class="holder_tip">Enter your phone number</span>
+					</div>
+					<div class="blank0"></div>
+					<div class="muxfb_tip tel_tip f_red">*The phone number can not be empty!</div>
+					<div class="blank0"></div>
+				</div>
+				<div class="blank0"></div>
+				<div>Please enter your feedback:</div>
+				<textarea placeholder="Your feedback is important to us" name="content" class="textareabox"></textarea>
+				<span class="muxfb_tip content_tip f_red">*Please enter your content</span>
+				<div class="blank20"></div>
+				<input type="button" value="Send" class="ui-button theme_bgcolor" />
+				<input type="hidden" name="user_id" value="19">
+				<input type="hidden" name="ajax" value="1">
+            </div>
+		</form>	
+		</div>
+		<div class="blank0"></div>
+	</div>
+	<div class="muxfb_dialog_mask"></div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		resetWindowBox();
+		sidebarFun();
+		bind_ajax_form_custom_footer(".user_message_ajax");
+	});
+
+	// Sidebar Function
+	function sidebarFun(){
+		$("#sidebar ul li").hover(function(){
+			$(this).find(".sidebox").stop().animate({"width":"150px"},200).css("background","#3d9eeb")
+		},function(){
+			$(this).find(".sidebox").stop().animate({"width":"38px"},200).css("background","#939393")	
+		});
+		var lastRmenuStatus=false;
+		$(window).scroll(function(){
+			var _top=$(window).scrollTop();
+			if(_top>300){
+				$("#sidebar").data("expanded",true);
+			}else{
+				$("#sidebar").data("expanded",false);
+			}
+			if($("#sidebar").data("expanded")!=lastRmenuStatus){
+				lastRmenuStatus=$("#sidebar").data("expanded");
+				if(lastRmenuStatus){
+					$("#sidebar .sidetop").animate({"height":"38px"},200);
+				}else{
+					$("#sidebar .sidetop").animate({"height":"0"},200);
+				}
+			}
+		});
+		//User Comments
+		var $muxfb_dialog=$("#muxfb_dialog");
+		$muxfb_dialog.find("#muxfb_dialog_close").on('click',function(){
+			$muxfb_dialog.hide();
+		});
+		$("#link_box").on('click',function(){
+			$muxfb_dialog.show();
+		});
+	}
+
+	//Goto Top 
+	function goTop(){
+		$('html,body').animate({'scrollTop':0},100);
+	}
+	function bind_ajax_form_custom_footer(str)
+	{
+		$(str).find(".ui-button").bind("click",function(){
+			var $muxfb_form=$("#muxfb_form");
+			var $muxfb_form_user_name=$("#muxfb_form").find("input[name='user_name']");
+			var $muxfb_form_tel=$("#muxfb_form").find("input[name='tel']");
+			var $muxfb_form_content=$("#muxfb_form").find("textarea[name='content']");
+			$muxfb_form.find(".muxfb_tip").hide();
+			if($.trim($muxfb_form_user_name.val())==''){
+				$muxfb_form.find(".user_name_tip").show();
+				$muxfb_form_user_name.focus();
+				return false;
+			}
+			if($.trim($muxfb_form_tel.val())==''){
+				$muxfb_form.find(".tel_tip").show();
+				$muxfb_form_tel.focus();
+				return false;
+			}
+			if($.trim($muxfb_form_content.val())==''){
+				$muxfb_form.find(".content_tip").show();
+				$muxfb_form_content.focus();
+				return false;
+			}
+			$(str).submit();
+		});
+		$(str).bind("submit",function(){
+			var ajaxurl = $(this).attr("action");
+			var query = $(this).serialize() ;
+			$.ajax({ 
+				url: ajaxurl,
+				dataType: "json",
+				data:query,
+				type: "POST",
+				success: function(ajaxobj){
+					if(ajaxobj.status==1)
+					{
+						location.href = ajaxobj.jump;
+					}
+					else
+					{ 
+						$("."+ajaxobj.info+"_tip").show();		
+					}
+				},
+				error:function(ajaxobj)
+				{
+					if(ajaxobj.responseText!='')
+					alert(ajaxobj.responseText);
+				}
+			});
+			return false;
+		});
+	}
+</script>
+</body>
+</html>
